@@ -1,0 +1,12 @@
+# Stage 2 + 3: rule engine, LLM validator, ensemble fusion, CLI.
+# This is all you need to reproduce PCMDE scores from an existing ensemble JSON.
+# Pure CPU, no GPU required.
+#
+#   pip install -r requirements/core.txt
+
+pyyaml>=6.0
+requests>=2.31
+
+# analysis/ scripts (ablation statistics)
+numpy>=1.24
+scipy>=1.11

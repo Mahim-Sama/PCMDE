@@ -1,0 +1,102 @@
+Image_caption,Image_path
+" ""Boeing 737 737-300 airliner with 2 turbofan engines, Mach 0.74, swept wings.""",nid_1.png
+"""Boeing 737 737-200 airliner with 2 turbofan engines, Mach 0.74, swept wings.""",nid_3.png
+"""DC-10 DC-10 airliner with 3 turbofan engines, Mach 0.88, swept wings.""",nid_10.png
+"""Fokker 50 Fokker 50 airliner with 2 turboprop engines, Mach 0.52, straight wings.""",nid_17.png
+"""MD-80 MD-80 airliner with 2 turbofan engines, Mach 0.76, swept wings.""",nid_20.png
+"""Saab 2000 Saab 2000 airliner with 2 turboprop engines, Mach 0.58, swept wings.""",nid_21.png
+" ""A340 A340-300 airliner with 4 turbofan engines, Mach 0.82, swept wings.""",nid_25.png
+" ""A380 A380 airliner with 4 turbofan engines, Mach 0.89, swept wings.""",nid_26.png
+"""Fokker 70 Fokker 70 airliner with 2 turbofan engines, Mach 0.75, swept wings.""",nid_30.png
+" ""Generate a realistic side view images of  Boeing 757 757-300 airliner with 2 turbofan engines, Mach 0.8, swept wings.""",nid_31.png
+" ""Generate a realistic side view images of Tu-154 Tu-154 airliner with 3 turbofan engines, Mach 0.82, swept wings.""",nid_38.png
+" ""Generate a realistic side view images of DC-10 DC-10 airliner with 3 turbofan engines, Mach 0.88, swept wings.""",nid_41.png
+"""Generate a realistic side view images of BAE 146 BAE 146-200 airliner with 4 turbofan engines, Mach 0.7, swept wings.""",nid_43.png
+" ""Generate a realistic side view images of DR-400 DR-400 general aviation with 1 piston engines, Mach 0.22, low-wing wings.""",nid_44.png
+" ""Generate a realistic side view images of Embraer ERJ 145 ERJ 135 airliner with 2 turbofan engines, Mach 0.78, swept wings.""",nid_45.png
+"""Generate a realistic top view images of  Il-76 Il-76 strategic airlifter with 4 turbofan engines, Mach 0.82, swept wings.""",nid_52.png
+"""Generate a Aircraft side profile Boeing 737 737-300 airliner with 2 turbofan engines, Mach 0.74, swept wings.""",nid_71.png
+" ""Generate a Aircraft One side visible side profile Boeing 727 727-200 airliner with 3 turbofan engines, Mach 0.8, swept wings.""",nid_72.png
+"""Generate a Aircraft side profile of A320 A319 airliner with 2 turbofan engines, Mach 0.82, swept wings.""",nid_73.png
+" ""Generate a realistic aircraft side profile of BAE 146 BAE 146-300 airliner with 4 turbofan engines, Mach 0.7, swept wings.""",nid_74.png
+"""Generate a Aircraft side profile of BAE-125 BAE-125 business jet with 2 turbofan engines, Mach 0.7, swept wings.""",nid_75.png
+"""Generate a  realistic Aircraft side profile of Beechcraft 1900 Beechcraft 1900 airliner with 2 turboprop engines, Mach 0.52, straight wings.""",nid_76.png
+"""Generate a  realistic Aircraft side profile of Boeing 717 Boeing 717 airliner with 2 turbofan engines, Mach 0.77, swept wings.""",nid_77.png
+"""Generate a realistic Aircraft side view profile images of  A340 A340-500 airliner with 4 turbofan engines, Mach 0.86, swept wings.""",nid_78.png
+" ""Generate a  realistic Aircraft side profile of Dornier 328 Dornier 328 airliner with 2 turboprop engines, Mach 0.47, straight wings.""",nid_79.png
+"""Generate a Aircraft side profile images of Metroliner Metroliner airliner with 2 turboprop engines, Mach 0.47, straight wings.""",nid_80.png
+"""Generate a realistic single Aircraft side profile images of CRJ-200 CRJ-200 airliner with 2 turbofan engines, Mach 0.81, swept wings.""",nid_81.png
+" ""Generate a  realistic Aircraft side profile of DC-10 DC-10 airliner with 3 turbofan engines, Mach 0.88, swept wings.""",nid_82.png
+""" Generate a  realistic Aircraft side profile of images of Dash 8 DHC-8-100 airliner with 2 turboprop engines, Mach 0.37, straight wings.""",nid_83.png
+"""Generate a  realistic Aircraft side profile of images of  BAE 146 BAE 146-200 airliner with 4 turbofan engines, Mach 0.7, swept wings.""",nid_84.png
+" ""Generate a  realistic single Aircraft side profile images of  Embraer ERJ 145 ERJ 135 airliner with 2 turbofan engines, Mach 0.78, swept wings.""",nid_85.png
+"""Generate a  realistic single Aircraft side profile images of Fokker 50 Fokker 50 airliner with 2 turboprop engines, Mach 0.52, straight wings.""",nid_86.png
+"""Generate a  realistic single Aircraft side profile images of Boeing 717 Boeing 717 airliner with 2 turbofan engines, Mach 0.77, swept wings.""",nid_87.png
+"""Generate a realistic one Aircraft side profile images of  A310 A310 airliner with 2 turbofan engines, Mach 0.82, swept wings.""",nid_88.png
+" ""Generate a realistic single Aircraft side profile images of A340 A340-300 airliner with 4 turbofan engines, Mach 0.82, swept wings.""",nid_89.png
+" ""Generate a realistic single Aircraft side profile images of CRJ-200 CRJ-200 airliner with 2 turbofan engines, Mach 0.81, swept wings.""",nid_90.png
+"Generate a realistic aircraft image on white background Boeing 707 Boeing 707-320 airliner with under-wing Pratt & Whitney JT3D 4 turbofan engines, 46.6m length, Mach 0.82, 44.42m wingspan, swept wings.",ComfyUI_00001_.png
+"Generate a realistic aircraft image on white background Boeing 727 Boeing 727-200 airliner with two under-wing, one in tail Pratt & Whitney JT8D 3 turbofan engines, 46.7m length, Mach 0.8, 32.92m wingspan, swept wings.",ComfyUI_00002_.png
+"Generate a realistic aircraft image on white background Boeing 737 Boeing 737-200 airliner with under-wing Pratt & Whitney JT8D 2 turbofan engines, 30.5m length, Mach 0.74, 28.35m wingspan, swept wings.",ComfyUI_00003_.png
+"Generate a realistic aircraft image on white background Boeing 737 Boeing 737-300 airliner with under-wing CFM56-3 series 2 turbofan engines, 33.4m length, Mach 0.74, 28.88m wingspan, swept wings.",ComfyUI_00004_.png
+"Generate a realistic aircraft image on white background Boeing 737 Boeing 737-400 airliner with under-wing CFM56-3 2 turbofan engines, 36.5m length, Mach 0.74, 28.88m wingspan, swept wings.",ComfyUI_00005_.png
+"Generate a realistic aircraft image on white background Boeing 737 Boeing 737-500 airliner with under-wing CFM56-3 2 turbofan engines, 31.0m length, Mach 0.785, 28.88m wingspan, swept wings.",ComfyUI_00006_.png
+"Generate a realistic aircraft image on white background Boeing 737 Boeing 737-700 airliner with under-wing CFM56-7B 2 turbofan engines, 33.6m length, Mach 0.785, 34.3m wingspan, swept wings.",ComfyUI_00008_.png
+"images/1598898.jpg-> Generate a realistic aircraft image on white background Boeing 737 Boeing 737-800 airliner with under-wing CFM56-7B 2 turbofan engines, 39.5m length, Mach 0.785, 34.3m wingspan, swept wings.",ComfyUI_00009_.png
+"images/1456775.jpg-> Generate a realistic aircraft image on white background Boeing 737 Boeing 737-900 airliner with under-wing CFM56-7 2 turbofan engines, 42.1m length, Mach 0.79, 35.79m wingspan, swept wings.",ComfyUI_00010_.png
+"Generate a realistic aircraft image on white background A320 Airbus A319 airliner with under-wing CFM56-5B/A 2 turbofan engines, 33.8m length, Mach 0.82, 34.1m wingspan, swept wings.",ComfyUI_00011_.png
+"Generate a realistic aircraft image on white background A320 Airbus A320 airliner with under-wing CFM International CFM56 2 turbofan engines, 37.6m length, Mach 0.82, 34.1m wingspan, swept wings.",ComfyUI_00012_.png
+"Generate a realistic aircraft image on white background Challenger 600 Canadair Challenger 600 business jet with rear-mounted General Electric CF34 2 turbofan engines, 20.9m length, Mach 0.7, 19.61m wingspan, swept wings.",ComfyUI_00014_.png
+"A300 A300B4 airliner with 2 turbofan engines, Mach 0.82, swept wings.",id_4036.png
+"A320 A319 airliner with 2 turbofan engines, Mach 0.82, swept wings.",id_4153.png
+"A340 A340-600 airliner with 4 turbofan engines, Mach 0.86, swept wings.",id_4417.png
+"A380 A380 airliner with 4 turbofan engines, Mach 0.89, swept wings.",id_4452.png
+"BAE 146 BAE 146-300 airliner with 4 turbofan engines, Mach 0.7, swept wings.",id_4622.png
+"Challenger 600 Challenger 600 business jet with 2 turbofan engines, Mach 0.7, swept wings.",id_5063.png
+"DC-10 DC-10 airliner with 3 turbofan engines, Mach 0.88, swept wings.",id_5087.png
+"Embraer E-Jet E-170 airliner with 2 turbofan engines, Mach 0.82, swept wings.",id_5470.png
+"DHC-6 DHC-6 utility aircraft with 2 turboprop engines, Mach 0.31, straight wings.",id_5329.png
+"Generate a  realistic Aircraft side profile of  A300 A300B4 airliner with 2 turbofan engines, Mach 0.82, swept wings.",nsid_115.png
+"Generate a  realistic aircraft one side showing profile of  A320 A319 airliner with 2 turbofan engines, Mach 0.82, swept wings.",nsid_116.png
+"Generate a  realistic aircraft left side showing profile of  A340 A340-600 airliner with 4 turbofan engines, Mach 0.86, swept wings.",nsid_117.png
+" Generate a  realistic aircraft side profile of  A380 A380 airliner with 4 turbofan engines, Mach 0.89, swept wings.",nsid_118.png
+"Generate a realistic aircraft one side showingprofile of BAE 146 BAE 146-300 airliner with 4 turbofan engines, Mach 0.7, swept wings.",nsid_119.png
+"Generate a realistic aircraft image Boeing 707 Boeing 707-320 airliner with under-wing Pratt & Whitney JT3D 4 turbofan engines, 46.6m length, Mach 0.82, 44.42m wingspan, swept wings.",nsid_122.png
+"Generate a realistic double mixed aircraft images of A320 A319 airliner with 2 turbofan engines, Mach 0.82, swept wings.",nsid_120.png
+Generate a realistic side-view profile of an A320/A319 airliner with two turbofan engines and swept wings (Mach 0.82). ,nsid_121.png
+"Generate a  realistic aircraft  side profile of  A380 A380 airliner with 4 turbofan engines, Mach 0.89, swept wings.",nsid_123.png
+"Generate a  realistic aircraft  side profile of BAE 146 BAE 146-300 airliner with 4 turbofan engines, Mach 0.7, swept wings.",nsid_124.png
+"Generate a realistic aircraft image on Boeing 727 Boeing 727-200 airliner with two under-wing, one in tail Pratt & Whitney JT8D 3 turbofan engines, 46.7m length, Mach 0.8, 32.92m wingspan, swept wings.",nsid_125.png
+"Generate a  realistic aircraft  side profile of DC-10 DC-10 airliner with 3 turbofan engines, Mach 0.88, swept wings.",nsid_126.png
+"Generate a realistic side-view profile of an Embraer E-Jet E-170 airliner with two turbofan engines, Mach 0.82, and swept wings.",nsid_127.png
+"Generate a  realistic engine component aircraft Boeing 737 737-200 airliner with 2 turbofan engines, Mach 0.74, swept wings.",nsid_128.png
+"a realistic photo of a commercial aircraft on a runway, side profile view, clear daylight, professional aviation photography",nid_111.png
+"a realistic photo of a commercial aircraft on a runway, side profile view, clear daylight, professional aviation photography",nid_112.png
+"a realistic photo of a commercial aircraft on a runway, side profile view, clear daylight, professional aviation photography",nid_113.png
+"a realistic photo of a commercial aircraft on a runway, side profile view, clear daylight, professional aviation photography",nid_114.png
+"a realistic photo of a commercial aircraft on a runway, side profile view, clear daylight, professional aviation photography",nid_115.png
+"a realistic photo of a commercial aircraft on a runway, side profile view, clear daylight, professional aviation photography",nid_116.png
+"a realistic photo of a commercial aircraft on a runway, side profile view, clear daylight, professional aviation photography",nid_117.png
+"a realistic photo of a commercial aircraft on a runway, side profile view, clear daylight, professional aviation photography",nid_118.png
+"a realistic photo of a commercial aircraft on a runway, side profile view, clear daylight, professional aviation photography",nid_119.png
+"a realistic photo of a commercial aircraft on a runway, side profile view, clear daylight, professional aviation photography",nid_120.png
+"a realistic photo of a commercial aircraft on a runway, side profile view, clear daylight, professional aviation photography",nid_121.png
+"a realistic photo of a commercial aircraft on a runway, side profile view, clear daylight, professional aviation photography",nid_122.png
+"a realistic photo of a commercial aircraft on a runway, side profile view, clear daylight, professional aviation photography",nid_123.png
+"a realistic photo of a commercial aircraft on a runway, side profile view, clear daylight, professional aviation photography",nid_124.png
+"a realistic photo of a commercial aircraft on a runway, side profile view, clear daylight, professional aviation photography",nid_125.png
+"a realistic photo of a commercial aircraft on a runway, side profile view, clear daylight, professional aviation photography",nid_126.png
+"a realistic photo of a commercial aircraft on a runway, side profile view, clear daylight, professional aviation photography",nid_127.png
+"a realistic photo of a commercial aircraft on a runway, side profile view, clear daylight, professional aviation photography",nid_128.png
+"a realistic photo of a commercial aircraft on a runway, side profile view, clear daylight, professional aviation photography",nid_129.png
+"a realistic photo of a commercial aircraft on a runway, side profile view, clear daylight, professional aviation photography",nid_130.png
+"a realistic photo of a commercial aircraft on a runway, side profile view, clear daylight, professional aviation photography",nid_131.png
+"a realistic photo of a commercial aircraft on a runway, side profile view, clear daylight, professional aviation photography",nid_132.png
+"a realistic photo of a commercial aircraft on a runway, side profile view, clear daylight, professional aviation photography",nid_133.png
+"a realistic photo of a commercial aircraft on a runway, side profile view, clear daylight, professional aviation photography",nid_134.png
+"a realistic photo of a commercial aircraft on a runway, side profile view, clear daylight, professional aviation photography",nid_135.png
+"a realistic photo of a commercial aircraft on a runway, side profile view, clear daylight, professional aviation photography",nid_136.png
+"a realistic photo of a commercial aircraft on a runway, side profile view, clear daylight, professional aviation photography",nid_137.png
+"a realistic photo of a commercial aircraft on a runway, side profile view, clear daylight, professional aviation photography",nid_138.png
+"a realistic photo of a commercial aircraft on a runway, side profile view, clear daylight, professional aviation photography",nid_139.png
+"a realistic photo of a commercial aircraft on a runway, side profile view, clear daylight, professional aviation photography",nid_140.png

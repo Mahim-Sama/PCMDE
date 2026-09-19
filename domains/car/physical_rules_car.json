@@ -1,0 +1,408 @@
+{
+  "object_type": "car",
+  "version": "3.0",
+  "_meta": {
+    "description": "Physical validation rules for passenger cars, written against the detector vocabulary (wheel, bonnet, windshield, headlight, taillight, door, side_window, fender, grille, trunk, roof, bumper, rearview_mirror) and following the paper's Section IV-B rule set (P1-P10, S1-S12, R1-R10) with the viewpoint-dependent counts of Table II.",
+    "generated_by": "handcrafted, September 2026; replaces v2.0 (archive/superseded_rules/), which referenced body/bed/spoiler and singular lowercase names the detector never emits and capped every image at critical_violation_cap.",
+    "paper_deviations": [
+      "There is no 'body' class, so every rule anchored on the body (S1-S2 vehicle bounds, R1, containment) uses 'roof' as the body-top reference and 'wheel' as the ground reference.",
+      "Rules whose reference component has several instances per image (wheel, door, fender) are limited to y-axis comparisons: the geometric predicates compare against the FIRST reference box only, so proximity and overlap checks against multi-instance parts (S11 fender-around-wheel, R4 door-vs-wheel) are omitted rather than evaluated wrongly.",
+      "S1/S2/S3/S4/S6/S7 are expressed relative to other components instead of image fractions (y > 0.6H, x > 0.7W): predicates receive no image size.",
+      "Counts follow Table II as ranges over all viewpoints, since the viewpoint is not known to the rule engine.",
+      "P5 (fenders = wheels) and P6 (side windows = doors) are equality constraints between two counts, which the rule catalog cannot express; they are approximated by ranges."
+    ]
+  },
+  "component_aliases": {
+    "wheels": "wheel",
+    "tire": "wheel",
+    "tires": "wheel",
+    "tyre": "wheel",
+    "tyres": "wheel",
+    "headlights": "headlight",
+    "head_light": "headlight",
+    "head_lights": "headlight",
+    "headlamp": "headlight",
+    "headlamps": "headlight",
+    "taillights": "taillight",
+    "tail_light": "taillight",
+    "tail_lights": "taillight",
+    "taillamp": "taillight",
+    "taillamps": "taillight",
+    "doors": "door",
+    "bumpers": "bumper",
+    "front_bumper": "bumper",
+    "rear_bumper": "bumper",
+    "fenders": "fender",
+    "car_fender": "fender",
+    "car_fenders": "fender",
+    "side_windows": "side_window",
+    "windows": "side_window",
+    "rearview_mirrors": "rearview_mirror",
+    "rear_view_mirror": "rearview_mirror",
+    "rear_view_mirrors": "rearview_mirror",
+    "side_mirror": "rearview_mirror",
+    "side_mirrors": "rearview_mirror",
+    "mirror": "rearview_mirror",
+    "mirrors": "rearview_mirror",
+    "hood": "bonnet",
+    "front_hood": "bonnet",
+    "windscreen": "windshield",
+    "front_windshield": "windshield",
+    "grill": "grille",
+    "front_grille": "grille",
+    "boot": "trunk",
+    "rear_compartment": "trunk"
+  },
+  "subtypes": {
+    "sedan": {
+      "display_name": "Sedan",
+      "filename_prefix_patterns": ["sedan_", "berlina_"],
+      "caption_regex_patterns": ["\\b(sedan|saloon|berlina)\\b"]
+    },
+    "suv": {
+      "display_name": "SUV / Crossover",
+      "filename_prefix_patterns": ["suv_", "crossover_"],
+      "caption_regex_patterns": ["\\b(suv|crossover|4x4|four.by.four)\\b"]
+    },
+    "sports_car": {
+      "display_name": "Sports Car",
+      "filename_prefix_patterns": ["sports_", "coupe_", "supercar_"],
+      "caption_regex_patterns": ["\\b(sports\\s*car|coupe|coupé|supercar|hypercar|roadster)\\b"]
+    },
+    "pickup_truck": {
+      "display_name": "Pickup Truck",
+      "filename_prefix_patterns": ["pickup_", "truck_", "ute_"],
+      "caption_regex_patterns": ["\\b(pickup|pick.up|truck|ute|bakkie)\\b"]
+    },
+    "van": {
+      "display_name": "Van / Minivan",
+      "filename_prefix_patterns": ["van_", "minivan_", "mpv_"],
+      "caption_regex_patterns": ["\\b(van|minivan|mpv|people.carrier|transit)\\b"]
+    },
+    "convertible": {
+      "display_name": "Convertible / Cabriolet",
+      "filename_prefix_patterns": ["convert_", "cabrio_", "cabriolet_", "droptop_"],
+      "caption_regex_patterns": ["\\b(convertible|cabriolet|cabrio|drop.?top|open.?top)\\b"]
+    }
+  },
+  "fallback_subtype": {
+    "subtype_id": "generic_car",
+    "display_name": "Generic Car"
+  },
+  "subtype_notes": {
+    "sedan": "Four-door passenger car with a separate enclosed trunk. Four wheels, two headlights, two taillights, one bonnet, windshield and roof.",
+    "suv": "Tall four-door vehicle with elevated ground clearance and a high, flat roofline. Four wheels, two headlights, two taillights.",
+    "sports_car": "Two-door low-profile vehicle with a long bonnet and short roofline. Two headlights, two taillights, four wheels.",
+    "pickup_truck": "Two- or four-door vehicle with an open cargo bed behind the cab (the detector has no bed class, so the bed appears as part of the body). Four or more wheels.",
+    "van": "Tall box-like body with a long wheelbase, large side windows and a nearly flat roof. Four or more wheels.",
+    "convertible": "Two-door open-top vehicle. With the top down no roof is visible above the windshield line, so a missing roof is expected rather than an error.",
+    "generic_car": "Car type not stated. Apply universal constraints: wheels at the bottom, roof at the top, windshield between bonnet and roof, headlights and taillights at opposite ends."
+  },
+  "scoring_weights": {
+    "presence": 0.28,
+    "spatial": 0.38,
+    "relational": 0.19,
+    "subtype": 0.15
+  },
+  "pass_threshold": 60,
+  "rules": [
+    {
+      "rule_id": "P0_wheels_present",
+      "rule_type": "critical_presence",
+      "parameters": {"required_components": ["wheel"]},
+      "severity": "critical",
+      "description": "Every car image must contain at least one wheel. A vehicle with no detectable wheel is structurally unusable (paper case study: 'missing wheels, vehicle lifted above ground')."
+    },
+    {
+      "rule_id": "P1_wheel_count",
+      "rule_type": "count_constraint",
+      "subject_component": "wheel",
+      "parameters": {"count_range": {"min": 2, "max": 4}},
+      "severity": "major",
+      "description": "Paper P1 / Table II: 2 wheels visible from the front or rear, 2-3 in a side view, 4 from above. More than 4 means a multi-vehicle or duplicated detection."
+    },
+    {
+      "rule_id": "P2a_bonnet_count",
+      "rule_type": "count_constraint",
+      "subject_component": "bonnet",
+      "parameters": {"count_range": {"min": 0, "max": 1}},
+      "severity": "major",
+      "description": "Paper P2: exactly one bonnet when visible, none from the rear. Two bonnets is impossible."
+    },
+    {
+      "rule_id": "P2b_windshield_count",
+      "rule_type": "count_constraint",
+      "subject_component": "windshield",
+      "parameters": {"count_range": {"min": 0, "max": 1}},
+      "severity": "major",
+      "description": "Paper P2: exactly one windshield when visible, none from the rear."
+    },
+    {
+      "rule_id": "P2c_roof_count",
+      "rule_type": "count_constraint",
+      "subject_component": "roof",
+      "parameters": {"count_range": {"min": 0, "max": 1}},
+      "severity": "major",
+      "description": "Paper P2: at most one roof panel; zero for a convertible with the top down."
+    },
+    {
+      "rule_id": "P3a_headlight_count",
+      "rule_type": "count_constraint",
+      "subject_component": "headlight",
+      "parameters": {"count_range": {"min": 0, "max": 2}},
+      "severity": "minor",
+      "description": "Paper P3 / Table II: 2 headlights from the front, 1-2 in a side view, 0 from the rear. Three or more is impossible on a standard passenger car."
+    },
+    {
+      "rule_id": "P3b_taillight_count",
+      "rule_type": "count_constraint",
+      "subject_component": "taillight",
+      "parameters": {"count_range": {"min": 0, "max": 2}},
+      "severity": "minor",
+      "description": "Paper P3 / Table II: 2 taillights from the rear, 1-2 in a side view, 0 from the front."
+    },
+    {
+      "rule_id": "P4a_door_count",
+      "rule_type": "count_constraint",
+      "subject_component": "door",
+      "parameters": {"count_range": {"min": 0, "max": 4}},
+      "severity": "minor",
+      "description": "Paper P4 / Table II: 0 doors visible from the front or rear, 1-2 in a side view, 2-4 from above or in oblique views."
+    },
+    {
+      "rule_id": "P4b_door_count_two_door_types",
+      "rule_type": "count_constraint",
+      "subject_component": "door",
+      "applies_to_subtypes": ["sports_car", "convertible"],
+      "parameters": {"count_range": {"min": 0, "max": 2}},
+      "severity": "major",
+      "description": "Paper 'vehicle type-specific rules': sports cars and convertibles have two doors in total, so more than two visible doors contradicts the caption."
+    },
+    {
+      "rule_id": "P5_fender_count",
+      "rule_type": "count_constraint",
+      "subject_component": "fender",
+      "parameters": {"count_range": {"min": 0, "max": 4}},
+      "severity": "minor",
+      "description": "Paper P5: one fender per wheel, so at most four are visible."
+    },
+    {
+      "rule_id": "P6_side_window_count",
+      "rule_type": "count_constraint",
+      "subject_component": "side_window",
+      "parameters": {"count_range": {"min": 0, "max": 6}},
+      "severity": "minor",
+      "description": "Paper P6: side windows follow the door count, up to three per side including quarter windows."
+    },
+    {
+      "rule_id": "P7_grille_count",
+      "rule_type": "count_constraint",
+      "subject_component": "grille",
+      "parameters": {"count_range": {"min": 0, "max": 1}},
+      "severity": "minor",
+      "description": "Paper P7: one grille in front-facing views, none from the rear."
+    },
+    {
+      "rule_id": "P8_trunk_count",
+      "rule_type": "count_constraint",
+      "subject_component": "trunk",
+      "parameters": {"count_range": {"min": 0, "max": 1}},
+      "severity": "minor",
+      "description": "Paper P8: one trunk lid in rear-facing views, none from the front."
+    },
+    {
+      "rule_id": "P9_mirror_count",
+      "rule_type": "count_constraint",
+      "subject_component": "rearview_mirror",
+      "parameters": {"count_range": {"min": 0, "max": 2}},
+      "severity": "minor",
+      "description": "Paper P9: one side mirror per side, so at most two are visible."
+    },
+    {
+      "rule_id": "P10_bumper_count",
+      "rule_type": "count_constraint",
+      "subject_component": "bumper",
+      "parameters": {"count_range": {"min": 0, "max": 2}},
+      "severity": "minor",
+      "description": "Paper P10: one front and one rear bumper; 0-2 are visible depending on viewpoint."
+    },
+    {
+      "rule_id": "S1_wheels_below_roof",
+      "rule_type": "relative_position_constraint",
+      "subject_component": "wheel",
+      "reference_component": "roof",
+      "parameters": {"axis": "y", "direction": "below_centroid"},
+      "severity": "major",
+      "description": "Paper S1/S2: wheels are at the bottom of the vehicle and the roof at the top, so every wheel centroid lies below the roof centroid. Wheels above the roofline are the paper's headline impossibility."
+    },
+    {
+      "rule_id": "S1b_wheels_not_on_roof",
+      "rule_type": "forbid_overlap",
+      "subject_component": "wheel",
+      "reference_component": "roof",
+      "parameters": {"max_overlap_ratio": 0.1},
+      "severity": "major",
+      "description": "Paper R7/S2: a wheel bounding box must not lie inside the roof region."
+    },
+    {
+      "rule_id": "S1c_wheels_not_on_windshield",
+      "rule_type": "forbid_overlap",
+      "subject_component": "wheel",
+      "reference_component": "windshield",
+      "parameters": {"max_overlap_ratio": 0.15},
+      "severity": "major",
+      "description": "Wheels sit at the base of the vehicle and the windshield in the upper body; substantial overlap is an impossible configuration."
+    },
+    {
+      "rule_id": "S5a_windshield_below_roof",
+      "rule_type": "relative_position_constraint",
+      "subject_component": "windshield",
+      "reference_component": "roof",
+      "parameters": {"axis": "y", "direction": "below_centroid"},
+      "severity": "major",
+      "description": "Paper S5/R5: the windshield sits between the bonnet and the roof, hence below the roof centroid."
+    },
+    {
+      "rule_id": "S5b_windshield_above_bonnet",
+      "rule_type": "relative_position_constraint",
+      "subject_component": "windshield",
+      "reference_component": "bonnet",
+      "parameters": {"axis": "y", "direction": "above_centroid"},
+      "severity": "minor",
+      "description": "Paper S5/R5: the windshield rises above the bonnet it meets."
+    },
+    {
+      "rule_id": "S9_grille_below_bonnet",
+      "rule_type": "relative_position_constraint",
+      "subject_component": "grille",
+      "reference_component": "bonnet",
+      "parameters": {"axis": "y", "direction": "below_centroid"},
+      "severity": "minor",
+      "description": "Paper S9: the grille sits below the bonnet on the front fascia."
+    },
+    {
+      "rule_id": "S10_side_windows_above_doors",
+      "rule_type": "relative_position_constraint",
+      "subject_component": "side_window",
+      "reference_component": "door",
+      "parameters": {"axis": "y", "direction": "above_centroid"},
+      "severity": "major",
+      "description": "Paper S10: side windows are directly above the doors."
+    },
+    {
+      "rule_id": "S12_lights_at_opposite_ends",
+      "rule_type": "relative_position_constraint",
+      "subject_component": "taillight",
+      "reference_component": "headlight",
+      "parameters": {"axis": "x", "direction": "opposite", "tolerance_fraction": 0.3},
+      "severity": "major",
+      "description": "Paper S12/R3: headlights and taillights are at opposite ends of the vehicle. Co-located front and rear lights mean the two ends of the car have merged."
+    },
+    {
+      "rule_id": "S6_headlights_below_roof",
+      "rule_type": "relative_position_constraint",
+      "subject_component": "headlight",
+      "reference_component": "roof",
+      "parameters": {"axis": "y", "direction": "below_centroid"},
+      "severity": "major",
+      "description": "Paper S6: headlights are on the front fascia, below the roofline."
+    },
+    {
+      "rule_id": "S7_taillights_below_roof",
+      "rule_type": "relative_position_constraint",
+      "subject_component": "taillight",
+      "reference_component": "roof",
+      "parameters": {"axis": "y", "direction": "below_centroid"},
+      "severity": "major",
+      "description": "Paper S7: taillights are on the rear fascia, below the roofline."
+    },
+    {
+      "rule_id": "S_doors_below_roof",
+      "rule_type": "relative_position_constraint",
+      "subject_component": "door",
+      "reference_component": "roof",
+      "parameters": {"axis": "y", "direction": "below_centroid"},
+      "severity": "major",
+      "description": "Paper R7: the roof spans above the doors, so each door centroid lies below the roof centroid."
+    },
+    {
+      "rule_id": "S_bumpers_below_roof",
+      "rule_type": "relative_position_constraint",
+      "subject_component": "bumper",
+      "reference_component": "roof",
+      "parameters": {"axis": "y", "direction": "below_centroid"},
+      "severity": "major",
+      "description": "Paper R10: bumpers are at the lower front and rear of the body, below the roofline."
+    },
+    {
+      "rule_id": "R1_wheel_requires_body",
+      "rule_type": "dependency_constraint",
+      "subject_component": "wheel",
+      "reference_component": "roof",
+      "severity": "major",
+      "description": "Paper R1: wheels imply a vehicle body. With no body class, the roof stands in as the body reference."
+    },
+    {
+      "rule_id": "R_door_requires_wheel",
+      "rule_type": "dependency_constraint",
+      "subject_component": "door",
+      "reference_component": "wheel",
+      "severity": "major",
+      "description": "A car door implies a vehicle with wheels; a door panel with no wheels is a detached component."
+    },
+    {
+      "rule_id": "R5_windshield_requires_roof",
+      "rule_type": "dependency_constraint",
+      "subject_component": "windshield",
+      "reference_component": "roof",
+      "applies_to_subtypes": ["sedan", "suv", "sports_car", "pickup_truck", "van", "generic_car"],
+      "severity": "major",
+      "description": "Paper R5: the windshield connects the bonnet to the roof, so a windshield implies a roof. Convertibles are excluded because the top may be down."
+    },
+    {
+      "rule_id": "R8_grille_requires_headlight",
+      "rule_type": "dependency_constraint",
+      "subject_component": "grille",
+      "reference_component": "headlight",
+      "severity": "minor",
+      "description": "Paper R8: the grille is adjacent to the headlights on the front fascia, so a visible grille implies visible headlights."
+    },
+    {
+      "rule_id": "R6a_wheel_smaller_than_roof",
+      "rule_type": "size_hierarchy",
+      "subject_component": "wheel",
+      "reference_component": "roof",
+      "parameters": {"dimension": "width"},
+      "severity": "major",
+      "description": "Paper R6: a wheel is narrower than the roof panel is wide. A wheel wider than the roof is a scale inversion."
+    },
+    {
+      "rule_id": "R6b_side_window_vs_door_area",
+      "rule_type": "size_ratio_constraint",
+      "subject_component": "side_window",
+      "reference_component": "door",
+      "parameters": {"dimension": "area", "min_ratio": 0.0, "max_ratio": 0.7},
+      "severity": "minor",
+      "description": "Paper R6: side window area is below 70 % of the door area it sits in."
+    },
+    {
+      "rule_id": "R6c_headlight_smaller_than_bonnet",
+      "rule_type": "size_hierarchy",
+      "subject_component": "headlight",
+      "reference_component": "bonnet",
+      "parameters": {"dimension": "area"},
+      "severity": "minor",
+      "description": "Paper R6: a headlight is smaller than the bonnet it is set into."
+    },
+    {
+      "rule_id": "R6d_taillight_smaller_than_trunk",
+      "rule_type": "size_hierarchy",
+      "subject_component": "taillight",
+      "reference_component": "trunk",
+      "parameters": {"dimension": "area"},
+      "severity": "minor",
+      "description": "Paper R6: a taillight is smaller than the trunk lid it is set beside."
+    }
+  ],
+  "llm_prompt_template": "You are an automotive design and vehicle recognition expert assessing whether a detected set of components plausibly describes a real car of the stated type.\n\nVEHICLE TYPE: {subtype} (id: {subtype_id})\nCAPTION: \"{caption}\"\n{subtype_notes}\nDETECTED COMPONENT COUNTS:\n{counts_json}\n\nDETECTED BOUNDING BOXES (pixel coordinates, center-format):\n{boxes_json}\n\nDetection confidence (image-level aggregate): {ensemble_confidence}\n\nRULES BEING CHECKED BY THE PHYSICAL VALIDATOR (for your reference):\n{rule_summary}\n\n=== YOUR TASK ===\n\nAssess whether the detected configuration is physically plausible for a real {subtype}.\nThe detector reports only these parts: wheel, bonnet, windshield, headlight, taillight, door, side_window, fender, grille, trunk, roof, bumper, rearview_mirror. Parts absent from the list were not looked for.\nBe tolerant of viewpoint: a front view shows no trunk or taillights, a rear view no bonnet or windshield, a side view 2-3 wheels and 1-2 doors.\nDo NOT penalise purely because some bounding boxes are missing.\n\nConsider:\n1. COMPONENT COUNTS: Are the counts consistent with the vehicle type and a single viewpoint (wheels, doors, lights, mirrors)?\n2. SPATIAL RELATIONSHIPS: Are the wheels at the bottom, the roof on top, the windshield between bonnet and roof, headlights and taillights at opposite ends?\n3. TYPE-SPECIFIC FEATURES: Is the door count consistent with the body style? Is a missing roof explained by a convertible?\n4. OBVIOUS IMPOSSIBILITIES: Wheels above the roofline, a windshield at the rear, front and rear lights in the same place, floating detached parts.\n5. SCALE VIOLATIONS: Any component whose size is implausible relative to the vehicle (e.g. a wheel larger than the roof).\n\n=== RESPOND IN EXACTLY THIS FORMAT ===\n\nSCORE: [0-100 integer or decimal]\nVERDICT: [PASS if >=60, FAIL if <60]\nSUBTYPE: {subtype}\nCONFIDENCE: [0.0-1.0]\nSPECIFICATION_VIOLATIONS: [bullet list of count/type mismatches, or None]\nSPATIAL_VIOLATIONS: [bullet list of impossible placements or scale errors, or None]\nREASONING: [3-5 sentences summarizing your assessment]\n"
+}

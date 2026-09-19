@@ -1,0 +1,49 @@
+# PCMDE — aircraft domain
+# Run from the PROJECT ROOT:
+#   python cli/evaluate.py --config configs/aircraft.yaml
+#
+# NOTE: this config is NEW. The aircraft results under results/aircraft/ablation/
+# were produced in March 2026 by a legacy per-domain evaluator that is no longer
+# in this repo (see docs/KNOWN_GAPS.md). Re-running with this config will produce
+# the current framework's output schema, which differs from those archived files.
+
+experiment_name: "aircraft_pcmde_v2"
+
+paths:
+  # Stage-1 inputs, read by pipeline/ensemble.py and analysis/run_ablation.py
+  detections_json: "./data/aircraft/detections/yolov12_aircraft.json"
+  vlm_jsons:
+    - "./data/aircraft/vlm/deepseek_aircraft.json"
+    - "./data/aircraft/vlm/pixtral_aircraft.json"
+  # Where analysis/run_ablation.py writes the five ablation variants
+  ablation_dir:  "./results/aircraft/ablation"
+  ensemble_json: "./data/aircraft/ensemble/ensemble_aircraft.json"
+  captions_csv:  "./data/aircraft/captions.csv"
+  rules_file:    "./domains/aircraft/physical_rules_aircraft.json"
+  output_json:   "./results/aircraft/scores/aircraft_pcmde_scores.json"
+
+csv_mapping:
+  image_col:   "Image_path"
+  caption_col: "Image_caption"
+
+llm:
+  enabled: true
+  model_name: "deepseek-r1:70b"
+  api_base: "http://localhost:11434"
+  temperature: 0.3
+  # deepseek-r1 emits a <think> block before the answer; 120 s was not
+  # enough for 70B and produced empty replies (see docs/KNOWN_GAPS.md).
+  timeout_seconds: 600
+  max_tokens: 1200
+  runs_per_image: 3          # paper Sec. III-D: score three times
+  variance_threshold: 10.0   # spread above this -> keep the median run
+  max_attempts: 6            # retries for failed/unparseable replies
+
+scoring:
+  rule_weight: 0.6
+  llm_weight: 0.4
+  # All three domains share the paper's tau = 60 (the rules JSON declares 60 too).
+  pass_threshold: 60.0
+  component_threshold: 40.0
+  critical_violation_cap: 45.0
+  unevaluable_is_violation: true

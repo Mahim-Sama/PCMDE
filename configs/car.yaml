@@ -1,0 +1,50 @@
+# PCMDE — car domain
+# Run from the PROJECT ROOT:
+#   python cli/evaluate.py --config configs/car.yaml
+#
+# NOTE: this config is NEW. The car results under results/car/ablation/ were
+# produced in March 2026 by a legacy "car_evaluation_probabilistic" pipeline that
+# is no longer in this repo (see docs/KNOWN_GAPS.md).
+
+experiment_name: "car_pcmde_v2"
+
+paths:
+  # Stage-1 inputs, read by pipeline/ensemble.py and analysis/run_ablation.py
+  detections_json: "./data/car/detections/yolov12_car.json"
+  vlm_jsons:
+    - "./data/car/vlm/deepseek_car.json"
+    - "./data/car/vlm/pixtral_car.json"
+  # Where analysis/run_ablation.py writes the five ablation variants
+  ablation_dir:  "./results/car/ablation"
+  ensemble_json: "./data/car/ensemble/ensemble_car.json"
+  captions_csv:  "./data/car/captions.csv"
+  rules_file:    "./domains/car/physical_rules_car.json"
+  output_json:   "./results/car/scores/car_pcmde_scores.json"
+
+# The car captions CSV uses different column names from aircraft/animal.
+# Handled here rather than by rewriting the CSV, so the file stays byte-identical
+# to the one the cross-check notebook and fleur.py already consume.
+csv_mapping:
+  image_col:   "image_id"
+  caption_col: "caption"
+
+llm:
+  enabled: true
+  model_name: "deepseek-r1:70b"
+  api_base: "http://localhost:11434"
+  temperature: 0.3
+  # deepseek-r1 emits a <think> block before the answer; 120 s was not
+  # enough for 70B and produced empty replies (see docs/KNOWN_GAPS.md).
+  timeout_seconds: 600
+  max_tokens: 1200
+  runs_per_image: 3          # paper Sec. III-D: score three times
+  variance_threshold: 10.0   # spread above this -> keep the median run
+  max_attempts: 6            # retries for failed/unparseable replies
+
+scoring:
+  rule_weight: 0.6
+  llm_weight: 0.4
+  pass_threshold: 60.0
+  component_threshold: 40.0
+  critical_violation_cap: 45.0
+  unevaluable_is_violation: true

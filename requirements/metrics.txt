@@ -1,0 +1,33 @@
+# Baseline cross-check metrics: CLIPScore, SigLIP / SigLIP-2, VQAScore, FLEUR.
+# GPU required for VQAScore (CLIP-FLANT5-XXL) and FLEUR (LLaVA-1.5-13B).
+#
+#   pip install -r requirements/metrics.txt
+#
+# Install VQAScore and FLEUR in their own environments if they conflict with the
+# transformers pin needed by SigLIP-2 (they often do).
+
+-r core.txt
+
+torch>=2.1
+torchvision>=0.16
+pandas>=2.0
+numpy>=1.24
+pillow>=10.0
+tqdm>=4.66
+
+# CLIPScore — metrics/other_metrics_crosscheck.ipynb (OpenAI CLIP, ViT-B/32)
+#   pip install git+https://github.com/openai/CLIP.git
+ftfy>=6.1
+regex
+
+# SigLIP + SigLIP-2 — same notebook (google/siglip2-so400m-patch14-384)
+transformers>=4.45
+
+# VQAScore — clip-flant5-xxl. Currently only working on the HPC box; the
+# notebook cell fails locally on flash-attention. See docs/KNOWN_GAPS.md.
+#   pip install t2v-metrics
+
+# FLEUR — metrics/fleur.py, requires a local LLaVA checkout:
+#   git clone https://github.com/haotian-liu/LLaVA.git
+#   cd LLaVA && pip install -e .
+# fleur.py expects it at ./LLaVA (see sys.path.insert at the top of the file).

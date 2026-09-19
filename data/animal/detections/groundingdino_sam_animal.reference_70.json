@@ -1,0 +1,9648 @@
+{
+  "model": "GroundingDINO + SAM + Geometric Rules",
+  "confidence_threshold": 0.25,
+  "total_images": 70,
+  "total_detections": 796,
+  "results": [
+    {
+      "image_id": "scoiattolo_8.jpg",
+      "detected_animal": "squirrel",
+      "components": {
+        "head": 1,
+        "eye": 1,
+        "ear": 1,
+        "nose": 1,
+        "beak": 0,
+        "horn": 0,
+        "trunk": 0,
+        "leg": 0,
+        "tail": 0,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "horn_count": 0,
+      "average_confidence": 0.6979,
+      "total_detections": 5,
+      "detections": [
+        {
+          "class": "nose",
+          "confidence": 0.5026,
+          "bbox": [
+            152.17,
+            132.48,
+            169.79,
+            154.46
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.5591,
+          "bbox": [
+            185.04,
+            98.35,
+            207.42,
+            128.07
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.9,
+          "bbox": [
+            130.25,
+            162.65,
+            256.73,
+            208.56
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.578,
+          "bbox": [
+            204.39,
+            57.71,
+            238.66,
+            123.02
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            130.25,
+            37.2,
+            256.73,
+            180.73
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "scoiattolo_5.jpg",
+      "detected_animal": "squirrel",
+      "components": {
+        "head": 1,
+        "eye": 2,
+        "ear": 2,
+        "nose": 1,
+        "beak": 0,
+        "horn": 0,
+        "trunk": 0,
+        "leg": 4,
+        "tail": 1,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 4,
+      "horn_count": 0,
+      "average_confidence": 0.4358,
+      "total_detections": 12,
+      "detections": [
+        {
+          "class": "nose",
+          "confidence": 0.6321,
+          "bbox": [
+            234.01,
+            108.47,
+            266.73,
+            137.24
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.5407,
+          "bbox": [
+            280.38,
+            106.35,
+            295.64,
+            125.24
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.449,
+          "bbox": [
+            213.89,
+            103.9,
+            229.3,
+            121.37
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.3629,
+          "bbox": [
+            143.57,
+            114.74,
+            424.41,
+            331.02
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.2831,
+          "bbox": [
+            362.4,
+            335.02,
+            419.39,
+            414.69
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3029,
+          "bbox": [
+            147.55,
+            246.14,
+            228.57,
+            336.32
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.2989,
+          "bbox": [
+            356.08,
+            333.67,
+            420.15,
+            415.9
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.2901,
+          "bbox": [
+            157.85,
+            311.23,
+            245.58,
+            408.81
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.252,
+          "bbox": [
+            263.24,
+            255.36,
+            371.55,
+            333.21
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.4618,
+          "bbox": [
+            290.3,
+            92.25,
+            316.43,
+            128.94
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.4063,
+          "bbox": [
+            199.55,
+            93.28,
+            228.38,
+            126.19
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            176.18,
+            83.25,
+            339.8,
+            146.24
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "pecora_1.jpg",
+      "detected_animal": "sheep",
+      "components": {
+        "head": 1,
+        "eye": 1,
+        "ear": 2,
+        "nose": 2,
+        "beak": 0,
+        "horn": 2,
+        "trunk": 0,
+        "leg": 4,
+        "tail": 0,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 4,
+      "horn_count": 2,
+      "average_confidence": 0.433,
+      "total_detections": 13,
+      "detections": [
+        {
+          "class": "nose",
+          "confidence": 0.5638,
+          "bbox": [
+            189.91,
+            136.65,
+            213.03,
+            153.81
+          ]
+        },
+        {
+          "class": "nose",
+          "confidence": 0.2173,
+          "bbox": [
+            189.13,
+            149.34,
+            205.0,
+            163.81
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4523,
+          "bbox": [
+            224.91,
+            117.28,
+            238.4,
+            134.9
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.4077,
+          "bbox": [
+            89.16,
+            112.19,
+            445.32,
+            410.78
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3424,
+          "bbox": [
+            324.32,
+            357.14,
+            372.41,
+            467.61
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3133,
+          "bbox": [
+            208.27,
+            343.99,
+            243.43,
+            446.49
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3054,
+          "bbox": [
+            234.82,
+            349.48,
+            265.26,
+            449.21
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.296,
+          "bbox": [
+            371.93,
+            353.8,
+            410.19,
+            477.58
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.457,
+          "bbox": [
+            89.26,
+            51.21,
+            216.76,
+            172.71
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.3852,
+          "bbox": [
+            219.59,
+            57.73,
+            329.15,
+            173.18
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.4699,
+          "bbox": [
+            240.49,
+            108.2,
+            275.72,
+            133.92
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.4684,
+          "bbox": [
+            152.89,
+            103.77,
+            186.12,
+            132.19
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            41.28,
+            26.81,
+            377.13,
+            197.57
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "scoiattolo_7.jpg",
+      "detected_animal": "squirrel",
+      "components": {
+        "head": 1,
+        "eye": 2,
+        "ear": 2,
+        "nose": 1,
+        "beak": 0,
+        "horn": 0,
+        "trunk": 0,
+        "leg": 2,
+        "tail": 0,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 2,
+      "horn_count": 0,
+      "average_confidence": 0.5212,
+      "total_detections": 9,
+      "detections": [
+        {
+          "class": "nose",
+          "confidence": 0.6136,
+          "bbox": [
+            228.93,
+            130.1,
+            263.56,
+            162.95
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.5119,
+          "bbox": [
+            280.29,
+            99.61,
+            301.27,
+            131.56
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.5051,
+          "bbox": [
+            193.17,
+            94.66,
+            214.38,
+            124.23
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.3438,
+          "bbox": [
+            184.68,
+            187.56,
+            311.65,
+            324.29
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3127,
+          "bbox": [
+            236.18,
+            324.86,
+            360.52,
+            434.96
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.302,
+          "bbox": [
+            163.38,
+            248.49,
+            220.74,
+            338.65
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.5825,
+          "bbox": [
+            189.77,
+            28.69,
+            223.12,
+            96.39
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.5692,
+          "bbox": [
+            275.43,
+            32.38,
+            308.87,
+            102.06
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            163.9,
+            1.84,
+            333.04,
+            189.8
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "gallina_6.jpg",
+      "detected_animal": "chicken",
+      "components": {
+        "head": 1,
+        "eye": 2,
+        "ear": 0,
+        "nose": 0,
+        "beak": 1,
+        "horn": 0,
+        "trunk": 0,
+        "leg": 1,
+        "tail": 1,
+        "wing": 2,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 1,
+      "horn_count": 0,
+      "average_confidence": 0.4426,
+      "total_detections": 9,
+      "detections": [
+        {
+          "class": "wing",
+          "confidence": 0.3639,
+          "bbox": [
+            241.36,
+            226.67,
+            326.37,
+            349.71
+          ]
+        },
+        {
+          "class": "wing",
+          "confidence": 0.2927,
+          "bbox": [
+            330.27,
+            161.38,
+            463.73,
+            336.45
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.3106,
+          "bbox": [
+            199.61,
+            92.16,
+            225.69,
+            110.8
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.2872,
+          "bbox": [
+            173.7,
+            103.41,
+            187.4,
+            113.68
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.5037,
+          "bbox": [
+            162.54,
+            111.88,
+            464.64,
+            419.34
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.3032,
+          "bbox": [
+            331.15,
+            161.77,
+            464.01,
+            336.59
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3968,
+          "bbox": [
+            204.81,
+            365.11,
+            295.56,
+            473.57
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            153.09,
+            84.28,
+            237.79,
+            139.49
+          ]
+        },
+        {
+          "class": "beak",
+          "confidence": 0.5753,
+          "bbox": [
+            165.19,
+            107.96,
+            199.62,
+            130.91
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "mucca_2.jpg",
+      "detected_animal": "cow",
+      "components": {
+        "head": 1,
+        "eye": 3,
+        "ear": 1,
+        "nose": 1,
+        "beak": 0,
+        "horn": 1,
+        "trunk": 0,
+        "leg": 3,
+        "tail": 1,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 3,
+      "horn_count": 1,
+      "average_confidence": 0.4337,
+      "total_detections": 12,
+      "detections": [
+        {
+          "class": "nose",
+          "confidence": 0.3391,
+          "bbox": [
+            80.26,
+            182.69,
+            96.77,
+            199.55
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.3527,
+          "bbox": [
+            116.85,
+            124.63,
+            135.63,
+            152.56
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.2911,
+          "bbox": [
+            104.49,
+            121.42,
+            116.03,
+            140.25
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.1733,
+          "bbox": [
+            136.52,
+            137.91,
+            152.78,
+            156.87
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.5011,
+          "bbox": [
+            80.91,
+            144.39,
+            425.37,
+            348.28
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.4263,
+          "bbox": [
+            401.86,
+            146.53,
+            426.3,
+            368.92
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3491,
+          "bbox": [
+            177.68,
+            294.19,
+            233.62,
+            405.11
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3427,
+          "bbox": [
+            294.84,
+            314.81,
+            357.77,
+            412.31
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.2807,
+          "bbox": [
+            351.48,
+            257.29,
+            401.95,
+            439.26
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.6146,
+          "bbox": [
+            120.3,
+            79.73,
+            153.7,
+            114.78
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.5831,
+          "bbox": [
+            144.1,
+            106.79,
+            170.48,
+            146.83
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            61.86,
+            53.86,
+            188.58,
+            234.93
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "scoiattolo_1.jpg",
+      "detected_animal": "squirrel",
+      "components": {
+        "head": 1,
+        "eye": 2,
+        "ear": 2,
+        "nose": 1,
+        "beak": 0,
+        "horn": 0,
+        "trunk": 0,
+        "leg": 2,
+        "tail": 1,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 2,
+      "horn_count": 0,
+      "average_confidence": 0.4714,
+      "total_detections": 10,
+      "detections": [
+        {
+          "class": "nose",
+          "confidence": 0.6431,
+          "bbox": [
+            163.58,
+            190.13,
+            181.13,
+            211.88
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.5987,
+          "bbox": [
+            196.77,
+            160.05,
+            222.95,
+            186.54
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.199,
+          "bbox": [
+            161.94,
+            164.33,
+            171.24,
+            180.81
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.3344,
+          "bbox": [
+            152.64,
+            146.37,
+            501.95,
+            367.53
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.4349,
+          "bbox": [
+            297.17,
+            65.1,
+            501.62,
+            342.99
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.2756,
+          "bbox": [
+            192.9,
+            342.34,
+            270.67,
+            368.65
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.2664,
+          "bbox": [
+            265.94,
+            355.66,
+            317.16,
+            392.72
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.6348,
+          "bbox": [
+            213.29,
+            106.88,
+            244.71,
+            160.11
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.3769,
+          "bbox": [
+            177.22,
+            80.86,
+            209.47,
+            146.24
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            145.39,
+            54.66,
+            261.26,
+            238.08
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "cane_2.jpg",
+      "detected_animal": "dog",
+      "components": {
+        "head": 1,
+        "eye": 2,
+        "ear": 2,
+        "nose": 1,
+        "beak": 0,
+        "horn": 0,
+        "trunk": 0,
+        "leg": 3,
+        "tail": 1,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 3,
+      "horn_count": 0,
+      "average_confidence": 0.4901,
+      "total_detections": 11,
+      "detections": [
+        {
+          "class": "nose",
+          "confidence": 0.7372,
+          "bbox": [
+            73.68,
+            123.4,
+            87.61,
+            137.26
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.5447,
+          "bbox": [
+            131.74,
+            91.18,
+            150.78,
+            106.37
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.219,
+          "bbox": [
+            115.44,
+            106.56,
+            126.94,
+            116.43
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.5096,
+          "bbox": [
+            73.15,
+            98.04,
+            507.53,
+            383.02
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.4312,
+          "bbox": [
+            437.3,
+            262.29,
+            507.11,
+            378.99
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.4028,
+          "bbox": [
+            164.38,
+            269.71,
+            257.1,
+            501.02
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3676,
+          "bbox": [
+            366.51,
+            275.2,
+            458.43,
+            473.94
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3305,
+          "bbox": [
+            104.53,
+            265.02,
+            218.2,
+            491.49
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.5941,
+          "bbox": [
+            174.55,
+            59.6,
+            232.78,
+            98.67
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.3041,
+          "bbox": [
+            154.25,
+            58.81,
+            180.97,
+            80.86
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            41.86,
+            43.12,
+            264.6,
+            152.95
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "gatto_4.jpg",
+      "detected_animal": "cat",
+      "components": {
+        "head": 1,
+        "eye": 2,
+        "ear": 2,
+        "nose": 1,
+        "beak": 0,
+        "horn": 0,
+        "trunk": 0,
+        "leg": 2,
+        "tail": 2,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 2,
+      "horn_count": 0,
+      "average_confidence": 0.5293,
+      "total_detections": 11,
+      "detections": [
+        {
+          "class": "nose",
+          "confidence": 0.7934,
+          "bbox": [
+            242.04,
+            185.82,
+            271.71,
+            209.97
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4516,
+          "bbox": [
+            274.77,
+            149.07,
+            325.36,
+            197.45
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4464,
+          "bbox": [
+            185.24,
+            147.22,
+            237.74,
+            196.21
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.5205,
+          "bbox": [
+            78.34,
+            133.11,
+            511.56,
+            418.35
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.4042,
+          "bbox": [
+            75.05,
+            331.89,
+            127.21,
+            419.7
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.332,
+          "bbox": [
+            481.7,
+            278.46,
+            512.0,
+            349.09
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3742,
+          "bbox": [
+            276.91,
+            351.38,
+            413.14,
+            485.31
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3613,
+          "bbox": [
+            98.87,
+            363.5,
+            202.94,
+            483.07
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.6031,
+          "bbox": [
+            156.87,
+            56.25,
+            216.32,
+            123.29
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.5851,
+          "bbox": [
+            293.73,
+            57.84,
+            350.71,
+            119.98
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            118.1,
+            25.5,
+            389.48,
+            240.71
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "pecora_4.jpg",
+      "detected_animal": "sheep",
+      "components": {
+        "head": 1,
+        "eye": 2,
+        "ear": 2,
+        "nose": 1,
+        "beak": 0,
+        "horn": 2,
+        "trunk": 0,
+        "leg": 3,
+        "tail": 1,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 3,
+      "horn_count": 2,
+      "average_confidence": 0.4469,
+      "total_detections": 13,
+      "detections": [
+        {
+          "class": "nose",
+          "confidence": 0.6513,
+          "bbox": [
+            217.41,
+            279.05,
+            297.73,
+            355.19
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4303,
+          "bbox": [
+            305.3,
+            174.67,
+            330.81,
+            206.16
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4106,
+          "bbox": [
+            180.14,
+            176.63,
+            206.31,
+            201.52
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.3395,
+          "bbox": [
+            107.44,
+            209.34,
+            420.94,
+            422.79
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.2949,
+          "bbox": [
+            0.02,
+            405.09,
+            30.9,
+            454.65
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3475,
+          "bbox": [
+            16.89,
+            344.36,
+            150.33,
+            496.85
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3306,
+          "bbox": [
+            183.01,
+            413.8,
+            234.99,
+            511.89
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3109,
+          "bbox": [
+            298.56,
+            429.69,
+            348.64,
+            511.73
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.4798,
+          "bbox": [
+            45.19,
+            38.75,
+            209.45,
+            166.23
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.4125,
+          "bbox": [
+            300.01,
+            37.99,
+            462.84,
+            166.4
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.4362,
+          "bbox": [
+            345.8,
+            89.61,
+            462.3,
+            172.47
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.4157,
+          "bbox": [
+            71.09,
+            88.83,
+            165.35,
+            172.41
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            0.0,
+            0.0,
+            512.0,
+            418.68
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "gallina_3.jpg",
+      "detected_animal": "chicken",
+      "components": {
+        "head": 1,
+        "eye": 1,
+        "ear": 0,
+        "nose": 0,
+        "beak": 2,
+        "horn": 0,
+        "trunk": 0,
+        "leg": 2,
+        "tail": 1,
+        "wing": 1,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 2,
+      "horn_count": 0,
+      "average_confidence": 0.4553,
+      "total_detections": 9,
+      "detections": [
+        {
+          "class": "wing",
+          "confidence": 0.3749,
+          "bbox": [
+            297.19,
+            78.63,
+            458.1,
+            300.07
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.5028,
+          "bbox": [
+            213.4,
+            92.23,
+            237.66,
+            112.46
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.4986,
+          "bbox": [
+            115.26,
+            118.72,
+            458.17,
+            437.29
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.4652,
+          "bbox": [
+            299.81,
+            78.31,
+            458.7,
+            299.21
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3263,
+          "bbox": [
+            161.65,
+            408.45,
+            265.48,
+            459.38
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3067,
+          "bbox": [
+            230.72,
+            401.08,
+            301.33,
+            471.42
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            155.77,
+            68.17,
+            265.01,
+            169.26
+          ]
+        },
+        {
+          "class": "beak",
+          "confidence": 0.3502,
+          "bbox": [
+            171.51,
+            93.6,
+            231.38,
+            154.82
+          ]
+        },
+        {
+          "class": "beak",
+          "confidence": 0.3234,
+          "bbox": [
+            171.38,
+            93.15,
+            201.41,
+            128.46
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "gallina_1.jpg",
+      "detected_animal": "chicken",
+      "components": {
+        "head": 1,
+        "eye": 1,
+        "ear": 0,
+        "nose": 0,
+        "beak": 1,
+        "horn": 0,
+        "trunk": 0,
+        "leg": 1,
+        "tail": 1,
+        "wing": 1,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 1,
+      "horn_count": 0,
+      "average_confidence": 0.5088,
+      "total_detections": 7,
+      "detections": [
+        {
+          "class": "wing",
+          "confidence": 0.3238,
+          "bbox": [
+            354.09,
+            79.48,
+            501.0,
+            367.19
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4848,
+          "bbox": [
+            202.14,
+            102.82,
+            221.48,
+            120.56
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.4949,
+          "bbox": [
+            158.56,
+            115.24,
+            500.95,
+            446.75
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.3873,
+          "bbox": [
+            350.56,
+            79.94,
+            501.2,
+            364.48
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.312,
+          "bbox": [
+            225.07,
+            402.19,
+            307.42,
+            491.32
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            147.28,
+            92.07,
+            240.38,
+            138.41
+          ]
+        },
+        {
+          "class": "beak",
+          "confidence": 0.6089,
+          "bbox": [
+            160.58,
+            111.01,
+            198.73,
+            131.79
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "pecora_8.jpg",
+      "detected_animal": "sheep",
+      "components": {
+        "head": 1,
+        "eye": 0,
+        "ear": 2,
+        "nose": 0,
+        "beak": 0,
+        "horn": 0,
+        "trunk": 0,
+        "leg": 3,
+        "tail": 0,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 3,
+      "horn_count": 0,
+      "average_confidence": 0.4033,
+      "total_detections": 7,
+      "detections": [
+        {
+          "class": "leg",
+          "confidence": 0.3283,
+          "bbox": [
+            269.96,
+            361.33,
+            303.78,
+            464.03
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3114,
+          "bbox": [
+            226.48,
+            368.41,
+            258.57,
+            478.01
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.2563,
+          "bbox": [
+            173.7,
+            368.86,
+            206.77,
+            449.45
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.2992,
+          "bbox": [
+            103.22,
+            73.05,
+            134.47,
+            101.13
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.2918,
+          "bbox": [
+            217.01,
+            79.02,
+            243.16,
+            100.44
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            75.23,
+            67.43,
+            271.15,
+            106.74
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.3864,
+          "bbox": [
+            76.35,
+            87.09,
+            415.59,
+            419.67
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "pecora_2.jpg",
+      "detected_animal": "sheep",
+      "components": {
+        "head": 1,
+        "eye": 1,
+        "ear": 2,
+        "nose": 1,
+        "beak": 0,
+        "horn": 0,
+        "trunk": 0,
+        "leg": 2,
+        "tail": 1,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 2,
+      "horn_count": 0,
+      "average_confidence": 0.4742,
+      "total_detections": 9,
+      "detections": [
+        {
+          "class": "nose",
+          "confidence": 0.5808,
+          "bbox": [
+            88.71,
+            138.92,
+            103.54,
+            155.24
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4071,
+          "bbox": [
+            138.03,
+            100.66,
+            161.66,
+            119.34
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.4055,
+          "bbox": [
+            87.34,
+            122.68,
+            464.27,
+            379.01
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.4537,
+          "bbox": [
+            426.12,
+            210.7,
+            463.75,
+            300.38
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3634,
+          "bbox": [
+            353.2,
+            307.0,
+            424.64,
+            451.02
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3518,
+          "bbox": [
+            185.76,
+            326.82,
+            247.21,
+            450.86
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.3794,
+          "bbox": [
+            162.99,
+            71.09,
+            200.09,
+            94.4
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.376,
+          "bbox": [
+            174.13,
+            86.72,
+            196.08,
+            126.29
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            64.36,
+            50.05,
+            223.72,
+            195.32
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "gatto_5.jpg",
+      "detected_animal": "cat",
+      "components": {
+        "head": 1,
+        "eye": 2,
+        "ear": 2,
+        "nose": 1,
+        "beak": 0,
+        "horn": 0,
+        "trunk": 0,
+        "leg": 3,
+        "tail": 0,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 3,
+      "horn_count": 0,
+      "average_confidence": 0.4698,
+      "total_detections": 10,
+      "detections": [
+        {
+          "class": "nose",
+          "confidence": 0.7396,
+          "bbox": [
+            398.19,
+            163.04,
+            424.65,
+            193.38
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4437,
+          "bbox": [
+            365.84,
+            125.72,
+            397.65,
+            158.26
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.3039,
+          "bbox": [
+            416.9,
+            135.13,
+            426.71,
+            150.57
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.3815,
+          "bbox": [
+            186.21,
+            198.94,
+            363.32,
+            369.91
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.344,
+          "bbox": [
+            279.21,
+            324.17,
+            384.97,
+            503.8
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3168,
+          "bbox": [
+            172.81,
+            323.39,
+            268.03,
+            511.78
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.2991,
+          "bbox": [
+            106.56,
+            376.84,
+            157.11,
+            470.4
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.5027,
+          "bbox": [
+            391.45,
+            56.79,
+            463.16,
+            115.88
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.4163,
+          "bbox": [
+            311.16,
+            3.88,
+            379.31,
+            108.49
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            280.76,
+            0.0,
+            493.56,
+            231.28
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "cane_3.jpg",
+      "detected_animal": "dog",
+      "components": {
+        "head": 1,
+        "eye": 1,
+        "ear": 2,
+        "nose": 1,
+        "beak": 0,
+        "horn": 0,
+        "trunk": 0,
+        "leg": 2,
+        "tail": 1,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 2,
+      "horn_count": 0,
+      "average_confidence": 0.5314,
+      "total_detections": 9,
+      "detections": [
+        {
+          "class": "nose",
+          "confidence": 0.7823,
+          "bbox": [
+            102.88,
+            170.22,
+            131.18,
+            193.44
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4749,
+          "bbox": [
+            158.98,
+            132.42,
+            181.92,
+            156.15
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.537,
+          "bbox": [
+            101.18,
+            121.54,
+            425.69,
+            406.02
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.4262,
+          "bbox": [
+            320.76,
+            231.58,
+            424.49,
+            410.39
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3517,
+          "bbox": [
+            181.42,
+            370.27,
+            248.89,
+            507.26
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3367,
+          "bbox": [
+            295.35,
+            304.78,
+            368.54,
+            500.31
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.5581,
+          "bbox": [
+            192.28,
+            49.64,
+            245.44,
+            144.18
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.3654,
+          "bbox": [
+            162.36,
+            60.42,
+            191.41,
+            100.0
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            74.36,
+            20.88,
+            273.95,
+            222.19
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "cane_5.jpg",
+      "detected_animal": "dog",
+      "components": {
+        "head": 1,
+        "eye": 2,
+        "ear": 2,
+        "nose": 1,
+        "beak": 0,
+        "horn": 0,
+        "trunk": 0,
+        "leg": 4,
+        "tail": 1,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 4,
+      "horn_count": 0,
+      "average_confidence": 0.4394,
+      "total_detections": 12,
+      "detections": [
+        {
+          "class": "nose",
+          "confidence": 0.7487,
+          "bbox": [
+            217.0,
+            150.84,
+            263.86,
+            184.33
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4105,
+          "bbox": [
+            198.0,
+            103.1,
+            226.42,
+            129.59
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4087,
+          "bbox": [
+            268.28,
+            101.19,
+            294.68,
+            128.15
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.3931,
+          "bbox": [
+            131.07,
+            143.03,
+            509.48,
+            391.62
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.3019,
+          "bbox": [
+            387.68,
+            259.23,
+            511.87,
+            468.34
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3552,
+          "bbox": [
+            175.89,
+            371.33,
+            242.69,
+            511.37
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3303,
+          "bbox": [
+            320.82,
+            373.73,
+            374.77,
+            511.53
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3231,
+          "bbox": [
+            413.36,
+            403.24,
+            511.81,
+            467.58
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.2678,
+          "bbox": [
+            378.5,
+            271.71,
+            417.63,
+            497.32
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.4247,
+          "bbox": [
+            293.67,
+            60.69,
+            378.16,
+            192.01
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.3588,
+          "bbox": [
+            132.88,
+            103.78,
+            189.98,
+            203.29
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            83.83,
+            27.76,
+            427.21,
+            258.3
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "elefante_5.jpg",
+      "detected_animal": "elephant",
+      "components": {
+        "head": 1,
+        "eye": 3,
+        "ear": 2,
+        "nose": 0,
+        "beak": 0,
+        "horn": 3,
+        "trunk": 0,
+        "leg": 2,
+        "tail": 1,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 2,
+      "horn_count": 3,
+      "average_confidence": 0.4424,
+      "total_detections": 13,
+      "detections": [
+        {
+          "class": "eye",
+          "confidence": 0.4515,
+          "bbox": [
+            195.03,
+            134.77,
+            222.06,
+            172.68
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.402,
+          "bbox": [
+            311.12,
+            138.04,
+            331.17,
+            179.16
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.201,
+          "bbox": [
+            199.0,
+            81.45,
+            220.49,
+            106.65
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.3631,
+          "bbox": [
+            40.57,
+            256.0,
+            467.14,
+            393.63
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.4239,
+          "bbox": [
+            335.78,
+            352.35,
+            368.09,
+            451.5
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3458,
+          "bbox": [
+            179.2,
+            286.96,
+            271.61,
+            493.54
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3108,
+          "bbox": [
+            273.81,
+            309.17,
+            352.23,
+            500.3
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.4655,
+          "bbox": [
+            222.56,
+            153.61,
+            320.51,
+            464.1
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.4381,
+          "bbox": [
+            119.13,
+            250.29,
+            227.71,
+            421.54
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.3608,
+          "bbox": [
+            303.08,
+            187.09,
+            419.49,
+            418.84
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.5382,
+          "bbox": [
+            308.5,
+            54.1,
+            467.71,
+            266.46
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.5011,
+          "bbox": [
+            40.24,
+            51.72,
+            218.77,
+            255.62
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            0.0,
+            0.0,
+            512.0,
+            512.0
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "gatto_8.jpg",
+      "detected_animal": "cat",
+      "components": {
+        "head": 1,
+        "eye": 2,
+        "ear": 2,
+        "nose": 1,
+        "beak": 0,
+        "horn": 0,
+        "trunk": 0,
+        "leg": 1,
+        "tail": 1,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 1,
+      "horn_count": 0,
+      "average_confidence": 0.4767,
+      "total_detections": 9,
+      "detections": [
+        {
+          "class": "nose",
+          "confidence": 0.7061,
+          "bbox": [
+            361.24,
+            80.96,
+            377.6,
+            99.17
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4193,
+          "bbox": [
+            342.17,
+            60.87,
+            366.06,
+            85.11
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.1641,
+          "bbox": [
+            369.34,
+            69.49,
+            383.24,
+            85.93
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.4207,
+          "bbox": [
+            14.96,
+            58.6,
+            413.2,
+            443.4
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.3451,
+          "bbox": [
+            14.6,
+            352.23,
+            279.78,
+            511.23
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.2529,
+          "bbox": [
+            280.86,
+            423.83,
+            370.39,
+            462.97
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.5827,
+          "bbox": [
+            280.04,
+            10.31,
+            318.17,
+            64.05
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.4497,
+          "bbox": [
+            327.57,
+            8.96,
+            360.42,
+            38.57
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            259.4,
+            0.0,
+            403.88,
+            117.21
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "elefante_8.jpg",
+      "detected_animal": "elephant",
+      "components": {
+        "head": 1,
+        "eye": 1,
+        "ear": 1,
+        "nose": 0,
+        "beak": 0,
+        "horn": 1,
+        "trunk": 0,
+        "leg": 4,
+        "tail": 2,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 4,
+      "horn_count": 1,
+      "average_confidence": 0.4544,
+      "total_detections": 11,
+      "detections": [
+        {
+          "class": "eye",
+          "confidence": 0.5217,
+          "bbox": [
+            392.71,
+            164.34,
+            418.42,
+            187.7
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.4867,
+          "bbox": [
+            110.21,
+            280.58,
+            504.25,
+            397.53
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.3384,
+          "bbox": [
+            111.95,
+            205.32,
+            145.01,
+            342.69
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.334,
+          "bbox": [
+            218.44,
+            182.82,
+            271.26,
+            417.72
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3313,
+          "bbox": [
+            231.48,
+            322.64,
+            311.54,
+            472.42
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3283,
+          "bbox": [
+            182.48,
+            325.55,
+            236.9,
+            469.51
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3237,
+          "bbox": [
+            138.54,
+            331.24,
+            189.99,
+            470.08
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3029,
+          "bbox": [
+            289.96,
+            342.21,
+            343.52,
+            471.65
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.5366,
+          "bbox": [
+            385.26,
+            210.74,
+            506.07,
+            347.01
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.5453,
+          "bbox": [
+            348.87,
+            141.55,
+            378.16,
+            206.62
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            303.1,
+            85.94,
+            512.0,
+            475.22
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "gatto_1.jpg",
+      "detected_animal": "cat",
+      "components": {
+        "head": 1,
+        "eye": 2,
+        "ear": 2,
+        "nose": 1,
+        "beak": 0,
+        "horn": 0,
+        "trunk": 0,
+        "leg": 3,
+        "tail": 1,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 3,
+      "horn_count": 0,
+      "average_confidence": 0.4868,
+      "total_detections": 11,
+      "detections": [
+        {
+          "class": "nose",
+          "confidence": 0.731,
+          "bbox": [
+            114.2,
+            149.23,
+            132.44,
+            167.87
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.3849,
+          "bbox": [
+            144.37,
+            124.58,
+            160.69,
+            144.78
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.3828,
+          "bbox": [
+            129.12,
+            112.1,
+            143.5,
+            129.02
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.523,
+          "bbox": [
+            112.79,
+            111.27,
+            465.51,
+            385.41
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.4433,
+          "bbox": [
+            415.95,
+            322.98,
+            466.78,
+            390.19
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3733,
+          "bbox": [
+            209.44,
+            299.46,
+            286.91,
+            471.35
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3228,
+          "bbox": [
+            271.87,
+            305.55,
+            353.55,
+            407.25
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3208,
+          "bbox": [
+            175.19,
+            305.96,
+            236.65,
+            456.9
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.5298,
+          "bbox": [
+            167.72,
+            76.17,
+            216.52,
+            144.02
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.3935,
+          "bbox": [
+            142.43,
+            54.67,
+            177.0,
+            94.82
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            93.74,
+            32.03,
+            236.98,
+            190.51
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "gatto_9.jpg",
+      "detected_animal": "cat",
+      "components": {
+        "head": 1,
+        "eye": 4,
+        "ear": 4,
+        "nose": 2,
+        "beak": 0,
+        "horn": 0,
+        "trunk": 0,
+        "leg": 4,
+        "tail": 1,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 4,
+      "horn_count": 0,
+      "average_confidence": 0.4466,
+      "total_detections": 17,
+      "detections": [
+        {
+          "class": "nose",
+          "confidence": 0.688,
+          "bbox": [
+            147.8,
+            111.8,
+            171.87,
+            130.6
+          ]
+        },
+        {
+          "class": "nose",
+          "confidence": 0.2907,
+          "bbox": [
+            361.34,
+            165.11,
+            384.1,
+            192.09
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4041,
+          "bbox": [
+            378.46,
+            155.01,
+            395.3,
+            173.97
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4037,
+          "bbox": [
+            168.05,
+            90.96,
+            189.13,
+            112.31
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.3996,
+          "bbox": [
+            129.76,
+            90.96,
+            153.19,
+            114.41
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.3967,
+          "bbox": [
+            339.92,
+            151.84,
+            361.33,
+            171.19
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.4082,
+          "bbox": [
+            279.66,
+            114.03,
+            432.61,
+            389.57
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.3844,
+          "bbox": [
+            31.68,
+            336.41,
+            124.02,
+            437.81
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3331,
+          "bbox": [
+            110.89,
+            290.42,
+            179.81,
+            468.62
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.333,
+          "bbox": [
+            297.45,
+            319.74,
+            343.41,
+            482.99
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.319,
+          "bbox": [
+            188.26,
+            298.29,
+            254.92,
+            471.27
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.2962,
+          "bbox": [
+            346.88,
+            328.49,
+            390.37,
+            488.72
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.5373,
+          "bbox": [
+            293.96,
+            91.11,
+            344.72,
+            160.27
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.5242,
+          "bbox": [
+            381.3,
+            91.43,
+            433.22,
+            158.32
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.4726,
+          "bbox": [
+            183.82,
+            35.98,
+            220.36,
+            90.29
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.4518,
+          "bbox": [
+            117.46,
+            36.12,
+            152.2,
+            78.99
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            54.31,
+            4.76,
+            496.37,
+            223.31
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "elefante_4.jpg",
+      "detected_animal": "elephant",
+      "components": {
+        "head": 1,
+        "eye": 2,
+        "ear": 0,
+        "nose": 0,
+        "beak": 0,
+        "horn": 2,
+        "trunk": 0,
+        "leg": 1,
+        "tail": 3,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 1,
+      "horn_count": 2,
+      "average_confidence": 0.4421,
+      "total_detections": 10,
+      "detections": [
+        {
+          "class": "eye",
+          "confidence": 0.465,
+          "bbox": [
+            309.64,
+            148.53,
+            333.95,
+            179.23
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.358,
+          "bbox": [
+            192.34,
+            150.78,
+            212.53,
+            183.53
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.3432,
+          "bbox": [
+            49.34,
+            256.4,
+            469.59,
+            416.49
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.3528,
+          "bbox": [
+            49.97,
+            159.4,
+            219.29,
+            429.13
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.3492,
+          "bbox": [
+            85.81,
+            370.52,
+            127.99,
+            431.83
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.2797,
+          "bbox": [
+            307.63,
+            164.01,
+            468.07,
+            375.15
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.2898,
+          "bbox": [
+            156.66,
+            354.44,
+            222.19,
+            478.54
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.5241,
+          "bbox": [
+            306.37,
+            163.43,
+            469.02,
+            375.14
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.5086,
+          "bbox": [
+            49.33,
+            158.73,
+            220.56,
+            381.57
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            0.0,
+            81.16,
+            512.0,
+            431.64
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "gallina_7.jpg",
+      "detected_animal": "chicken",
+      "components": {
+        "head": 1,
+        "eye": 1,
+        "ear": 0,
+        "nose": 0,
+        "beak": 2,
+        "horn": 0,
+        "trunk": 0,
+        "leg": 2,
+        "tail": 2,
+        "wing": 1,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 2,
+      "horn_count": 0,
+      "average_confidence": 0.4379,
+      "total_detections": 10,
+      "detections": [
+        {
+          "class": "wing",
+          "confidence": 0.3055,
+          "bbox": [
+            320.85,
+            87.97,
+            409.82,
+            285.69
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.5296,
+          "bbox": [
+            217.88,
+            52.71,
+            244.43,
+            76.09
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.6058,
+          "bbox": [
+            143.89,
+            83.8,
+            411.91,
+            450.77
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.3577,
+          "bbox": [
+            321.46,
+            89.17,
+            407.6,
+            194.93
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.2715,
+          "bbox": [
+            150.77,
+            331.21,
+            179.43,
+            385.62
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3823,
+          "bbox": [
+            164.1,
+            398.33,
+            258.57,
+            477.3
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3804,
+          "bbox": [
+            242.64,
+            408.97,
+            332.03,
+            503.22
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            173.91,
+            31.1,
+            265.09,
+            136.49
+          ]
+        },
+        {
+          "class": "beak",
+          "confidence": 0.3703,
+          "bbox": [
+            200.94,
+            78.89,
+            238.13,
+            120.45
+          ]
+        },
+        {
+          "class": "beak",
+          "confidence": 0.2264,
+          "bbox": [
+            186.94,
+            68.82,
+            215.74,
+            90.95
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "elefante_10.jpg",
+      "detected_animal": "elephant",
+      "components": {
+        "head": 1,
+        "eye": 3,
+        "ear": 3,
+        "nose": 0,
+        "beak": 0,
+        "horn": 4,
+        "trunk": 1,
+        "leg": 5,
+        "tail": 1,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 5,
+      "horn_count": 4,
+      "average_confidence": 0.3858,
+      "total_detections": 19,
+      "detections": [
+        {
+          "class": "trunk",
+          "confidence": 0.2875,
+          "bbox": [
+            231.59,
+            311.24,
+            285.98,
+            436.12
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4816,
+          "bbox": [
+            294.92,
+            135.37,
+            313.12,
+            162.89
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4585,
+          "bbox": [
+            188.12,
+            136.36,
+            209.48,
+            172.25
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.2567,
+          "bbox": [
+            330.84,
+            321.45,
+            350.75,
+            347.46
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.2886,
+          "bbox": [
+            47.9,
+            256.0,
+            465.32,
+            373.77
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.3485,
+          "bbox": [
+            72.69,
+            346.64,
+            103.29,
+            434.48
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3836,
+          "bbox": [
+            67.92,
+            349.68,
+            125.12,
+            475.36
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.317,
+          "bbox": [
+            283.92,
+            352.91,
+            327.22,
+            482.75
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3053,
+          "bbox": [
+            103.09,
+            351.6,
+            159.53,
+            478.22
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.2988,
+          "bbox": [
+            155.75,
+            382.43,
+            206.18,
+            475.86
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.2957,
+          "bbox": [
+            206.5,
+            333.66,
+            263.03,
+            482.85
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.445,
+          "bbox": [
+            154.0,
+            249.01,
+            207.25,
+            355.11
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.3095,
+          "bbox": [
+            231.74,
+            310.7,
+            285.96,
+            436.41
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.2914,
+          "bbox": [
+            340.12,
+            324.75,
+            389.17,
+            487.18
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.2254,
+          "bbox": [
+            218.87,
+            15.46,
+            285.1,
+            50.22
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.5474,
+          "bbox": [
+            287.38,
+            30.0,
+            465.9,
+            247.98
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.4933,
+          "bbox": [
+            47.24,
+            30.11,
+            211.41,
+            254.29
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.3473,
+          "bbox": [
+            372.37,
+            261.27,
+            439.82,
+            357.86
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            0.0,
+            0.0,
+            512.0,
+            512.0
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "scoiattolo_2.jpg",
+      "detected_animal": "squirrel",
+      "components": {
+        "head": 1,
+        "eye": 2,
+        "ear": 1,
+        "nose": 1,
+        "beak": 0,
+        "horn": 0,
+        "trunk": 0,
+        "leg": 1,
+        "tail": 0,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 1,
+      "horn_count": 0,
+      "average_confidence": 0.501,
+      "total_detections": 7,
+      "detections": [
+        {
+          "class": "nose",
+          "confidence": 0.6372,
+          "bbox": [
+            292.34,
+            182.75,
+            316.07,
+            209.02
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.5307,
+          "bbox": [
+            244.17,
+            160.3,
+            278.12,
+            194.64
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4378,
+          "bbox": [
+            200.87,
+            150.35,
+            229.02,
+            184.46
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.3723,
+          "bbox": [
+            155.38,
+            128.95,
+            341.82,
+            346.71
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.2688,
+          "bbox": [
+            169.64,
+            294.38,
+            248.87,
+            399.04
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.3105,
+          "bbox": [
+            157.94,
+            48.88,
+            234.28,
+            184.28
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            126.32,
+            16.86,
+            347.7,
+            241.05
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "pecora_9.jpg",
+      "detected_animal": "sheep",
+      "components": {
+        "head": 1,
+        "eye": 5,
+        "ear": 3,
+        "nose": 2,
+        "beak": 0,
+        "horn": 4,
+        "trunk": 0,
+        "leg": 4,
+        "tail": 2,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 4,
+      "horn_count": 4,
+      "average_confidence": 0.3535,
+      "total_detections": 22,
+      "detections": [
+        {
+          "class": "nose",
+          "confidence": 0.4393,
+          "bbox": [
+            355.33,
+            143.52,
+            374.94,
+            159.5
+          ]
+        },
+        {
+          "class": "nose",
+          "confidence": 0.4368,
+          "bbox": [
+            160.03,
+            114.24,
+            182.45,
+            131.58
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.3636,
+          "bbox": [
+            337.62,
+            109.25,
+            352.18,
+            125.19
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.3606,
+          "bbox": [
+            376.57,
+            112.97,
+            390.43,
+            131.2
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.325,
+          "bbox": [
+            143.82,
+            92.98,
+            158.36,
+            109.64
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.2431,
+          "bbox": [
+            175.67,
+            86.24,
+            188.13,
+            102.16
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.1562,
+          "bbox": [
+            183.6,
+            96.86,
+            196.46,
+            111.13
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.3809,
+          "bbox": [
+            291.52,
+            115.88,
+            437.25,
+            367.64
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.2978,
+          "bbox": [
+            21.28,
+            255.48,
+            54.21,
+            392.59
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.2803,
+          "bbox": [
+            18.85,
+            193.94,
+            46.77,
+            312.52
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3185,
+          "bbox": [
+            320.6,
+            304.14,
+            355.8,
+            450.41
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3013,
+          "bbox": [
+            26.79,
+            284.87,
+            53.23,
+            391.93
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3007,
+          "bbox": [
+            363.39,
+            302.57,
+            401.09,
+            440.73
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.2885,
+          "bbox": [
+            163.42,
+            309.17,
+            194.17,
+            422.17
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.4293,
+          "bbox": [
+            290.84,
+            79.0,
+            351.99,
+            142.05
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.4094,
+          "bbox": [
+            375.05,
+            79.21,
+            437.54,
+            135.17
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.2628,
+          "bbox": [
+            103.06,
+            69.03,
+            148.69,
+            137.45
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.219,
+          "bbox": [
+            176.23,
+            65.74,
+            224.12,
+            137.83
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.3587,
+          "bbox": [
+            390.22,
+            105.39,
+            423.93,
+            129.39
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.3581,
+          "bbox": [
+            303.08,
+            106.39,
+            340.55,
+            130.27
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.2961,
+          "bbox": [
+            184.13,
+            96.91,
+            213.1,
+            115.73
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            36.16,
+            45.69,
+            504.44,
+            186.08
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "gatto_7.jpg",
+      "detected_animal": "cat",
+      "components": {
+        "head": 1,
+        "eye": 2,
+        "ear": 2,
+        "nose": 1,
+        "beak": 0,
+        "horn": 0,
+        "trunk": 0,
+        "leg": 2,
+        "tail": 0,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 2,
+      "horn_count": 0,
+      "average_confidence": 0.5711,
+      "total_detections": 9,
+      "detections": [
+        {
+          "class": "nose",
+          "confidence": 0.8563,
+          "bbox": [
+            239.44,
+            168.05,
+            278.74,
+            204.13
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4729,
+          "bbox": [
+            167.57,
+            127.2,
+            230.45,
+            186.49
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4712,
+          "bbox": [
+            288.8,
+            134.82,
+            350.3,
+            192.23
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.4416,
+          "bbox": [
+            79.98,
+            121.89,
+            455.27,
+            418.18
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3523,
+          "bbox": [
+            129.99,
+            383.25,
+            220.48,
+            453.11
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.326,
+          "bbox": [
+            287.58,
+            388.25,
+            369.31,
+            452.98
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.6621,
+          "bbox": [
+            325.24,
+            18.43,
+            414.1,
+            107.38
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.6076,
+          "bbox": [
+            118.25,
+            5.85,
+            196.39,
+            94.36
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            59.08,
+            0.0,
+            473.28,
+            243.79
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "scoiattolo_4.jpg",
+      "detected_animal": "squirrel",
+      "components": {
+        "head": 1,
+        "eye": 2,
+        "ear": 2,
+        "nose": 1,
+        "beak": 0,
+        "horn": 0,
+        "trunk": 0,
+        "leg": 0,
+        "tail": 0,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "horn_count": 0,
+      "average_confidence": 0.6147,
+      "total_detections": 7,
+      "detections": [
+        {
+          "class": "nose",
+          "confidence": 0.6953,
+          "bbox": [
+            236.6,
+            182.85,
+            266.59,
+            207.19
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.539,
+          "bbox": [
+            195.75,
+            148.07,
+            224.92,
+            182.51
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.5295,
+          "bbox": [
+            275.72,
+            147.63,
+            302.28,
+            179.11
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.3385,
+          "bbox": [
+            186.27,
+            220.13,
+            345.15,
+            233.79
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.6299,
+          "bbox": [
+            179.96,
+            87.63,
+            219.93,
+            156.6
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.6206,
+          "bbox": [
+            277.88,
+            85.84,
+            317.69,
+            150.15
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            152.42,
+            61.57,
+            345.24,
+            231.46
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "gallina_2.jpg",
+      "detected_animal": "chicken",
+      "components": {
+        "head": 1,
+        "eye": 2,
+        "ear": 0,
+        "nose": 0,
+        "beak": 1,
+        "horn": 0,
+        "trunk": 0,
+        "leg": 2,
+        "tail": 1,
+        "wing": 2,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 2,
+      "horn_count": 0,
+      "average_confidence": 0.4221,
+      "total_detections": 10,
+      "detections": [
+        {
+          "class": "wing",
+          "confidence": 0.3035,
+          "bbox": [
+            350.46,
+            44.77,
+            448.0,
+            216.05
+          ]
+        },
+        {
+          "class": "wing",
+          "confidence": 0.2901,
+          "bbox": [
+            252.93,
+            203.78,
+            426.88,
+            351.09
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4732,
+          "bbox": [
+            218.43,
+            82.78,
+            243.7,
+            109.39
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.2289,
+          "bbox": [
+            403.39,
+            87.18,
+            429.33,
+            122.03
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.5365,
+          "bbox": [
+            180.12,
+            103.94,
+            460.68,
+            461.25
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.3244,
+          "bbox": [
+            351.7,
+            44.93,
+            449.45,
+            216.44
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3508,
+          "bbox": [
+            342.45,
+            410.82,
+            404.06,
+            511.48
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3022,
+          "bbox": [
+            229.39,
+            413.84,
+            308.61,
+            449.2
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            132.15,
+            65.02,
+            478.86,
+            142.86
+          ]
+        },
+        {
+          "class": "beak",
+          "confidence": 0.4614,
+          "bbox": [
+            181.68,
+            103.4,
+            213.8,
+            131.74
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "cane_1.jpg",
+      "detected_animal": "dog",
+      "components": {
+        "head": 1,
+        "eye": 2,
+        "ear": 1,
+        "nose": 1,
+        "beak": 0,
+        "horn": 0,
+        "trunk": 0,
+        "leg": 0,
+        "tail": 0,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "horn_count": 0,
+      "average_confidence": 0.4982,
+      "total_detections": 6,
+      "detections": [
+        {
+          "class": "nose",
+          "confidence": 0.6871,
+          "bbox": [
+            453.77,
+            197.2,
+            485.61,
+            232.12
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4172,
+          "bbox": [
+            377.4,
+            150.63,
+            407.94,
+            179.77
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.255,
+          "bbox": [
+            408.24,
+            141.36,
+            422.69,
+            162.51
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.2797,
+          "bbox": [
+            251.71,
+            327.92,
+            375.61,
+            376.32
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.3999,
+          "bbox": [
+            300.83,
+            26.37,
+            357.84,
+            141.28
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            254.37,
+            0.0,
+            512.0,
+            273.92
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "scoiattolo_3.jpg",
+      "detected_animal": "squirrel",
+      "components": {
+        "head": 1,
+        "eye": 2,
+        "ear": 3,
+        "nose": 1,
+        "beak": 0,
+        "horn": 0,
+        "trunk": 0,
+        "leg": 0,
+        "tail": 0,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "horn_count": 0,
+      "average_confidence": 0.4435,
+      "total_detections": 8,
+      "detections": [
+        {
+          "class": "nose",
+          "confidence": 0.2458,
+          "bbox": [
+            184.79,
+            186.36,
+            201.98,
+            215.34
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4423,
+          "bbox": [
+            166.45,
+            151.37,
+            184.91,
+            171.2
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4321,
+          "bbox": [
+            199.03,
+            122.39,
+            218.32,
+            142.32
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.3537,
+          "bbox": [
+            198.67,
+            196.5,
+            317.27,
+            358.64
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.4569,
+          "bbox": [
+            210.55,
+            96.66,
+            235.54,
+            132.25
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.3701,
+          "bbox": [
+            192.16,
+            96.94,
+            208.53,
+            117.58
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.2972,
+          "bbox": [
+            177.66,
+            232.42,
+            208.39,
+            276.55
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            152.64,
+            60.69,
+            249.36,
+            312.53
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "gallina_4.jpg",
+      "detected_animal": "chicken",
+      "components": {
+        "head": 1,
+        "eye": 1,
+        "ear": 0,
+        "nose": 0,
+        "beak": 1,
+        "horn": 0,
+        "trunk": 0,
+        "leg": 2,
+        "tail": 1,
+        "wing": 1,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 2,
+      "horn_count": 0,
+      "average_confidence": 0.5182,
+      "total_detections": 8,
+      "detections": [
+        {
+          "class": "wing",
+          "confidence": 0.3408,
+          "bbox": [
+            331.43,
+            53.54,
+            459.72,
+            250.3
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4895,
+          "bbox": [
+            231.51,
+            79.47,
+            250.13,
+            100.76
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.5451,
+          "bbox": [
+            154.06,
+            120.7,
+            459.67,
+            440.02
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.4173,
+          "bbox": [
+            332.18,
+            53.95,
+            459.97,
+            250.3
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3814,
+          "bbox": [
+            274.15,
+            390.75,
+            310.88,
+            503.4
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3427,
+          "bbox": [
+            188.97,
+            376.65,
+            265.01,
+            487.53
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            191.81,
+            54.88,
+            266.77,
+            186.53
+          ]
+        },
+        {
+          "class": "beak",
+          "confidence": 0.6787,
+          "bbox": [
+            202.52,
+            101.62,
+            245.75,
+            167.72
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "gatto_3.jpg",
+      "detected_animal": "cat",
+      "components": {
+        "head": 1,
+        "eye": 0,
+        "ear": 2,
+        "nose": 0,
+        "beak": 0,
+        "horn": 0,
+        "trunk": 0,
+        "leg": 2,
+        "tail": 1,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 2,
+      "horn_count": 0,
+      "average_confidence": 0.4642,
+      "total_detections": 7,
+      "detections": [
+        {
+          "class": "torso",
+          "confidence": 0.4183,
+          "bbox": [
+            139.56,
+            77.04,
+            443.88,
+            395.22
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.5761,
+          "bbox": [
+            268.75,
+            345.75,
+            444.11,
+            486.06
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3216,
+          "bbox": [
+            160.34,
+            278.93,
+            201.38,
+            410.54
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3196,
+          "bbox": [
+            0.62,
+            361.94,
+            477.35,
+            511.52
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.3503,
+          "bbox": [
+            229.22,
+            19.34,
+            295.01,
+            130.89
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.3135,
+          "bbox": [
+            140.1,
+            14.96,
+            196.25,
+            111.64
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            109.12,
+            0.0,
+            325.99,
+            154.07
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "cane_8.jpg",
+      "detected_animal": "dog",
+      "components": {
+        "head": 1,
+        "eye": 1,
+        "ear": 2,
+        "nose": 1,
+        "beak": 0,
+        "horn": 0,
+        "trunk": 0,
+        "leg": 3,
+        "tail": 1,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 3,
+      "horn_count": 0,
+      "average_confidence": 0.4923,
+      "total_detections": 10,
+      "detections": [
+        {
+          "class": "nose",
+          "confidence": 0.6793,
+          "bbox": [
+            430.34,
+            99.1,
+            445.96,
+            117.28
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4337,
+          "bbox": [
+            411.43,
+            60.86,
+            424.9,
+            78.25
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.4652,
+          "bbox": [
+            68.17,
+            69.06,
+            446.51,
+            386.9
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.4677,
+          "bbox": [
+            68.17,
+            231.57,
+            188.07,
+            409.83
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.411,
+          "bbox": [
+            331.89,
+            281.21,
+            378.04,
+            484.9
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3395,
+          "bbox": [
+            169.32,
+            300.46,
+            217.4,
+            459.72
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.2955,
+          "bbox": [
+            205.67,
+            287.55,
+            276.63,
+            492.58
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.6211,
+          "bbox": [
+            296.32,
+            13.08,
+            366.77,
+            84.96
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.2602,
+          "bbox": [
+            383.08,
+            29.01,
+            406.6,
+            89.19
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            266.39,
+            0.0,
+            475.88,
+            138.12
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "mucca_7.jpg",
+      "detected_animal": "cow",
+      "components": {
+        "head": 1,
+        "eye": 3,
+        "ear": 2,
+        "nose": 1,
+        "beak": 0,
+        "horn": 2,
+        "trunk": 0,
+        "leg": 2,
+        "tail": 1,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 1
+      },
+      "leg_count": 2,
+      "horn_count": 2,
+      "average_confidence": 0.499,
+      "total_detections": 14,
+      "detections": [
+        {
+          "class": "nose",
+          "confidence": 0.731,
+          "bbox": [
+            204.1,
+            282.91,
+            314.28,
+            361.6
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4524,
+          "bbox": [
+            300.46,
+            186.76,
+            326.01,
+            219.49
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4247,
+          "bbox": [
+            188.17,
+            189.81,
+            211.28,
+            214.5
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.2686,
+          "bbox": [
+            197.2,
+            223.4,
+            223.38,
+            249.79
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.4427,
+          "bbox": [
+            66.55,
+            215.24,
+            436.86,
+            397.72
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.4218,
+          "bbox": [
+            376.19,
+            245.98,
+            408.05,
+            355.47
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3604,
+          "bbox": [
+            112.27,
+            283.52,
+            191.03,
+            511.75
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3302,
+          "bbox": [
+            314.5,
+            293.11,
+            389.14,
+            511.92
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.5658,
+          "bbox": [
+            322.91,
+            17.21,
+            437.86,
+            169.92
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.5652,
+          "bbox": [
+            66.48,
+            18.98,
+            187.24,
+            174.49
+          ]
+        },
+        {
+          "class": "foreign_part",
+          "confidence": 0.2966,
+          "bbox": [
+            67.85,
+            17.51,
+            436.44,
+            511.67
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.595,
+          "bbox": [
+            322.62,
+            163.05,
+            412.99,
+            223.45
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.5822,
+          "bbox": [
+            96.28,
+            164.6,
+            189.74,
+            221.06
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            0.0,
+            0.0,
+            512.0,
+            430.48
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "mucca_8.jpg",
+      "detected_animal": "cow",
+      "components": {
+        "head": 1,
+        "eye": 0,
+        "ear": 0,
+        "nose": 0,
+        "beak": 0,
+        "horn": 2,
+        "trunk": 0,
+        "leg": 1,
+        "tail": 2,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 1,
+      "horn_count": 2,
+      "average_confidence": 0.4922,
+      "total_detections": 7,
+      "detections": [
+        {
+          "class": "torso",
+          "confidence": 0.3799,
+          "bbox": [
+            103.17,
+            114.15,
+            387.26,
+            440.54
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.4917,
+          "bbox": [
+            205.02,
+            230.28,
+            297.69,
+            448.11
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.3703,
+          "bbox": [
+            104.08,
+            33.33,
+            386.22,
+            198.09
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.2615,
+          "bbox": [
+            171.05,
+            369.17,
+            218.17,
+            511.92
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.5038,
+          "bbox": [
+            274.69,
+            40.07,
+            386.56,
+            195.14
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.4883,
+          "bbox": [
+            103.49,
+            32.39,
+            251.77,
+            195.64
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            46.88,
+            0.0,
+            443.18,
+            228.29
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "gallina_9.jpg",
+      "detected_animal": "chicken",
+      "components": {
+        "head": 1,
+        "eye": 2,
+        "ear": 0,
+        "nose": 0,
+        "beak": 2,
+        "horn": 0,
+        "trunk": 0,
+        "leg": 4,
+        "tail": 2,
+        "wing": 2,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 4,
+      "horn_count": 0,
+      "average_confidence": 0.3794,
+      "total_detections": 14,
+      "detections": [
+        {
+          "class": "wing",
+          "confidence": 0.3565,
+          "bbox": [
+            369.34,
+            99.03,
+            484.74,
+            314.3
+          ]
+        },
+        {
+          "class": "wing",
+          "confidence": 0.3396,
+          "bbox": [
+            33.49,
+            49.41,
+            140.78,
+            313.22
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.346,
+          "bbox": [
+            319.49,
+            260.28,
+            336.19,
+            273.55
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.3314,
+          "bbox": [
+            187.76,
+            54.76,
+            213.97,
+            79.56
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.4575,
+          "bbox": [
+            301.39,
+            179.18,
+            484.74,
+            437.97
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.4957,
+          "bbox": [
+            369.22,
+            98.79,
+            485.4,
+            313.79
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.3136,
+          "bbox": [
+            33.4,
+            50.11,
+            140.51,
+            306.97
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3351,
+          "bbox": [
+            324.29,
+            382.34,
+            374.98,
+            476.48
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.2965,
+          "bbox": [
+            103.36,
+            402.29,
+            181.59,
+            489.81
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.2952,
+          "bbox": [
+            364.09,
+            409.58,
+            407.78,
+            493.61
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.2727,
+          "bbox": [
+            178.55,
+            412.63,
+            259.49,
+            479.47
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            126.72,
+            4.99,
+            378.39,
+            353.38
+          ]
+        },
+        {
+          "class": "beak",
+          "confidence": 0.2668,
+          "bbox": [
+            162.67,
+            67.89,
+            207.22,
+            117.23
+          ]
+        },
+        {
+          "class": "beak",
+          "confidence": 0.2549,
+          "bbox": [
+            301.23,
+            245.35,
+            342.43,
+            303.61
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "mucca_6.jpg",
+      "detected_animal": "cow",
+      "components": {
+        "head": 1,
+        "eye": 1,
+        "ear": 1,
+        "nose": 1,
+        "beak": 0,
+        "horn": 2,
+        "trunk": 0,
+        "leg": 3,
+        "tail": 1,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 3,
+      "horn_count": 2,
+      "average_confidence": 0.498,
+      "total_detections": 11,
+      "detections": [
+        {
+          "class": "nose",
+          "confidence": 0.6608,
+          "bbox": [
+            27.45,
+            143.26,
+            43.43,
+            165.74
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4361,
+          "bbox": [
+            73.27,
+            104.47,
+            94.97,
+            124.74
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.5236,
+          "bbox": [
+            28.67,
+            103.48,
+            464.73,
+            331.47
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.3917,
+          "bbox": [
+            441.55,
+            113.36,
+            463.77,
+            336.15
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3609,
+          "bbox": [
+            327.16,
+            276.21,
+            388.17,
+            426.27
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3385,
+          "bbox": [
+            204.99,
+            232.45,
+            250.2,
+            407.52
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3148,
+          "bbox": [
+            377.15,
+            237.28,
+            418.27,
+            430.5
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.4969,
+          "bbox": [
+            102.68,
+            41.23,
+            133.9,
+            88.93
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.4581,
+          "bbox": [
+            71.97,
+            58.59,
+            92.82,
+            84.51
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.5466,
+          "bbox": [
+            118.24,
+            87.37,
+            148.83,
+            119.0
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            3.18,
+            16.33,
+            173.1,
+            190.64
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "mucca_4.jpg",
+      "detected_animal": "cow",
+      "components": {
+        "head": 1,
+        "eye": 2,
+        "ear": 2,
+        "nose": 1,
+        "beak": 0,
+        "horn": 2,
+        "trunk": 0,
+        "leg": 0,
+        "tail": 0,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 2
+      },
+      "leg_count": 0,
+      "horn_count": 2,
+      "average_confidence": 0.5166,
+      "total_detections": 11,
+      "detections": [
+        {
+          "class": "nose",
+          "confidence": 0.5965,
+          "bbox": [
+            197.46,
+            302.86,
+            317.01,
+            380.28
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4933,
+          "bbox": [
+            166.88,
+            214.52,
+            200.43,
+            245.4
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4909,
+          "bbox": [
+            312.86,
+            211.93,
+            341.36,
+            241.61
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.2641,
+          "bbox": [
+            216.59,
+            386.72,
+            304.24,
+            481.35
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.6101,
+          "bbox": [
+            345.02,
+            28.23,
+            489.78,
+            143.28
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.5877,
+          "bbox": [
+            11.65,
+            59.36,
+            157.76,
+            152.99
+          ]
+        },
+        {
+          "class": "foreign_part",
+          "confidence": 0.3379,
+          "bbox": [
+            158.53,
+            181.33,
+            347.38,
+            382.59
+          ]
+        },
+        {
+          "class": "foreign_part",
+          "confidence": 0.2577,
+          "bbox": [
+            345.73,
+            29.05,
+            488.69,
+            142.62
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.5868,
+          "bbox": [
+            351.16,
+            136.26,
+            432.38,
+            231.36
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.5081,
+          "bbox": [
+            73.41,
+            147.35,
+            152.58,
+            240.9
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            0.0,
+            0.0,
+            512.0,
+            450.7
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "mucca_9.jpg",
+      "detected_animal": "cow",
+      "components": {
+        "head": 1,
+        "eye": 4,
+        "ear": 4,
+        "nose": 2,
+        "beak": 0,
+        "horn": 4,
+        "trunk": 0,
+        "leg": 7,
+        "tail": 1,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 7,
+      "horn_count": 4,
+      "average_confidence": 0.4431,
+      "total_detections": 24,
+      "detections": [
+        {
+          "class": "nose",
+          "confidence": 0.4648,
+          "bbox": [
+            397.79,
+            205.08,
+            433.82,
+            231.9
+          ]
+        },
+        {
+          "class": "nose",
+          "confidence": 0.3872,
+          "bbox": [
+            143.88,
+            223.65,
+            191.16,
+            252.52
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4464,
+          "bbox": [
+            424.98,
+            161.61,
+            442.48,
+            180.17
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4223,
+          "bbox": [
+            381.07,
+            163.23,
+            398.48,
+            179.55
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4217,
+          "bbox": [
+            128.39,
+            158.95,
+            148.87,
+            180.73
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.382,
+          "bbox": [
+            178.74,
+            157.33,
+            196.61,
+            181.8
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.4423,
+          "bbox": [
+            67.81,
+            160.42,
+            253.23,
+            365.53
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.2927,
+          "bbox": [
+            0.0,
+            274.0,
+            32.67,
+            325.3
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.4124,
+          "bbox": [
+            0.01,
+            247.99,
+            59.2,
+            370.95
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3276,
+          "bbox": [
+            268.03,
+            297.68,
+            298.66,
+            447.99
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3144,
+          "bbox": [
+            192.54,
+            333.86,
+            237.75,
+            483.07
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3074,
+          "bbox": [
+            386.96,
+            297.0,
+            436.79,
+            456.65
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.2937,
+          "bbox": [
+            304.54,
+            296.25,
+            350.54,
+            459.04
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.2813,
+          "bbox": [
+            102.12,
+            318.87,
+            149.1,
+            482.68
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.2702,
+          "bbox": [
+            139.83,
+            357.87,
+            165.83,
+            474.1
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.5427,
+          "bbox": [
+            431.04,
+            89.48,
+            472.98,
+            140.72
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.5382,
+          "bbox": [
+            342.54,
+            93.69,
+            387.48,
+            150.06
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.5327,
+          "bbox": [
+            187.71,
+            68.31,
+            221.76,
+            140.37
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.5109,
+          "bbox": [
+            106.12,
+            83.44,
+            140.31,
+            142.47
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.5425,
+          "bbox": [
+            203.97,
+            133.9,
+            252.45,
+            178.66
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.527,
+          "bbox": [
+            439.51,
+            138.98,
+            488.96,
+            176.23
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.516,
+          "bbox": [
+            334.98,
+            139.12,
+            383.07,
+            172.21
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.5076,
+          "bbox": [
+            67.32,
+            138.03,
+            132.75,
+            183.68
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            0.0,
+            31.47,
+            512.0,
+            289.37
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "pecora_7.jpg",
+      "detected_animal": "sheep",
+      "components": {
+        "head": 1,
+        "eye": 2,
+        "ear": 2,
+        "nose": 1,
+        "beak": 0,
+        "horn": 2,
+        "trunk": 0,
+        "leg": 0,
+        "tail": 0,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 3
+      },
+      "leg_count": 0,
+      "horn_count": 2,
+      "average_confidence": 0.4639,
+      "total_detections": 12,
+      "detections": [
+        {
+          "class": "nose",
+          "confidence": 0.7592,
+          "bbox": [
+            236.54,
+            198.29,
+            284.99,
+            233.22
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4515,
+          "bbox": [
+            187.53,
+            154.77,
+            213.92,
+            183.8
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4297,
+          "bbox": [
+            301.98,
+            153.91,
+            324.32,
+            177.53
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.3787,
+          "bbox": [
+            62.98,
+            144.23,
+            436.23,
+            195.43
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.4736,
+          "bbox": [
+            63.18,
+            37.12,
+            248.08,
+            245.02
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.4551,
+          "bbox": [
+            259.32,
+            27.81,
+            436.6,
+            230.32
+          ]
+        },
+        {
+          "class": "foreign_part",
+          "confidence": 0.296,
+          "bbox": [
+            194.11,
+            131.85,
+            311.22,
+            271.72
+          ]
+        },
+        {
+          "class": "foreign_part",
+          "confidence": 0.2764,
+          "bbox": [
+            64.54,
+            37.94,
+            251.86,
+            244.37
+          ]
+        },
+        {
+          "class": "foreign_part",
+          "confidence": 0.2723,
+          "bbox": [
+            258.72,
+            28.69,
+            435.1,
+            229.34
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.4504,
+          "bbox": [
+            309.81,
+            122.39,
+            371.46,
+            183.48
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.3743,
+          "bbox": [
+            135.4,
+            127.38,
+            217.68,
+            191.94
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            0.0,
+            0.0,
+            511.29,
+            288.46
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "cane_10.jpg",
+      "detected_animal": "dog",
+      "components": {
+        "head": 1,
+        "eye": 5,
+        "ear": 4,
+        "nose": 3,
+        "beak": 0,
+        "horn": 0,
+        "trunk": 0,
+        "leg": 3,
+        "tail": 2,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 3,
+      "horn_count": 0,
+      "average_confidence": 0.4303,
+      "total_detections": 19,
+      "detections": [
+        {
+          "class": "nose",
+          "confidence": 0.6525,
+          "bbox": [
+            377.98,
+            269.21,
+            409.49,
+            296.33
+          ]
+        },
+        {
+          "class": "nose",
+          "confidence": 0.2742,
+          "bbox": [
+            238.05,
+            196.03,
+            271.92,
+            218.87
+          ]
+        },
+        {
+          "class": "nose",
+          "confidence": 0.2138,
+          "bbox": [
+            233.55,
+            162.06,
+            272.47,
+            196.99
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4757,
+          "bbox": [
+            341.61,
+            253.91,
+            371.14,
+            279.23
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4645,
+          "bbox": [
+            414.26,
+            253.32,
+            438.23,
+            278.27
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4218,
+          "bbox": [
+            209.42,
+            112.98,
+            238.76,
+            140.68
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.3494,
+          "bbox": [
+            263.08,
+            114.32,
+            283.04,
+            133.71
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.1996,
+          "bbox": [
+            267.49,
+            144.04,
+            288.07,
+            167.36
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.4565,
+          "bbox": [
+            228.61,
+            176.71,
+            459.27,
+            435.34
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.3264,
+          "bbox": [
+            0.2,
+            326.13,
+            319.18,
+            508.39
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.2612,
+          "bbox": [
+            85.41,
+            289.69,
+            135.14,
+            313.48
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3981,
+          "bbox": [
+            300.0,
+            377.55,
+            374.46,
+            493.14
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3421,
+          "bbox": [
+            387.07,
+            378.58,
+            442.8,
+            480.32
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.281,
+          "bbox": [
+            229.78,
+            389.1,
+            320.01,
+            482.34
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.5448,
+          "bbox": [
+            180.49,
+            10.86,
+            235.42,
+            125.56
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.5361,
+          "bbox": [
+            402.45,
+            161.87,
+            459.79,
+            251.56
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.5266,
+          "bbox": [
+            264.87,
+            12.82,
+            316.01,
+            125.15
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.502,
+          "bbox": [
+            313.93,
+            164.91,
+            368.02,
+            252.93
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            124.63,
+            0.0,
+            512.0,
+            353.43
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "elefante_3.jpg",
+      "detected_animal": "elephant",
+      "components": {
+        "head": 1,
+        "eye": 1,
+        "ear": 1,
+        "nose": 0,
+        "beak": 0,
+        "horn": 1,
+        "trunk": 0,
+        "leg": 3,
+        "tail": 1,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 3,
+      "horn_count": 1,
+      "average_confidence": 0.4805,
+      "total_detections": 9,
+      "detections": [
+        {
+          "class": "eye",
+          "confidence": 0.4435,
+          "bbox": [
+            114.05,
+            141.65,
+            143.34,
+            164.93
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.4487,
+          "bbox": [
+            51.59,
+            254.47,
+            399.39,
+            365.69
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.342,
+          "bbox": [
+            303.3,
+            103.44,
+            380.94,
+            409.83
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3335,
+          "bbox": [
+            165.62,
+            253.45,
+            235.87,
+            473.39
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3052,
+          "bbox": [
+            257.55,
+            324.23,
+            328.29,
+            477.93
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.2676,
+          "bbox": [
+            321.07,
+            333.95,
+            361.71,
+            476.13
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.5542,
+          "bbox": [
+            48.69,
+            225.35,
+            136.46,
+            286.87
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.6802,
+          "bbox": [
+            149.49,
+            90.6,
+            244.77,
+            244.03
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            9.47,
+            25.05,
+            283.99,
+            483.9
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "pecora_10.jpg",
+      "detected_animal": "sheep",
+      "components": {
+        "head": 1,
+        "eye": 4,
+        "ear": 4,
+        "nose": 2,
+        "beak": 0,
+        "horn": 4,
+        "trunk": 0,
+        "leg": 1,
+        "tail": 0,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 1,
+      "horn_count": 4,
+      "average_confidence": 0.4074,
+      "total_detections": 17,
+      "detections": [
+        {
+          "class": "nose",
+          "confidence": 0.5865,
+          "bbox": [
+            136.31,
+            176.54,
+            184.95,
+            225.7
+          ]
+        },
+        {
+          "class": "nose",
+          "confidence": 0.3383,
+          "bbox": [
+            325.71,
+            197.95,
+            369.77,
+            240.02
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4125,
+          "bbox": [
+            309.66,
+            140.69,
+            328.57,
+            162.41
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.401,
+          "bbox": [
+            378.31,
+            144.16,
+            400.88,
+            168.76
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.3294,
+          "bbox": [
+            193.4,
+            114.15,
+            210.96,
+            133.75
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.2712,
+          "bbox": [
+            105.13,
+            107.45,
+            125.04,
+            134.19
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.3391,
+          "bbox": [
+            0.03,
+            150.59,
+            262.26,
+            397.08
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.2763,
+          "bbox": [
+            0.0,
+            342.77,
+            21.76,
+            511.87
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.4271,
+          "bbox": [
+            255.71,
+            57.41,
+            333.01,
+            115.39
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.3976,
+          "bbox": [
+            387.94,
+            78.26,
+            473.2,
+            125.96
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.315,
+          "bbox": [
+            49.24,
+            52.17,
+            134.6,
+            92.09
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.3059,
+          "bbox": [
+            181.99,
+            52.53,
+            261.5,
+            96.64
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.4637,
+          "bbox": [
+            399.69,
+            119.65,
+            480.38,
+            165.52
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.4205,
+          "bbox": [
+            252.34,
+            102.2,
+            321.0,
+            144.74
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.3499,
+          "bbox": [
+            208.95,
+            90.41,
+            257.62,
+            129.82
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.3424,
+          "bbox": [
+            48.02,
+            84.37,
+            107.86,
+            123.39
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            0.0,
+            12.59,
+            512.0,
+            288.6
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "cane_9.jpg",
+      "detected_animal": "dog",
+      "components": {
+        "head": 1,
+        "eye": 4,
+        "ear": 4,
+        "nose": 2,
+        "beak": 0,
+        "horn": 0,
+        "trunk": 0,
+        "leg": 5,
+        "tail": 1,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 5,
+      "horn_count": 0,
+      "average_confidence": 0.4282,
+      "total_detections": 18,
+      "detections": [
+        {
+          "class": "nose",
+          "confidence": 0.6179,
+          "bbox": [
+            155.32,
+            107.64,
+            194.74,
+            139.17
+          ]
+        },
+        {
+          "class": "nose",
+          "confidence": 0.444,
+          "bbox": [
+            330.71,
+            182.42,
+            359.37,
+            208.23
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4112,
+          "bbox": [
+            314.89,
+            144.23,
+            335.33,
+            162.37
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4047,
+          "bbox": [
+            357.95,
+            142.6,
+            375.66,
+            160.04
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.385,
+          "bbox": [
+            190.93,
+            81.03,
+            212.07,
+            99.2
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.3838,
+          "bbox": [
+            138.59,
+            80.24,
+            158.05,
+            99.19
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.4244,
+          "bbox": [
+            277.21,
+            132.55,
+            503.28,
+            418.23
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.4313,
+          "bbox": [
+            0.07,
+            356.8,
+            87.74,
+            440.62
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3577,
+          "bbox": [
+            429.47,
+            332.29,
+            503.52,
+            473.8
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3352,
+          "bbox": [
+            291.56,
+            357.2,
+            345.35,
+            500.22
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.2967,
+          "bbox": [
+            92.74,
+            335.39,
+            144.44,
+            502.73
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.2755,
+          "bbox": [
+            199.0,
+            332.91,
+            249.25,
+            490.94
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.2694,
+          "bbox": [
+            378.25,
+            342.97,
+            428.19,
+            504.17
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.4682,
+          "bbox": [
+            282.35,
+            61.2,
+            334.2,
+            145.13
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.453,
+          "bbox": [
+            359.42,
+            56.87,
+            412.48,
+            140.53
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.4058,
+          "bbox": [
+            85.46,
+            57.91,
+            138.42,
+            161.23
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.3933,
+          "bbox": [
+            215.19,
+            65.52,
+            261.54,
+            162.59
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            20.05,
+            26.6,
+            477.89,
+            238.51
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "cane_6.jpg",
+      "detected_animal": "dog",
+      "components": {
+        "head": 1,
+        "eye": 1,
+        "ear": 1,
+        "nose": 1,
+        "beak": 0,
+        "horn": 0,
+        "trunk": 0,
+        "leg": 2,
+        "tail": 0,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 2,
+      "horn_count": 0,
+      "average_confidence": 0.577,
+      "total_detections": 7,
+      "detections": [
+        {
+          "class": "nose",
+          "confidence": 0.7827,
+          "bbox": [
+            344.23,
+            201.73,
+            381.25,
+            240.19
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.5376,
+          "bbox": [
+            263.44,
+            151.39,
+            298.96,
+            176.07
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.4881,
+          "bbox": [
+            0.0,
+            140.38,
+            382.54,
+            461.78
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3004,
+          "bbox": [
+            81.49,
+            440.51,
+            140.46,
+            511.98
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.2972,
+          "bbox": [
+            185.7,
+            411.57,
+            252.38,
+            511.99
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.6831,
+          "bbox": [
+            154.77,
+            37.34,
+            229.72,
+            163.42
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            109.47,
+            0.0,
+            426.55,
+            280.76
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "cane_4.jpg",
+      "detected_animal": "dog",
+      "components": {
+        "head": 1,
+        "eye": 3,
+        "ear": 2,
+        "nose": 1,
+        "beak": 0,
+        "horn": 0,
+        "trunk": 0,
+        "leg": 2,
+        "tail": 0,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 2,
+      "horn_count": 0,
+      "average_confidence": 0.5131,
+      "total_detections": 10,
+      "detections": [
+        {
+          "class": "nose",
+          "confidence": 0.7422,
+          "bbox": [
+            227.97,
+            159.99,
+            290.13,
+            199.26
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4384,
+          "bbox": [
+            303.68,
+            134.78,
+            337.24,
+            164.43
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4038,
+          "bbox": [
+            180.65,
+            137.19,
+            216.2,
+            164.43
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.1629,
+          "bbox": [
+            263.86,
+            168.68,
+            286.27,
+            192.68
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.5346,
+          "bbox": [
+            91.8,
+            120.49,
+            456.53,
+            391.46
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.4024,
+          "bbox": [
+            94.87,
+            296.2,
+            195.39,
+            487.11
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3453,
+          "bbox": [
+            338.42,
+            294.16,
+            439.76,
+            488.75
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.5853,
+          "bbox": [
+            308.73,
+            41.72,
+            399.59,
+            134.21
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.5661,
+          "bbox": [
+            118.11,
+            42.46,
+            213.03,
+            139.36
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            61.81,
+            10.21,
+            455.88,
+            230.76
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "elefante_2.jpg",
+      "detected_animal": "elephant",
+      "components": {
+        "head": 1,
+        "eye": 2,
+        "ear": 1,
+        "nose": 0,
+        "beak": 0,
+        "horn": 1,
+        "trunk": 1,
+        "leg": 2,
+        "tail": 0,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 1
+      },
+      "leg_count": 2,
+      "horn_count": 1,
+      "average_confidence": 0.442,
+      "total_detections": 10,
+      "detections": [
+        {
+          "class": "trunk",
+          "confidence": 0.3344,
+          "bbox": [
+            46.13,
+            178.0,
+            151.65,
+            451.23
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.392,
+          "bbox": [
+            136.29,
+            158.38,
+            166.42,
+            184.88
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.3911,
+          "bbox": [
+            155.96,
+            116.55,
+            207.36,
+            159.78
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.4104,
+          "bbox": [
+            0.0,
+            272.3,
+            511.97,
+            327.94
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.305,
+          "bbox": [
+            232.2,
+            254.95,
+            315.71,
+            433.63
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.257,
+          "bbox": [
+            408.36,
+            195.85,
+            512.0,
+            460.04
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.4022,
+          "bbox": [
+            0.0,
+            265.2,
+            141.15,
+            337.05
+          ]
+        },
+        {
+          "class": "foreign_part",
+          "confidence": 0.301,
+          "bbox": [
+            0.19,
+            74.35,
+            215.72,
+            449.71
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.6771,
+          "bbox": [
+            205.39,
+            102.47,
+            316.63,
+            260.87
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            0.0,
+            32.6,
+            379.96,
+            512.0
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "scoiattolo_10.jpg",
+      "detected_animal": "squirrel",
+      "components": {
+        "head": 1,
+        "eye": 3,
+        "ear": 3,
+        "nose": 2,
+        "beak": 0,
+        "horn": 0,
+        "trunk": 0,
+        "leg": 1,
+        "tail": 0,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 1,
+      "horn_count": 0,
+      "average_confidence": 0.4836,
+      "total_detections": 11,
+      "detections": [
+        {
+          "class": "nose",
+          "confidence": 0.5319,
+          "bbox": [
+            225.92,
+            155.54,
+            242.08,
+            175.04
+          ]
+        },
+        {
+          "class": "nose",
+          "confidence": 0.4235,
+          "bbox": [
+            306.62,
+            149.15,
+            318.38,
+            163.07
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4659,
+          "bbox": [
+            202.16,
+            144.43,
+            216.43,
+            160.7
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4579,
+          "bbox": [
+            324.73,
+            146.17,
+            336.97,
+            157.96
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.3104,
+          "bbox": [
+            240.77,
+            141.3,
+            249.22,
+            157.84
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.3547,
+          "bbox": [
+            185.64,
+            236.19,
+            248.65,
+            250.33
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.2711,
+          "bbox": [
+            216.18,
+            345.49,
+            257.89,
+            366.96
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.5412,
+          "bbox": [
+            185.09,
+            109.33,
+            209.55,
+            147.08
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.5273,
+          "bbox": [
+            221.64,
+            98.69,
+            240.72,
+            136.29
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.4857,
+          "bbox": [
+            337.43,
+            134.69,
+            354.24,
+            161.33
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            108.05,
+            43.69,
+            395.28,
+            428.7
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "gallina_8.jpg",
+      "detected_animal": "chicken",
+      "components": {
+        "head": 1,
+        "eye": 1,
+        "ear": 0,
+        "nose": 0,
+        "beak": 2,
+        "horn": 0,
+        "trunk": 0,
+        "leg": 2,
+        "tail": 1,
+        "wing": 2,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 2,
+      "horn_count": 0,
+      "average_confidence": 0.4047,
+      "total_detections": 10,
+      "detections": [
+        {
+          "class": "wing",
+          "confidence": 0.2872,
+          "bbox": [
+            175.5,
+            240.35,
+            315.45,
+            389.16
+          ]
+        },
+        {
+          "class": "wing",
+          "confidence": 0.2522,
+          "bbox": [
+            281.45,
+            19.8,
+            455.97,
+            424.13
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4884,
+          "bbox": [
+            209.68,
+            106.88,
+            227.09,
+            125.6
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.54,
+          "bbox": [
+            164.15,
+            135.19,
+            459.43,
+            412.33
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.2598,
+          "bbox": [
+            365.56,
+            18.99,
+            453.91,
+            143.09
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.2989,
+          "bbox": [
+            208.79,
+            421.89,
+            283.89,
+            481.98
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.2864,
+          "bbox": [
+            277.66,
+            402.57,
+            315.46,
+            451.54
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            170.51,
+            88.37,
+            250.83,
+            182.02
+          ]
+        },
+        {
+          "class": "beak",
+          "confidence": 0.4273,
+          "bbox": [
+            181.99,
+            120.56,
+            222.49,
+            168.64
+          ]
+        },
+        {
+          "class": "beak",
+          "confidence": 0.2566,
+          "bbox": [
+            213.55,
+            118.23,
+            239.36,
+            142.27
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "elefante_1.jpg",
+      "detected_animal": "elephant",
+      "components": {
+        "head": 1,
+        "eye": 1,
+        "ear": 1,
+        "nose": 0,
+        "beak": 0,
+        "horn": 2,
+        "trunk": 1,
+        "leg": 1,
+        "tail": 1,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 1,
+      "horn_count": 2,
+      "average_confidence": 0.4854,
+      "total_detections": 9,
+      "detections": [
+        {
+          "class": "trunk",
+          "confidence": 0.3138,
+          "bbox": [
+            321.96,
+            242.17,
+            436.76,
+            473.92
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4114,
+          "bbox": [
+            253.37,
+            151.96,
+            304.31,
+            199.65
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.3012,
+          "bbox": [
+            76.82,
+            267.81,
+            166.13,
+            384.14
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.4378,
+          "bbox": [
+            21.37,
+            343.57,
+            72.12,
+            442.11
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3716,
+          "bbox": [
+            234.31,
+            331.56,
+            303.92,
+            506.46
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.4959,
+          "bbox": [
+            426.19,
+            261.28,
+            488.94,
+            402.06
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.4009,
+          "bbox": [
+            258.7,
+            272.35,
+            349.27,
+            410.8
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.6862,
+          "bbox": [
+            3.5,
+            44.88,
+            237.3,
+            315.07
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            0.0,
+            0.0,
+            512.0,
+            483.98
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "elefante_6.jpg",
+      "detected_animal": "elephant",
+      "components": {
+        "head": 1,
+        "eye": 1,
+        "ear": 1,
+        "nose": 0,
+        "beak": 0,
+        "horn": 1,
+        "trunk": 1,
+        "leg": 4,
+        "tail": 1,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 4,
+      "horn_count": 1,
+      "average_confidence": 0.4585,
+      "total_detections": 11,
+      "detections": [
+        {
+          "class": "trunk",
+          "confidence": 0.3251,
+          "bbox": [
+            71.4,
+            220.88,
+            146.43,
+            416.1
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4046,
+          "bbox": [
+            128.45,
+            142.71,
+            174.72,
+            179.64
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.4517,
+          "bbox": [
+            69.06,
+            253.05,
+            447.9,
+            349.97
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.4331,
+          "bbox": [
+            418.5,
+            199.66,
+            441.59,
+            432.22
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3161,
+          "bbox": [
+            186.28,
+            242.6,
+            220.81,
+            443.6
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.316,
+          "bbox": [
+            209.07,
+            257.33,
+            277.99,
+            456.12
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.2981,
+          "bbox": [
+            319.64,
+            251.21,
+            423.72,
+            457.33
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.2799,
+          "bbox": [
+            296.64,
+            324.02,
+            349.98,
+            442.47
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.5584,
+          "bbox": [
+            70.19,
+            222.52,
+            148.82,
+            323.1
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.71,
+          "bbox": [
+            195.17,
+            89.81,
+            299.79,
+            235.45
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            24.27,
+            24.52,
+            345.7,
+            481.59
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "pecora_5.jpg",
+      "detected_animal": "sheep",
+      "components": {
+        "head": 1,
+        "eye": 3,
+        "ear": 3,
+        "nose": 1,
+        "beak": 0,
+        "horn": 2,
+        "trunk": 0,
+        "leg": 4,
+        "tail": 1,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 4,
+      "horn_count": 2,
+      "average_confidence": 0.41,
+      "total_detections": 16,
+      "detections": [
+        {
+          "class": "nose",
+          "confidence": 0.6449,
+          "bbox": [
+            192.95,
+            138.65,
+            216.7,
+            156.19
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.3527,
+          "bbox": [
+            164.74,
+            115.3,
+            180.46,
+            134.01
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.2743,
+          "bbox": [
+            215.43,
+            117.84,
+            230.51,
+            136.89
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.1859,
+          "bbox": [
+            173.59,
+            101.06,
+            189.55,
+            121.31
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.3022,
+          "bbox": [
+            90.56,
+            108.03,
+            401.51,
+            382.24
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.4236,
+          "bbox": [
+            380.83,
+            235.48,
+            401.47,
+            292.47
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3707,
+          "bbox": [
+            175.98,
+            327.02,
+            220.73,
+            469.66
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3706,
+          "bbox": [
+            292.99,
+            338.16,
+            333.99,
+            433.78
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3625,
+          "bbox": [
+            239.38,
+            309.88,
+            282.25,
+            473.37
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.339,
+          "bbox": [
+            352.62,
+            291.11,
+            390.06,
+            453.65
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.4928,
+          "bbox": [
+            90.61,
+            58.96,
+            197.03,
+            157.1
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.236,
+          "bbox": [
+            207.48,
+            62.84,
+            285.09,
+            153.71
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.5003,
+          "bbox": [
+            227.99,
+            93.7,
+            275.2,
+            126.97
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.4071,
+          "bbox": [
+            207.0,
+            62.81,
+            285.39,
+            154.01
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.3474,
+          "bbox": [
+            122.34,
+            90.58,
+            167.97,
+            124.26
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            51.65,
+            39.33,
+            324.35,
+            176.73
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "pecora_3.jpg",
+      "detected_animal": "sheep",
+      "components": {
+        "head": 1,
+        "eye": 4,
+        "ear": 2,
+        "nose": 1,
+        "beak": 0,
+        "horn": 2,
+        "trunk": 0,
+        "leg": 3,
+        "tail": 1,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 3,
+      "horn_count": 2,
+      "average_confidence": 0.3748,
+      "total_detections": 15,
+      "detections": [
+        {
+          "class": "nose",
+          "confidence": 0.2877,
+          "bbox": [
+            313.3,
+            235.25,
+            357.85,
+            282.29
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.2846,
+          "bbox": [
+            273.39,
+            155.31,
+            300.3,
+            176.69
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.1915,
+          "bbox": [
+            219.78,
+            136.88,
+            233.35,
+            151.42
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.16,
+          "bbox": [
+            201.86,
+            136.83,
+            215.42,
+            152.38
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.1509,
+          "bbox": [
+            205.91,
+            125.14,
+            218.31,
+            137.11
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.3723,
+          "bbox": [
+            204.57,
+            200.76,
+            399.1,
+            341.67
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.3787,
+          "bbox": [
+            293.43,
+            226.37,
+            369.39,
+            340.48
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3524,
+          "bbox": [
+            274.81,
+            325.33,
+            318.09,
+            494.33
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3246,
+          "bbox": [
+            220.28,
+            306.5,
+            256.06,
+            473.23
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.2789,
+          "bbox": [
+            336.6,
+            325.57,
+            372.08,
+            480.2
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.5073,
+          "bbox": [
+            248.52,
+            35.05,
+            367.35,
+            117.83
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.4993,
+          "bbox": [
+            73.08,
+            52.99,
+            251.72,
+            157.3
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.4573,
+          "bbox": [
+            175.75,
+            111.6,
+            210.04,
+            149.1
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.4258,
+          "bbox": [
+            281.82,
+            100.03,
+            320.56,
+            132.06
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            14.22,
+            0.0,
+            426.21,
+            401.51
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "mucca_3.jpg",
+      "detected_animal": "cow",
+      "components": {
+        "head": 1,
+        "eye": 1,
+        "ear": 2,
+        "nose": 1,
+        "beak": 0,
+        "horn": 2,
+        "trunk": 0,
+        "leg": 2,
+        "tail": 1,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 2,
+      "horn_count": 2,
+      "average_confidence": 0.448,
+      "total_detections": 11,
+      "detections": [
+        {
+          "class": "nose",
+          "confidence": 0.3825,
+          "bbox": [
+            237.53,
+            319.7,
+            276.25,
+            352.29
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.1811,
+          "bbox": [
+            227.09,
+            315.03,
+            246.09,
+            336.14
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.4642,
+          "bbox": [
+            56.68,
+            208.71,
+            381.51,
+            303.14
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.3959,
+          "bbox": [
+            73.19,
+            110.17,
+            129.51,
+            439.34
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.2995,
+          "bbox": [
+            299.67,
+            111.08,
+            349.79,
+            474.9
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.2777,
+          "bbox": [
+            133.62,
+            298.79,
+            203.49,
+            495.2
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.605,
+          "bbox": [
+            282.71,
+            32.51,
+            339.53,
+            106.18
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.6046,
+          "bbox": [
+            57.59,
+            26.66,
+            115.57,
+            114.05
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.4281,
+          "bbox": [
+            204.02,
+            263.74,
+            250.25,
+            337.23
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.34,
+          "bbox": [
+            295.41,
+            265.39,
+            338.76,
+            329.31
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            1.2,
+            0.0,
+            395.92,
+            417.42
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "scoiattolo_6.jpg",
+      "detected_animal": "squirrel",
+      "components": {
+        "head": 1,
+        "eye": 1,
+        "ear": 1,
+        "nose": 1,
+        "beak": 0,
+        "horn": 0,
+        "trunk": 0,
+        "leg": 1,
+        "tail": 0,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 1,
+      "horn_count": 0,
+      "average_confidence": 0.6284,
+      "total_detections": 6,
+      "detections": [
+        {
+          "class": "nose",
+          "confidence": 0.5898,
+          "bbox": [
+            98.36,
+            130.6,
+            115.05,
+            153.24
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.5905,
+          "bbox": [
+            140.18,
+            110.2,
+            174.64,
+            139.31
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.9,
+          "bbox": [
+            73.94,
+            146.83,
+            488.07,
+            307.34
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.2618,
+          "bbox": [
+            150.45,
+            255.11,
+            219.64,
+            333.97
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.4781,
+          "bbox": [
+            187.3,
+            103.72,
+            220.42,
+            143.67
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            73.94,
+            93.81,
+            244.84,
+            163.15
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "gallina_10.jpg",
+      "detected_animal": "chicken",
+      "components": {
+        "head": 1,
+        "eye": 2,
+        "ear": 0,
+        "nose": 0,
+        "beak": 3,
+        "horn": 0,
+        "trunk": 0,
+        "leg": 0,
+        "tail": 0,
+        "wing": 1,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "horn_count": 0,
+      "average_confidence": 0.4325,
+      "total_detections": 8,
+      "detections": [
+        {
+          "class": "wing",
+          "confidence": 0.3163,
+          "bbox": [
+            0.0,
+            121.44,
+            50.97,
+            272.17
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4282,
+          "bbox": [
+            135.8,
+            121.06,
+            165.9,
+            145.5
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4068,
+          "bbox": [
+            367.15,
+            104.54,
+            390.26,
+            124.27
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.4008,
+          "bbox": [
+            0.0,
+            178.29,
+            223.41,
+            240.02
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            72.55,
+            67.06,
+            449.32,
+            289.52
+          ]
+        },
+        {
+          "class": "beak",
+          "confidence": 0.4465,
+          "bbox": [
+            177.91,
+            137.73,
+            220.84,
+            162.16
+          ]
+        },
+        {
+          "class": "beak",
+          "confidence": 0.3108,
+          "bbox": [
+            334.17,
+            118.96,
+            377.19,
+            156.85
+          ]
+        },
+        {
+          "class": "beak",
+          "confidence": 0.2007,
+          "bbox": [
+            165.74,
+            137.27,
+            220.92,
+            257.74
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "elefante_9.jpg",
+      "detected_animal": "elephant",
+      "components": {
+        "head": 1,
+        "eye": 5,
+        "ear": 4,
+        "nose": 0,
+        "beak": 0,
+        "horn": 3,
+        "trunk": 0,
+        "leg": 4,
+        "tail": 1,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 4,
+      "horn_count": 3,
+      "average_confidence": 0.3662,
+      "total_detections": 19,
+      "detections": [
+        {
+          "class": "eye",
+          "confidence": 0.4004,
+          "bbox": [
+            191.72,
+            121.76,
+            210.31,
+            144.08
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.3542,
+          "bbox": [
+            387.12,
+            205.5,
+            400.33,
+            220.82
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.2023,
+          "bbox": [
+            392.92,
+            236.04,
+            405.02,
+            252.21
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.185,
+          "bbox": [
+            416.08,
+            235.83,
+            425.6,
+            246.91
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.1716,
+          "bbox": [
+            333.29,
+            234.11,
+            349.02,
+            255.27
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.372,
+          "bbox": [
+            57.77,
+            256.0,
+            333.47,
+            351.57
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.4141,
+          "bbox": [
+            254.33,
+            328.75,
+            286.81,
+            375.08
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3715,
+          "bbox": [
+            307.56,
+            274.89,
+            355.17,
+            452.38
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3497,
+          "bbox": [
+            219.41,
+            255.33,
+            284.45,
+            451.1
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3134,
+          "bbox": [
+            119.31,
+            248.14,
+            168.68,
+            454.99
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3105,
+          "bbox": [
+            170.21,
+            258.08,
+            228.67,
+            454.27
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.4104,
+          "bbox": [
+            337.2,
+            249.4,
+            396.38,
+            450.2
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.3331,
+          "bbox": [
+            129.6,
+            119.38,
+            191.84,
+            394.14
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.292,
+          "bbox": [
+            114.29,
+            198.61,
+            135.7,
+            268.73
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.4526,
+          "bbox": [
+            57.19,
+            63.21,
+            152.96,
+            206.35
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.4367,
+          "bbox": [
+            192.53,
+            63.97,
+            298.71,
+            212.57
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.3634,
+          "bbox": [
+            263.57,
+            172.96,
+            353.49,
+            292.77
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.2749,
+          "bbox": [
+            393.86,
+            188.61,
+            428.5,
+            259.5
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            0.0,
+            0.0,
+            502.76,
+            512.0
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "gatto_6.jpg",
+      "detected_animal": "cat",
+      "components": {
+        "head": 1,
+        "eye": 2,
+        "ear": 1,
+        "nose": 1,
+        "beak": 0,
+        "horn": 0,
+        "trunk": 0,
+        "leg": 2,
+        "tail": 1,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 2,
+      "horn_count": 0,
+      "average_confidence": 0.5081,
+      "total_detections": 9,
+      "detections": [
+        {
+          "class": "nose",
+          "confidence": 0.6859,
+          "bbox": [
+            393.86,
+            131.13,
+            407.32,
+            147.52
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.392,
+          "bbox": [
+            371.08,
+            117.21,
+            388.09,
+            136.1
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.2967,
+          "bbox": [
+            352.68,
+            120.61,
+            368.99,
+            132.92
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.5059,
+          "bbox": [
+            57.65,
+            105.39,
+            408.49,
+            322.55
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.4273,
+          "bbox": [
+            56.98,
+            277.18,
+            166.8,
+            388.14
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.4142,
+          "bbox": [
+            260.76,
+            261.08,
+            352.9,
+            384.01
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3194,
+          "bbox": [
+            178.71,
+            301.08,
+            267.07,
+            378.79
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.582,
+          "bbox": [
+            340.57,
+            63.27,
+            379.77,
+            113.46
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            327.22,
+            46.42,
+            420.68,
+            164.37
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "gatto_2.jpg",
+      "detected_animal": "cat",
+      "components": {
+        "head": 1,
+        "eye": 2,
+        "ear": 2,
+        "nose": 1,
+        "beak": 0,
+        "horn": 0,
+        "trunk": 0,
+        "leg": 3,
+        "tail": 1,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 1
+      },
+      "leg_count": 3,
+      "horn_count": 0,
+      "average_confidence": 0.4458,
+      "total_detections": 12,
+      "detections": [
+        {
+          "class": "nose",
+          "confidence": 0.669,
+          "bbox": [
+            414.91,
+            135.57,
+            430.87,
+            151.8
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4235,
+          "bbox": [
+            371.84,
+            110.64,
+            400.44,
+            129.12
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.2577,
+          "bbox": [
+            403.91,
+            91.89,
+            425.35,
+            116.66
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.5165,
+          "bbox": [
+            0.32,
+            88.99,
+            434.74,
+            401.4
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.4206,
+          "bbox": [
+            0.08,
+            307.97,
+            91.42,
+            484.09
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3291,
+          "bbox": [
+            81.68,
+            321.22,
+            168.37,
+            454.1
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3101,
+          "bbox": [
+            172.57,
+            376.12,
+            261.21,
+            441.1
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.2732,
+          "bbox": [
+            234.32,
+            314.61,
+            376.46,
+            488.19
+          ]
+        },
+        {
+          "class": "foreign_part",
+          "confidence": 0.2561,
+          "bbox": [
+            360.32,
+            79.95,
+            430.5,
+            179.53
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.5224,
+          "bbox": [
+            328.65,
+            45.1,
+            375.54,
+            110.41
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.4211,
+          "bbox": [
+            372.97,
+            26.18,
+            421.8,
+            82.28
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            308.21,
+            1.05,
+            451.31,
+            176.92
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "mucca_5.jpg",
+      "detected_animal": "cow",
+      "components": {
+        "head": 1,
+        "eye": 2,
+        "ear": 2,
+        "nose": 1,
+        "beak": 0,
+        "horn": 2,
+        "trunk": 0,
+        "leg": 2,
+        "tail": 0,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 2,
+      "horn_count": 2,
+      "average_confidence": 0.5912,
+      "total_detections": 11,
+      "detections": [
+        {
+          "class": "nose",
+          "confidence": 0.7391,
+          "bbox": [
+            296.29,
+            260.29,
+            380.58,
+            322.29
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4755,
+          "bbox": [
+            219.44,
+            148.09,
+            272.33,
+            194.18
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4684,
+          "bbox": [
+            344.41,
+            153.76,
+            374.59,
+            191.99
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.9,
+          "bbox": [
+            7.46,
+            347.69,
+            502.49,
+            397.05
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3285,
+          "bbox": [
+            7.46,
+            350.86,
+            109.95,
+            511.92
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3156,
+          "bbox": [
+            280.55,
+            347.79,
+            384.58,
+            512.0
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.6319,
+          "bbox": [
+            94.41,
+            15.38,
+            178.45,
+            108.17
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.6019,
+          "bbox": [
+            347.95,
+            2.15,
+            416.99,
+            106.94
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.553,
+          "bbox": [
+            352.69,
+            92.05,
+            433.93,
+            152.35
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.539,
+          "bbox": [
+            91.15,
+            96.06,
+            193.5,
+            161.9
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            22.59,
+            0.0,
+            502.49,
+            386.32
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "mucca_10.jpg",
+      "detected_animal": "cow",
+      "components": {
+        "head": 1,
+        "eye": 5,
+        "ear": 4,
+        "nose": 2,
+        "beak": 0,
+        "horn": 5,
+        "trunk": 0,
+        "leg": 3,
+        "tail": 1,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 3,
+      "horn_count": 5,
+      "average_confidence": 0.428,
+      "total_detections": 22,
+      "detections": [
+        {
+          "class": "nose",
+          "confidence": 0.5387,
+          "bbox": [
+            365.5,
+            325.36,
+            397.51,
+            346.24
+          ]
+        },
+        {
+          "class": "nose",
+          "confidence": 0.521,
+          "bbox": [
+            214.19,
+            262.36,
+            250.52,
+            284.44
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4434,
+          "bbox": [
+            252.4,
+            208.55,
+            270.03,
+            228.44
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.3649,
+          "bbox": [
+            200.67,
+            215.37,
+            221.01,
+            231.0
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.284,
+          "bbox": [
+            380.93,
+            274.33,
+            399.27,
+            293.57
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.2717,
+          "bbox": [
+            403.0,
+            286.35,
+            415.23,
+            300.42
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.2527,
+          "bbox": [
+            215.33,
+            217.94,
+            232.92,
+            237.49
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.4261,
+          "bbox": [
+            266.64,
+            209.84,
+            504.49,
+            420.6
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.3713,
+          "bbox": [
+            0.12,
+            196.4,
+            191.59,
+            276.23
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3322,
+          "bbox": [
+            136.68,
+            346.38,
+            163.52,
+            444.06
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3052,
+          "bbox": [
+            166.31,
+            351.81,
+            201.21,
+            473.13
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.269,
+          "bbox": [
+            290.75,
+            394.26,
+            333.16,
+            494.83
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.4941,
+          "bbox": [
+            270.24,
+            74.07,
+            428.88,
+            189.5
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.4705,
+          "bbox": [
+            414.58,
+            191.28,
+            505.79,
+            262.77
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.4517,
+          "bbox": [
+            30.87,
+            81.8,
+            196.16,
+            190.83
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.4419,
+          "bbox": [
+            0.1,
+            197.23,
+            185.29,
+            275.92
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.37,
+          "bbox": [
+            269.67,
+            184.25,
+            340.4,
+            263.24
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.496,
+          "bbox": [
+            408.41,
+            260.49,
+            455.82,
+            297.76
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.4721,
+          "bbox": [
+            299.74,
+            260.06,
+            344.32,
+            296.41
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.455,
+          "bbox": [
+            147.26,
+            187.44,
+            199.02,
+            224.69
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.4353,
+          "bbox": [
+            269.66,
+            184.22,
+            316.86,
+            222.19
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            0.0,
+            18.86,
+            512.0,
+            400.81
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "elefante_7.jpg",
+      "detected_animal": "elephant",
+      "components": {
+        "head": 1,
+        "eye": 2,
+        "ear": 2,
+        "nose": 0,
+        "beak": 0,
+        "horn": 2,
+        "trunk": 1,
+        "leg": 2,
+        "tail": 0,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 2,
+      "horn_count": 2,
+      "average_confidence": 0.4675,
+      "total_detections": 11,
+      "detections": [
+        {
+          "class": "trunk",
+          "confidence": 0.2564,
+          "bbox": [
+            196.88,
+            136.62,
+            321.83,
+            474.74
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.3739,
+          "bbox": [
+            331.23,
+            148.99,
+            357.19,
+            184.35
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.3679,
+          "bbox": [
+            160.13,
+            147.25,
+            203.16,
+            198.88
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.9,
+          "bbox": [
+            0.0,
+            431.23,
+            512.0,
+            482.43
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3329,
+          "bbox": [
+            153.34,
+            328.6,
+            247.96,
+            511.9
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3212,
+          "bbox": [
+            283.71,
+            326.85,
+            378.23,
+            511.99
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.3695,
+          "bbox": [
+            72.26,
+            282.88,
+            204.19,
+            406.69
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.3515,
+          "bbox": [
+            318.86,
+            281.41,
+            427.0,
+            402.43
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.4617,
+          "bbox": [
+            319.52,
+            45.29,
+            512.0,
+            324.5
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.457,
+          "bbox": [
+            0.0,
+            44.41,
+            206.84,
+            320.71
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            0.0,
+            0.0,
+            512.0,
+            479.14
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "scoiattolo_9.jpg",
+      "detected_animal": "squirrel",
+      "components": {
+        "head": 1,
+        "eye": 1,
+        "ear": 1,
+        "nose": 3,
+        "beak": 0,
+        "horn": 0,
+        "trunk": 0,
+        "leg": 1,
+        "tail": 0,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 1
+      },
+      "leg_count": 1,
+      "horn_count": 0,
+      "average_confidence": 0.4281,
+      "total_detections": 9,
+      "detections": [
+        {
+          "class": "nose",
+          "confidence": 0.4819,
+          "bbox": [
+            220.99,
+            110.72,
+            239.77,
+            136.75
+          ]
+        },
+        {
+          "class": "nose",
+          "confidence": 0.2109,
+          "bbox": [
+            322.25,
+            93.15,
+            337.52,
+            116.86
+          ]
+        },
+        {
+          "class": "nose",
+          "confidence": 0.1666,
+          "bbox": [
+            335.43,
+            125.67,
+            362.44,
+            149.71
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.5176,
+          "bbox": [
+            196.29,
+            104.22,
+            213.6,
+            122.2
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.3635,
+          "bbox": [
+            34.49,
+            105.3,
+            240.69,
+            148.12
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3829,
+          "bbox": [
+            103.59,
+            146.21,
+            238.72,
+            190.15
+          ]
+        },
+        {
+          "class": "foreign_part",
+          "confidence": 0.3168,
+          "bbox": [
+            164.82,
+            0.01,
+            511.8,
+            512.0
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.4632,
+          "bbox": [
+            168.7,
+            60.9,
+            207.98,
+            105.13
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            129.95,
+            43.14,
+            401.19,
+            167.47
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "pecora_6.jpg",
+      "detected_animal": "sheep",
+      "components": {
+        "head": 1,
+        "eye": 1,
+        "ear": 1,
+        "nose": 1,
+        "beak": 0,
+        "horn": 2,
+        "trunk": 0,
+        "leg": 3,
+        "tail": 2,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 1
+      },
+      "leg_count": 3,
+      "horn_count": 2,
+      "average_confidence": 0.4284,
+      "total_detections": 13,
+      "detections": [
+        {
+          "class": "nose",
+          "confidence": 0.598,
+          "bbox": [
+            308.58,
+            186.86,
+            326.26,
+            207.49
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4488,
+          "bbox": [
+            263.31,
+            149.67,
+            289.46,
+            169.45
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.3721,
+          "bbox": [
+            19.14,
+            137.33,
+            330.28,
+            471.66
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.4195,
+          "bbox": [
+            19.43,
+            421.44,
+            65.81,
+            504.96
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.255,
+          "bbox": [
+            19.07,
+            358.34,
+            70.04,
+            505.48
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3614,
+          "bbox": [
+            62.21,
+            446.5,
+            95.84,
+            511.8
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3316,
+          "bbox": [
+            212.66,
+            431.45,
+            244.2,
+            511.73
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.314,
+          "bbox": [
+            187.59,
+            433.36,
+            213.77,
+            511.86
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.4453,
+          "bbox": [
+            129.63,
+            61.15,
+            256.21,
+            202.12
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.2448,
+          "bbox": [
+            252.73,
+            101.63,
+            329.68,
+            183.14
+          ]
+        },
+        {
+          "class": "foreign_part",
+          "confidence": 0.2888,
+          "bbox": [
+            249.26,
+            131.61,
+            325.58,
+            217.83
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.5401,
+          "bbox": [
+            222.43,
+            123.74,
+            255.97,
+            159.47
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            89.62,
+            30.67,
+            369.69,
+            243.99
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "gatto_10.jpg",
+      "detected_animal": "cat",
+      "components": {
+        "head": 1,
+        "eye": 4,
+        "ear": 4,
+        "nose": 2,
+        "beak": 0,
+        "horn": 0,
+        "trunk": 0,
+        "leg": 2,
+        "tail": 1,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 2,
+      "horn_count": 0,
+      "average_confidence": 0.4401,
+      "total_detections": 15,
+      "detections": [
+        {
+          "class": "nose",
+          "confidence": 0.5853,
+          "bbox": [
+            167.01,
+            134.28,
+            188.57,
+            151.62
+          ]
+        },
+        {
+          "class": "nose",
+          "confidence": 0.4797,
+          "bbox": [
+            357.37,
+            145.83,
+            378.97,
+            167.83
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.3767,
+          "bbox": [
+            185.68,
+            115.62,
+            210.28,
+            138.21
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.3741,
+          "bbox": [
+            139.26,
+            116.15,
+            167.26,
+            140.41
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.3741,
+          "bbox": [
+            375.09,
+            134.2,
+            394.07,
+            153.43
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.3717,
+          "bbox": [
+            343.99,
+            130.63,
+            360.04,
+            147.66
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.4122,
+          "bbox": [
+            273.26,
+            112.59,
+            429.93,
+            332.58
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.3951,
+          "bbox": [
+            21.9,
+            346.17,
+            123.97,
+            396.57
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.2875,
+          "bbox": [
+            104.97,
+            280.36,
+            180.87,
+            390.79
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.2733,
+          "bbox": [
+            180.87,
+            274.38,
+            248.74,
+            388.27
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.5113,
+          "bbox": [
+            304.45,
+            76.36,
+            351.11,
+            137.03
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.4199,
+          "bbox": [
+            381.46,
+            80.0,
+            430.27,
+            146.63
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.4117,
+          "bbox": [
+            106.61,
+            57.57,
+            151.41,
+            110.53
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.3789,
+          "bbox": [
+            191.87,
+            57.34,
+            235.25,
+            88.27
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            41.88,
+            35.24,
+            495.0,
+            189.93
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "mucca_1.jpg",
+      "detected_animal": "cow",
+      "components": {
+        "head": 1,
+        "eye": 2,
+        "ear": 2,
+        "nose": 1,
+        "beak": 0,
+        "horn": 2,
+        "trunk": 0,
+        "leg": 4,
+        "tail": 1,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 4,
+      "horn_count": 2,
+      "average_confidence": 0.4566,
+      "total_detections": 14,
+      "detections": [
+        {
+          "class": "nose",
+          "confidence": 0.4466,
+          "bbox": [
+            201.26,
+            264.84,
+            257.38,
+            308.19
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.457,
+          "bbox": [
+            262.24,
+            195.94,
+            288.82,
+            219.69
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.2006,
+          "bbox": [
+            209.22,
+            196.62,
+            227.19,
+            226.97
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.491,
+          "bbox": [
+            32.24,
+            181.15,
+            486.33,
+            407.76
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.4086,
+          "bbox": [
+            439.02,
+            340.09,
+            468.18,
+            421.96
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3627,
+          "bbox": [
+            337.04,
+            360.32,
+            388.91,
+            460.99
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3227,
+          "bbox": [
+            408.32,
+            324.05,
+            441.89,
+            460.86
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3206,
+          "bbox": [
+            293.32,
+            353.83,
+            341.65,
+            497.34
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3038,
+          "bbox": [
+            232.69,
+            318.19,
+            277.94,
+            484.53
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.5371,
+          "bbox": [
+            32.17,
+            59.58,
+            225.09,
+            179.24
+          ]
+        },
+        {
+          "class": "horn",
+          "confidence": 0.536,
+          "bbox": [
+            292.99,
+            37.66,
+            486.1,
+            183.82
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.5324,
+          "bbox": [
+            294.27,
+            170.87,
+            359.9,
+            212.07
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.5238,
+          "bbox": [
+            168.39,
+            171.1,
+            218.79,
+            207.42
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            0.0,
+            0.0,
+            512.0,
+            362.3
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "cane_7.jpg",
+      "detected_animal": "dog",
+      "components": {
+        "head": 1,
+        "eye": 2,
+        "ear": 2,
+        "nose": 1,
+        "beak": 0,
+        "horn": 0,
+        "trunk": 0,
+        "leg": 2,
+        "tail": 1,
+        "wing": 0,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 2,
+      "horn_count": 0,
+      "average_confidence": 0.5257,
+      "total_detections": 10,
+      "detections": [
+        {
+          "class": "nose",
+          "confidence": 0.7523,
+          "bbox": [
+            236.79,
+            174.11,
+            281.67,
+            211.86
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.5031,
+          "bbox": [
+            279.76,
+            107.88,
+            310.87,
+            136.51
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.4974,
+          "bbox": [
+            200.94,
+            113.06,
+            236.34,
+            143.39
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.5204,
+          "bbox": [
+            126.04,
+            151.65,
+            386.81,
+            371.95
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.3287,
+          "bbox": [
+            162.43,
+            229.82,
+            193.13,
+            357.01
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.4398,
+          "bbox": [
+            171.86,
+            318.68,
+            237.59,
+            430.85
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.4182,
+          "bbox": [
+            283.61,
+            312.33,
+            349.51,
+            431.56
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.4622,
+          "bbox": [
+            300.72,
+            85.93,
+            386.03,
+            211.02
+          ]
+        },
+        {
+          "class": "ear",
+          "confidence": 0.3851,
+          "bbox": [
+            126.04,
+            86.34,
+            214.52,
+            217.38
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            74.04,
+            59.64,
+            438.03,
+            243.67
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "gallina_5.jpg",
+      "detected_animal": "chicken",
+      "components": {
+        "head": 1,
+        "eye": 1,
+        "ear": 0,
+        "nose": 0,
+        "beak": 2,
+        "horn": 0,
+        "trunk": 0,
+        "leg": 2,
+        "tail": 1,
+        "wing": 1,
+        "torso": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 2,
+      "horn_count": 0,
+      "average_confidence": 0.4873,
+      "total_detections": 9,
+      "detections": [
+        {
+          "class": "wing",
+          "confidence": 0.3058,
+          "bbox": [
+            311.2,
+            203.56,
+            443.63,
+            388.1
+          ]
+        },
+        {
+          "class": "eye",
+          "confidence": 0.5143,
+          "bbox": [
+            218.52,
+            208.64,
+            241.19,
+            228.61
+          ]
+        },
+        {
+          "class": "torso",
+          "confidence": 0.9,
+          "bbox": [
+            156.62,
+            245.38,
+            352.2,
+            483.34
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.3696,
+          "bbox": [
+            344.36,
+            380.8,
+            444.27,
+            476.28
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.3546,
+          "bbox": [
+            188.85,
+            471.42,
+            272.52,
+            511.92
+          ]
+        },
+        {
+          "class": "leg",
+          "confidence": 0.323,
+          "bbox": [
+            296.18,
+            471.07,
+            352.2,
+            511.96
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.95,
+          "bbox": [
+            156.62,
+            166.95,
+            271.69,
+            272.64
+          ]
+        },
+        {
+          "class": "beak",
+          "confidence": 0.4985,
+          "bbox": [
+            175.53,
+            218.09,
+            212.44,
+            244.63
+          ]
+        },
+        {
+          "class": "beak",
+          "confidence": 0.1703,
+          "bbox": [
+            176.01,
+            199.21,
+            251.9,
+            255.51
+          ]
+        }
+      ]
+    }
+  ]
+}

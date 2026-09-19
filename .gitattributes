@@ -1,0 +1,33 @@
+# Normalise line endings. Committed as LF, checked out native on Windows.
+* text=auto
+
+# Shell scripts must keep LF even when checked out on Windows, or bash and
+# the `#!/usr/bin/env bash` shebang fail with "bad interpreter: \r".
+*.sh text eol=lf
+
+# Python, config and data formats: LF in the working tree everywhere, so a
+# run on Windows and a run on Linux produce byte-identical outputs.
+*.py    text eol=lf
+*.yaml  text eol=lf
+*.yml   text eol=lf
+*.json  text eol=lf
+*.csv   text eol=lf
+*.txt   text eol=lf
+*.md    text eol=lf
+
+# Windows helpers, if any are ever added, need CRLF.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Never touch binaries.
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.pdf   binary
+*.docx  binary
+*.pth   binary
+*.pt    binary
+*.safetensors binary
+
+# Jupyter notebooks: diff as text, but keep them out of merge conflicts.
+*.ipynb text eol=lf -merge

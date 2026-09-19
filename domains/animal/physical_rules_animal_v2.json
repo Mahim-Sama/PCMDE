@@ -1,0 +1,497 @@
+{
+  "object_type": "animal",
+  "version": "2.0",
+  "_meta": {
+    "description": "Physical validation rules for mammals and birds commonly photographed in everyday scenes. Self-describing: each rule carries its own predicate, parameters, and severity. No interpreter vocabulary file is required.",
+    "generated_by": "handcrafted; mirrors the structure the generic LLM rule-generation prompt would produce"
+  },
+  "subtypes": {
+    "dog": {
+      "display_name": "Dog",
+      "filename_prefix_patterns": [
+        "cane"
+      ],
+      "caption_regex_patterns": [
+        "\\b(dog|puppy|canine)\\b"
+      ]
+    },
+    "cat": {
+      "display_name": "Cat",
+      "filename_prefix_patterns": [
+        "gatto"
+      ],
+      "caption_regex_patterns": [
+        "\\b(cat|kitten|feline)\\b"
+      ]
+    },
+    "horse": {
+      "display_name": "Horse",
+      "filename_prefix_patterns": [
+        "cavallo"
+      ],
+      "caption_regex_patterns": [
+        "\\b(horse|stallion|mare|equine)\\b"
+      ]
+    },
+    "sheep": {
+      "display_name": "Sheep",
+      "filename_prefix_patterns": [
+        "pecora"
+      ],
+      "caption_regex_patterns": [
+        "\\b(sheep|lamb|ewe)\\b"
+      ]
+    },
+    "cow": {
+      "display_name": "Cow",
+      "filename_prefix_patterns": [
+        "mucca"
+      ],
+      "caption_regex_patterns": [
+        "\\b(cow|cattle|bovine)\\b"
+      ]
+    },
+    "squirrel": {
+      "display_name": "Squirrel",
+      "filename_prefix_patterns": [
+        "scoiattolo"
+      ],
+      "caption_regex_patterns": [
+        "\\b(squirrel)\\b"
+      ]
+    },
+    "elephant": {
+      "display_name": "Elephant",
+      "filename_prefix_patterns": [
+        "elefante"
+      ],
+      "caption_regex_patterns": [
+        "\\b(elephant)\\b"
+      ]
+    },
+    "chicken": {
+      "display_name": "Chicken",
+      "filename_prefix_patterns": [
+        "gallina"
+      ],
+      "caption_regex_patterns": [
+        "\\b(chicken|hen|rooster|fowl)\\b"
+      ]
+    }
+  },
+  "fallback_subtype": {
+    "subtype_id": "generic_animal",
+    "display_name": "Generic Animal"
+  },
+  "subtype_notes": {
+    "chicken": "Chickens are bipedal (2 legs), have 2 wings, and a beak. Wings attach laterally or mid-dorsally to the torso.",
+    "dog": "Dogs are quadrupedal (4 legs), no wings, no beak. Tail length varies by breed.",
+    "cat": "Cats are quadrupedal (4 legs), no wings, no beak. Tail typically long and flexible.",
+    "horse": "Horses are quadrupedal (4 legs), no wings, no beak. Tail of hair hanging from posterior.",
+    "sheep": "Sheep are quadrupedal (4 legs), no wings, no beak. Short tail, often barely visible.",
+    "cow": "Cows are quadrupedal (4 legs), no wings, no beak. Tail hangs from posterior.",
+    "squirrel": "Squirrels are quadrupedal (4 legs), no wings, no beak. Bushy tail typically same length as body.",
+    "elephant": "Elephants are quadrupedal (4 legs), no wings, no beak. Head includes trunk extension; legs are heavy and columnar.",
+    "generic_animal": "Unknown animal type. Apply only universal physical constraints."
+  },
+  "scoring_weights": {
+    "presence": 0.3,
+    "spatial": 0.35,
+    "relational": 0.2,
+    "subtype": 0.15
+  },
+  "pass_threshold": 60,
+  "rules": [
+    {
+      "rule_id": "no_foreign_parts",
+      "rule_type": "count_constraint",
+      "subject_component": "foreign_part",
+      "parameters": {
+        "exact_count": 0
+      },
+      "severity": "critical",
+      "description": "No anatomical features outside the species' canonical part inventory."
+    },
+    {
+      "rule_type": "critical_presence",
+      "parameters": {
+        "required_components": [
+          "torso",
+          "head"
+        ]
+      },
+      "severity": "critical",
+      "description": "Every animal must have at least a torso and a head visible."
+    },
+    {
+      "rule_type": "count_constraint",
+      "subject_component": "torso",
+      "parameters": {
+        "exact_count": 1
+      },
+      "severity": "critical",
+      "description": "An animal has exactly one torso."
+    },
+    {
+      "rule_type": "count_constraint",
+      "subject_component": "head",
+      "parameters": {
+        "exact_count": 1
+      },
+      "severity": "critical",
+      "description": "An animal has exactly one head."
+    },
+    {
+      "rule_type": "count_constraint",
+      "subject_component": "leg",
+      "parameters": {
+        "count_by_subtype": {
+          "dog": 4,
+          "cat": 4,
+          "horse": 4,
+          "sheep": 4,
+          "cow": 4,
+          "squirrel": 4,
+          "elephant": 4,
+          "chicken": 2
+        }
+      },
+      "severity": "major",
+      "description": "Leg count depends on species: birds are bipedal, mammals are quadrupedal."
+    },
+    {
+      "rule_type": "count_constraint",
+      "subject_component": "eye",
+      "parameters": {
+        "count_range": {
+          "min": 1,
+          "max": 2
+        }
+      },
+      "severity": "minor",
+      "description": "One eye visible in profile view, two in frontal view."
+    },
+    {
+      "rule_type": "count_constraint",
+      "subject_component": "tail",
+      "parameters": {
+        "count_range": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "severity": "minor",
+      "description": "Tail may be occluded or minimal in some views."
+    },
+    {
+      "rule_type": "subtype_restriction",
+      "subject_component": "wing",
+      "parameters": {
+        "allowed_for_subtypes": [
+          "chicken"
+        ]
+      },
+      "severity": "major",
+      "description": "Wings are valid only for birds."
+    },
+    {
+      "rule_type": "subtype_restriction",
+      "subject_component": "beak",
+      "parameters": {
+        "allowed_for_subtypes": [
+          "chicken"
+        ]
+      },
+      "severity": "major",
+      "description": "Beak is valid only for birds."
+    },
+    {
+      "rule_type": "count_constraint",
+      "subject_component": "wing",
+      "parameters": {
+        "count_range": {
+          "min": 0,
+          "max": 2
+        }
+      },
+      "applies_to_subtypes": [
+        "chicken"
+      ],
+      "severity": "major",
+      "description": "Chickens have up to two wings (may be occluded/closed)"
+    },
+    {
+      "rule_type": "count_constraint",
+      "subject_component": "beak",
+      "parameters": {
+        "exact_count": 1
+      },
+      "applies_to_subtypes": [
+        "chicken"
+      ],
+      "severity": "major",
+      "description": "Chickens have one beak."
+    },
+    {
+      "rule_type": "containment_constraint",
+      "subject_component": "eye",
+      "reference_component": "head",
+      "parameters": {
+        "min_containment_ratio": 0.7
+      },
+      "severity": "major",
+      "description": "Eyes must lie within the head region."
+    },
+    {
+      "rule_type": "containment_constraint",
+      "subject_component": "beak",
+      "reference_component": "head",
+      "parameters": {
+        "min_containment_ratio": 0.6
+      },
+      "applies_to_subtypes": [
+        "chicken"
+      ],
+      "severity": "major",
+      "description": "Beak must lie within the head region."
+    },
+    {
+      "rule_type": "forbid_overlap",
+      "subject_component": "leg",
+      "reference_component": "head",
+      "parameters": {
+        "max_overlap_ratio": 0.5,
+        "min_reference_overlap": 0.15
+      },
+      "severity": "major",
+      "description": "Legs must not be on the head. Uses a bilateral overlap test: a leg's bbox falling inside a much-larger head bbox does not fire unless the intersection also occupies a meaningful fraction of the head's area. This prevents false positives when the head bbox is inflated by attached anatomy (e.g. a hanging trunk, snout, or mane) that extends down past the body."
+    },
+    {
+      "rule_type": "forbid_overlap",
+      "subject_component": "wing",
+      "reference_component": "head",
+      "parameters": {
+        "max_overlap_ratio": 0.3
+      },
+      "applies_to_subtypes": [
+        "chicken"
+      ],
+      "severity": "critical",
+      "description": "Wings must not overlap the head."
+    },
+    {
+      "rule_type": "forbid_overlap",
+      "subject_component": "beak",
+      "reference_component": "torso",
+      "parameters": {
+        "max_overlap_ratio": 0.45
+      },
+      "applies_to_subtypes": [
+        "chicken"
+      ],
+      "severity": "major",
+      "description": "Beak must be on the head, not the torso."
+    },
+    {
+      "rule_type": "forbid_overlap",
+      "subject_component": "tail",
+      "reference_component": "eye",
+      "parameters": {
+        "max_overlap_ratio": 0.3
+      },
+      "severity": "critical",
+      "description": "Tail must not overlap an eye."
+    },
+    {
+      "rule_type": "attachment_constraint",
+      "subject_component": "leg",
+      "reference_component": "torso",
+      "parameters": {
+        "margin_fraction": 0.25
+      },
+      "severity": "major",
+      "description": "Legs must be attached to the torso."
+    },
+    {
+      "rule_type": "relative_position_constraint",
+      "subject_component": "head",
+      "parameters": {
+        "axis": "x",
+        "position": "either",
+        "tolerance_fraction": 0.30
+      },
+      "severity": "major",
+      "description": "Head is at one of the anterior ends of the body along the image x axis (either leftmost or rightmost depending on which way the animal faces)."
+    },
+    {
+      "rule_type": "relative_position_constraint",
+      "subject_component": "tail",
+      "reference_component": "head",
+      "parameters": {
+        "axis": "x",
+        "direction": "opposite",
+        "tolerance_fraction": 0.16
+      },
+      "severity": "major",
+      "description": "Tail is on the opposite end of the body from the head."
+    },
+    {
+      "rule_type": "relative_position_constraint",
+      "subject_component": "leg",
+      "reference_component": "torso",
+      "parameters": {
+        "axis": "y",
+        "direction": "below_centroid"
+      },
+      "severity": "major",
+      "description": "Legs attach below the torso centroid."
+    },
+    {
+      "rule_type": "relative_position_constraint",
+      "subject_component": "beak",
+      "reference_component": "head",
+      "parameters": {
+        "axis": "x",
+        "direction": "left_of_centroid",
+        "tolerance_fraction": 0.06
+      },
+      "applies_to_subtypes": [
+        "chicken"
+      ],
+      "severity": "major",
+      "description": "Beak projects forward from the head."
+    },
+    {
+      "rule_type": "size_ratio_constraint",
+      "subject_component": "head",
+      "reference_component": "torso",
+      "parameters": {
+        "dimension": "width",
+        "min_ratio": 0.15,
+        "max_ratio": 0.5,
+        "bounds_by_subtype": {
+          "elephant": {
+            "min_ratio": 0.2,
+            "max_ratio": 0.95
+          },
+          "cow": {
+            "min_ratio": 0.15,
+            "max_ratio": 0.7
+          },
+          "horse": {
+            "min_ratio": 0.15,
+            "max_ratio": 0.6
+          },
+          "sheep": {
+            "min_ratio": 0.15,
+            "max_ratio": 0.6
+          }
+        }
+      },
+      "severity": "minor",
+      "description": "Head width is a sensible fraction of torso width. Bounds vary by species: elephants/cows/horses/sheep use relaxed bounds because (a) those species have proportionally large heads and (b) their torso bbox is often foreshortened in non-lateral views, inflating the ratio."
+    },
+    {
+      "rule_type": "size_ratio_constraint",
+      "subject_component": "leg",
+      "reference_component": "torso",
+      "parameters": {
+        "dimension": "height",
+        "min_ratio": 0.3,
+        "max_ratio": 1.5
+      },
+      "severity": "minor",
+      "description": "Leg height is 30-150% of torso height. Wider bounds tolerate non-lateral views where the torso bbox is vertically compressed by foreshortening."
+    },
+    {
+      "rule_type": "size_ratio_constraint",
+      "subject_component": "tail",
+      "reference_component": "torso",
+      "parameters": {
+        "dimension": "width",
+        "min_ratio": 0.1,
+        "max_ratio": 0.8
+      },
+      "severity": "minor",
+      "description": "Tail length is 10-80% of torso length."
+    },
+    {
+      "rule_type": "size_ratio_constraint",
+      "subject_component": "wing",
+      "reference_component": "torso",
+      "parameters": {
+        "dimension": "width",
+        "min_ratio": 0.5,
+        "max_ratio": 1.5
+      },
+      "applies_to_subtypes": [
+        "chicken"
+      ],
+      "severity": "minor",
+      "description": "Wing spread is 50-150% of torso length."
+    },
+    {
+      "rule_type": "size_ratio_constraint",
+      "subject_component": "eye",
+      "reference_component": "head",
+      "parameters": {
+        "dimension": "width",
+        "min_ratio": 0.05,
+        "max_ratio": 0.15
+      },
+      "severity": "minor",
+      "description": "Eye diameter is 5-15% of head width."
+    },
+    {
+      "rule_type": "size_ratio_constraint",
+      "subject_component": "beak",
+      "reference_component": "head",
+      "parameters": {
+        "dimension": "width",
+        "min_ratio": 0.2,
+        "max_ratio": 0.4
+      },
+      "applies_to_subtypes": [
+        "chicken"
+      ],
+      "severity": "minor",
+      "description": "Beak length is 20-40% of head length."
+    },
+    {
+      "rule_type": "size_hierarchy",
+      "subject_component": "head",
+      "reference_component": "torso",
+      "parameters": {
+        "dimension": "area",
+        "tolerance_factor": 2.0
+      },
+      "severity": "minor",
+      "description": "Head area should not vastly exceed torso area (tolerance allows up to 2x torso area, to accommodate close-ups, non-lateral views, and species where the head bbox includes attached anatomy like trunks)."
+    },
+    {
+      "rule_type": "size_hierarchy",
+      "subject_component": "eye",
+      "reference_component": "head",
+      "parameters": {
+        "dimension": "area"
+      },
+      "severity": "minor",
+      "description": "Eye is smaller than head."
+    },
+    {
+      "rule_type": "dependency_constraint",
+      "subject_component": "eye",
+      "reference_component": "head",
+      "severity": "major",
+      "description": "If an eye is detected, a head must also be detected."
+    },
+    {
+      "rule_type": "dependency_constraint",
+      "subject_component": "leg",
+      "reference_component": "torso",
+      "severity": "major",
+      "description": "If a leg is detected, a torso must also be detected."
+    }
+  ],
+  "llm_prompt_template": "You are a zoology and animal anatomy expert assessing whether a detected set of components plausibly describes a real animal of the stated species.\n\nSPECIES: {subtype} (id: {subtype_id})\nCAPTION: \"{caption}\"\n{subtype_notes}\nDETECTED COMPONENT COUNTS:\n{counts_json}\n\nDETECTED BOUNDING BOXES (pixel coordinates, center-format):\n{boxes_json}\n\nDetection confidence (image-level aggregate): {ensemble_confidence}\n\nRULES BEING CHECKED BY THE PHYSICAL VALIDATOR (for your reference):\n{rule_summary}\n\n=== YOUR TASK ===\n\nAssess whether the detected configuration is physically plausible for a real {subtype}.\nBe tolerant of detection noise (e.g., one fewer leg visible due to occlusion).\nDo NOT penalize purely because some bounding boxes are missing.\n\nConsider:\n1. COMPONENT COUNTS: Do the detected counts match typical {subtype} anatomy?\n2. SPATIAL RELATIONSHIPS: Are head/torso/limbs/tail in anatomically correct positions?\n3. SPECIES-SPECIFIC FEATURES: Are features like beak/wings present only on birds, absent on mammals?\n4. OBVIOUS IMPOSSIBILITIES: Floating parts, impossible orientations, etc.\n5. ANATOMICAL INCONSISTENCIES: List any anatomical features visible in the image that are inconsistent with the species named in the caption.\n6. NON-BIOLOGICAL/HUMAN-LIKE FEATURES: List any features that appear non-biological or human-like.\n\n=== RESPOND IN EXACTLY THIS FORMAT ===\n\nSCORE: [0-100 integer or decimal]\nVERDICT: [PASS if >=60, FAIL if <60]\nSUBTYPE: {subtype}\nCONFIDENCE: [0.0-1.0]\nSPECIFICATION_VIOLATIONS: [bullet list of count/type mismatches, or None]\nSPATIAL_VIOLATIONS: [bullet list of impossible placements, or None]\nREASONING: [3-5 sentences summarizing your assessment]\n"
+}

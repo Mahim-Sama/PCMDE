@@ -1,0 +1,1708 @@
+{
+  "model": "Pixtral-12B",
+  "confidence_threshold": 0.25,
+  "total_images": 100,
+  "total_detections": 394,
+  "results": [
+    {
+      "image_id": "cane_1.jpg",
+      "components": {
+        "head": 1,
+        "eye": 1,
+        "leg": 4,
+        "tail": 1,
+        "torso": 1,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 4,
+      "average_confidence": 1.0,
+      "total_detections": 8,
+      "detections": []
+    },
+    {
+      "image_id": "cane_10.jpg",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "cane_11.png",
+      "components": {
+        "head": 1,
+        "eye": 2,
+        "leg": 4,
+        "tail": 1,
+        "torso": 1,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 4,
+      "average_confidence": 1.0,
+      "total_detections": 9,
+      "detections": []
+    },
+    {
+      "image_id": "cane_12.png",
+      "components": {
+        "head": 1,
+        "eye": 2,
+        "leg": 4,
+        "tail": 1,
+        "torso": 1,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 4,
+      "average_confidence": 1.0,
+      "total_detections": 9,
+      "detections": []
+    },
+    {
+      "image_id": "cane_13.png",
+      "components": {
+        "head": 1,
+        "eye": 2,
+        "leg": 4,
+        "tail": 1,
+        "torso": 1,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 4,
+      "average_confidence": 1.0,
+      "total_detections": 9,
+      "detections": []
+    },
+    {
+      "image_id": "cane_14.png",
+      "components": {
+        "head": 1,
+        "eye": 1,
+        "leg": 4,
+        "tail": 1,
+        "torso": 1,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 4,
+      "average_confidence": 1.0,
+      "total_detections": 8,
+      "detections": []
+    },
+    {
+      "image_id": "cane_2.jpg",
+      "components": {
+        "head": 1,
+        "eye": 1,
+        "leg": 4,
+        "tail": 1,
+        "torso": 1,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 4,
+      "average_confidence": 1.0,
+      "total_detections": 8,
+      "detections": []
+    },
+    {
+      "image_id": "cane_3.jpg",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "cane_4.jpg",
+      "components": {
+        "head": 1,
+        "eye": 2,
+        "leg": 2,
+        "tail": 1,
+        "torso": 1,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 2,
+      "average_confidence": 1.0,
+      "total_detections": 7,
+      "detections": []
+    },
+    {
+      "image_id": "cane_5.jpg",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "cane_6.jpg",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "cane_7.jpg",
+      "components": {
+        "head": 1,
+        "eye": 2,
+        "leg": 2,
+        "tail": 1,
+        "torso": 1,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 2,
+      "average_confidence": 1.0,
+      "total_detections": 7,
+      "detections": []
+    },
+    {
+      "image_id": "cane_8.jpg",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "cane_9.jpg",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "cavallo_1.png",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "cavallo_2.png",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "cavallo_3.png",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "elefante_1.jpg",
+      "components": {
+        "head": 1,
+        "eye": 1,
+        "leg": 4,
+        "tail": 1,
+        "torso": 1,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 4,
+      "average_confidence": 1.0,
+      "total_detections": 8,
+      "detections": []
+    },
+    {
+      "image_id": "elefante_10.jpg",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "elefante_11.png",
+      "components": {
+        "head": 1,
+        "eye": 1,
+        "leg": 4,
+        "tail": 1,
+        "torso": 1,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 4,
+      "average_confidence": 1.0,
+      "total_detections": 8,
+      "detections": []
+    },
+    {
+      "image_id": "elefante_12.png",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "elefante_13.png",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "elefante_2.jpg",
+      "components": {
+        "head": 1,
+        "eye": 1,
+        "leg": 4,
+        "tail": 1,
+        "torso": 1,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 4,
+      "average_confidence": 1.0,
+      "total_detections": 8,
+      "detections": []
+    },
+    {
+      "image_id": "elefante_3.jpg",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "elefante_4.jpg",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "elefante_5.jpg",
+      "components": {
+        "head": 1,
+        "eye": 1,
+        "leg": 4,
+        "tail": 1,
+        "torso": 1,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 4,
+      "average_confidence": 1.0,
+      "total_detections": 8,
+      "detections": []
+    },
+    {
+      "image_id": "elefante_6.jpg",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "elefante_7.jpg",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "elefante_8.jpg",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "elefante_9.jpg",
+      "components": {
+        "head": 1,
+        "eye": 1,
+        "leg": 4,
+        "tail": 1,
+        "torso": 1,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 4,
+      "average_confidence": 1.0,
+      "total_detections": 8,
+      "detections": []
+    },
+    {
+      "image_id": "gallina_1.jpg",
+      "components": {
+        "head": 1,
+        "eye": 1,
+        "leg": 2,
+        "tail": 1,
+        "torso": 1,
+        "beak": 1,
+        "wing": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 2,
+      "average_confidence": 0.9,
+      "total_detections": 8,
+      "detections": []
+    },
+    {
+      "image_id": "gallina_10.jpg",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "gallina_11.png",
+      "components": {
+        "head": 1,
+        "eye": 1,
+        "leg": 4,
+        "tail": 1,
+        "torso": 1,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 4,
+      "average_confidence": 0.9,
+      "total_detections": 8,
+      "detections": []
+    },
+    {
+      "image_id": "gallina_12.png",
+      "components": {
+        "head": 1,
+        "eye": 1,
+        "leg": 4,
+        "tail": 1,
+        "torso": 1,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 4,
+      "average_confidence": 1.0,
+      "total_detections": 8,
+      "detections": []
+    },
+    {
+      "image_id": "gallina_13.png",
+      "components": {
+        "head": 1,
+        "eye": 1,
+        "leg": 4,
+        "tail": 1,
+        "torso": 1,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 4,
+      "average_confidence": 0.9,
+      "total_detections": 8,
+      "detections": []
+    },
+    {
+      "image_id": "gallina_14.png",
+      "components": {
+        "head": 1,
+        "eye": 1,
+        "leg": 4,
+        "tail": 1,
+        "torso": 1,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 4,
+      "average_confidence": 1.0,
+      "total_detections": 8,
+      "detections": []
+    },
+    {
+      "image_id": "gallina_2.jpg",
+      "components": {
+        "head": 1,
+        "eye": 1,
+        "leg": 2,
+        "tail": 1,
+        "torso": 1,
+        "beak": 1,
+        "wing": 2,
+        "foreign_part": 0
+      },
+      "leg_count": 2,
+      "average_confidence": 1.0,
+      "total_detections": 9,
+      "detections": []
+    },
+    {
+      "image_id": "gallina_3.jpg",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "gallina_4.jpg",
+      "components": {
+        "head": 1,
+        "eye": 1,
+        "leg": 4,
+        "tail": 1,
+        "torso": 1,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 4,
+      "average_confidence": 1.0,
+      "total_detections": 8,
+      "detections": []
+    },
+    {
+      "image_id": "gallina_5.jpg",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "gallina_6.jpg",
+      "components": {
+        "head": 1,
+        "eye": 1,
+        "leg": 2,
+        "tail": 1,
+        "torso": 1,
+        "beak": 1,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 2,
+      "average_confidence": 1.0,
+      "total_detections": 7,
+      "detections": []
+    },
+    {
+      "image_id": "gallina_7.jpg",
+      "components": {
+        "head": 1,
+        "eye": 1,
+        "leg": 2,
+        "tail": 1,
+        "torso": 1,
+        "beak": 1,
+        "wing": 1,
+        "foreign_part": 0
+      },
+      "leg_count": 2,
+      "average_confidence": 1.0,
+      "total_detections": 8,
+      "detections": []
+    },
+    {
+      "image_id": "gallina_8.jpg",
+      "components": {
+        "head": 1,
+        "eye": 1,
+        "leg": 4,
+        "tail": 1,
+        "torso": 1,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 4,
+      "average_confidence": 1.0,
+      "total_detections": 8,
+      "detections": []
+    },
+    {
+      "image_id": "gallina_9.jpg",
+      "components": {
+        "head": 1,
+        "eye": 1,
+        "leg": 4,
+        "tail": 1,
+        "torso": 1,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 4,
+      "average_confidence": 1.0,
+      "total_detections": 8,
+      "detections": []
+    },
+    {
+      "image_id": "gatto_1.jpg",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "gatto_10.jpg",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "gatto_11.png",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "gatto_12.png",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "gatto_13.png",
+      "components": {
+        "head": 1,
+        "eye": 2,
+        "leg": 4,
+        "tail": 1,
+        "torso": 1,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 4,
+      "average_confidence": 1.0,
+      "total_detections": 9,
+      "detections": []
+    },
+    {
+      "image_id": "gatto_14.png",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "gatto_2.jpg",
+      "components": {
+        "head": 1,
+        "eye": 1,
+        "leg": 4,
+        "tail": 1,
+        "torso": 1,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 4,
+      "average_confidence": 1.0,
+      "total_detections": 8,
+      "detections": []
+    },
+    {
+      "image_id": "gatto_3.jpg",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "gatto_4.jpg",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "gatto_5.jpg",
+      "components": {
+        "head": 1,
+        "eye": 1,
+        "leg": 4,
+        "tail": 1,
+        "torso": 1,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 4,
+      "average_confidence": 1.0,
+      "total_detections": 8,
+      "detections": []
+    },
+    {
+      "image_id": "gatto_6.jpg",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "gatto_7.jpg",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "gatto_8.jpg",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "gatto_9.jpg",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "mucca_1.jpg",
+      "components": {
+        "head": 1,
+        "eye": 1,
+        "leg": 4,
+        "tail": 1,
+        "torso": 1,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 4,
+      "average_confidence": 1.0,
+      "total_detections": 8,
+      "detections": []
+    },
+    {
+      "image_id": "mucca_10.jpg",
+      "components": {
+        "head": 2,
+        "eye": 4,
+        "leg": 8,
+        "tail": 2,
+        "torso": 2,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 8,
+      "average_confidence": 1.0,
+      "total_detections": 18,
+      "detections": []
+    },
+    {
+      "image_id": "mucca_11.png",
+      "components": {
+        "head": 1,
+        "eye": 2,
+        "leg": 4,
+        "tail": 1,
+        "torso": 1,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 4,
+      "average_confidence": 1.0,
+      "total_detections": 9,
+      "detections": []
+    },
+    {
+      "image_id": "mucca_12.png",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "mucca_13.png",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "mucca_14.png",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "mucca_2.jpg",
+      "components": {
+        "head": 1,
+        "eye": 0,
+        "leg": 4,
+        "tail": 1,
+        "torso": 1,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 4,
+      "average_confidence": 1.0,
+      "total_detections": 7,
+      "detections": []
+    },
+    {
+      "image_id": "mucca_3.jpg",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "mucca_4.jpg",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "mucca_5.jpg",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "mucca_6.jpg",
+      "components": {
+        "head": 1,
+        "eye": 1,
+        "leg": 4,
+        "tail": 1,
+        "torso": 1,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 4,
+      "average_confidence": 1.0,
+      "total_detections": 8,
+      "detections": []
+    },
+    {
+      "image_id": "mucca_7.jpg",
+      "components": {
+        "head": 1,
+        "eye": 2,
+        "leg": 2,
+        "tail": 1,
+        "torso": 1,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 2,
+      "average_confidence": 1.0,
+      "total_detections": 7,
+      "detections": []
+    },
+    {
+      "image_id": "mucca_8.jpg",
+      "components": {
+        "head": 1,
+        "eye": 0,
+        "leg": 4,
+        "tail": 1,
+        "torso": 1,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 4,
+      "average_confidence": 1.0,
+      "total_detections": 7,
+      "detections": []
+    },
+    {
+      "image_id": "mucca_9.jpg",
+      "components": {
+        "head": 4,
+        "eye": 8,
+        "leg": 16,
+        "tail": 4,
+        "torso": 4,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 16,
+      "average_confidence": 1.0,
+      "total_detections": 36,
+      "detections": []
+    },
+    {
+      "image_id": "pecora_1.jpg",
+      "components": {
+        "head": 1,
+        "eye": 1,
+        "leg": 4,
+        "tail": 1,
+        "torso": 1,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 4,
+      "average_confidence": 1.0,
+      "total_detections": 8,
+      "detections": []
+    },
+    {
+      "image_id": "pecora_10.jpg",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "pecora_11.png",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "pecora_12.png",
+      "components": {
+        "head": 1,
+        "eye": 2,
+        "leg": 4,
+        "tail": 1,
+        "torso": 1,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 4,
+      "average_confidence": 1.0,
+      "total_detections": 9,
+      "detections": []
+    },
+    {
+      "image_id": "pecora_13.png",
+      "components": {
+        "head": 1,
+        "eye": 2,
+        "leg": 4,
+        "tail": 1,
+        "torso": 1,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 4,
+      "average_confidence": 1.0,
+      "total_detections": 9,
+      "detections": []
+    },
+    {
+      "image_id": "pecora_14.png",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "pecora_2.jpg",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "pecora_3.jpg",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "pecora_4.jpg",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "pecora_5.jpg",
+      "components": {
+        "head": 1,
+        "eye": 1,
+        "leg": 4,
+        "tail": 1,
+        "torso": 1,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 4,
+      "average_confidence": 1.0,
+      "total_detections": 8,
+      "detections": []
+    },
+    {
+      "image_id": "pecora_6.jpg",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "pecora_7.jpg",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "pecora_8.jpg",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "pecora_9.jpg",
+      "components": {
+        "head": 1,
+        "eye": 1,
+        "leg": 4,
+        "tail": 1,
+        "torso": 1,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 4,
+      "average_confidence": 1.0,
+      "total_detections": 8,
+      "detections": []
+    },
+    {
+      "image_id": "scoiattolo_1.jpg",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "scoiattolo_10.jpg",
+      "components": {
+        "head": 2,
+        "eye": 4,
+        "leg": 8,
+        "tail": 2,
+        "torso": 2,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 8,
+      "average_confidence": 0.9,
+      "total_detections": 18,
+      "detections": []
+    },
+    {
+      "image_id": "scoiattolo_11.png",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "scoiattolo_12.png",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "scoiattolo_13.png",
+      "components": {
+        "head": 1,
+        "eye": 1,
+        "leg": 4,
+        "tail": 1,
+        "torso": 1,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 4,
+      "average_confidence": 1.0,
+      "total_detections": 8,
+      "detections": []
+    },
+    {
+      "image_id": "scoiattolo_14.png",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "scoiattolo_2.jpg",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "scoiattolo_3.jpg",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "scoiattolo_4.jpg",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "scoiattolo_5.jpg",
+      "components": {
+        "head": 1,
+        "eye": 1,
+        "leg": 4,
+        "tail": 1,
+        "torso": 1,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 4,
+      "average_confidence": 1.0,
+      "total_detections": 8,
+      "detections": []
+    },
+    {
+      "image_id": "scoiattolo_6.jpg",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "scoiattolo_7.jpg",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "scoiattolo_8.jpg",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    },
+    {
+      "image_id": "scoiattolo_9.jpg",
+      "components": {
+        "head": 0,
+        "eye": 0,
+        "leg": 0,
+        "tail": 0,
+        "torso": 0,
+        "beak": 0,
+        "wing": 0,
+        "foreign_part": 0
+      },
+      "leg_count": 0,
+      "average_confidence": 0.0,
+      "total_detections": 0,
+      "detections": []
+    }
+  ]
+}

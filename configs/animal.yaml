@@ -1,0 +1,61 @@
+# PCMDE — animal domain
+# Run from the PROJECT ROOT: paths below are resolved against the working directory.
+#   python cli/evaluate.py --config configs/animal.yaml
+#
+# These values reproduce results/animal/scores/animal_pcmde_scores.json.
+
+experiment_name: "animal_pcmde_v2"
+
+paths:
+  # Stage-1 inputs, read by pipeline/ensemble.py and analysis/run_ablation.py
+  detections_json: "./data/animal/detections/groundingdino_sam_animal.json"
+  vlm_jsons:
+    - "./data/animal/vlm/deepseek_animal.json"
+    - "./data/animal/vlm/pixtral_animal.json"
+  # Where analysis/run_ablation.py writes the five ablation variants
+  ablation_dir:  "./results/animal/ablation"
+  ensemble_json: "./data/animal/ensemble/ensemble_animal.json"
+  captions_csv:  "./data/animal/captions.csv"
+  rules_file:    "./domains/animal/physical_rules_animal_v2.json"
+  output_json:   "./results/animal/scores/animal_pcmde_scores.json"
+
+# Column names in captions.csv. Animal + aircraft use the Image_* convention;
+# the car CSV uses image_id/caption instead (see configs/car.yaml).
+csv_mapping:
+  image_col:   "Image_path"
+  caption_col: "Image_caption"
+
+llm:
+  enabled: true
+  model_name: "deepseek-r1:70b"
+  api_base: "http://localhost:11434"
+  temperature: 0.3
+  # deepseek-r1 emits a <think> block before the answer; 120 s was not
+  # enough for 70B and produced empty replies (see docs/KNOWN_GAPS.md).
+  timeout_seconds: 600
+  max_tokens: 1200
+  runs_per_image: 3          # paper Sec. III-D: score three times
+  variance_threshold: 10.0   # spread above this -> keep the median run
+  max_attempts: 6            # retries for failed/unparseable replies
+
+scoring:
+  # S_final = rule_weight * S_rules + llm_weight * S_LLM
+  rule_weight: 0.6
+  llm_weight: 0.4
+  # PASS requires: overall >= pass_threshold AND both components >= component_threshold
+  pass_threshold: 60.0
+  component_threshold: 40.0
+  # Score ceiling applied when a critical-severity rule fires an evidenced violation.
+  # NOTE: the paper states 30; 45 is the tuned value used for the reported animal run.
+  critical_violation_cap: 45.0
+  # Strict mode: a rule that cannot be evaluated (detector emitted no box)
+  # counts against the category score, but never triggers the critical cap.
+  unevaluable_is_violation: true
+
+  # Category weights (presence / spatial / relational / subtype) are read from the
+  # rules JSON. Uncomment to override:
+  # category_weights:
+  #   presence: 0.30
+  #   spatial: 0.35
+  #   relational: 0.20
+  #   subtype: 0.15

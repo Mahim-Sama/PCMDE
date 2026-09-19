@@ -1,0 +1,27 @@
+# Stage 1a: object detection.
+# GPU strongly recommended (CUDA 12.2+).
+#
+#   pip install -r requirements/detection.txt
+
+-r core.txt
+
+torch>=2.1
+torchvision>=0.16
+opencv-python>=4.8
+numpy>=1.24
+matplotlib>=3.7
+
+# YOLOv12 backend — pipeline/detection/yolov12_train_infer.ipynb
+ultralytics>=8.2
+
+# Grounding DINO backend (aircraft + animal, zero-shot).
+# pipeline/detection/groundingdino_sam_animal.py uses the Hugging Face ports
+# (transformers>=4.40: GroundingDinoForObjectDetection, SamModel) and needs no
+# source install. The raw repo below is only needed for the aircraft passes.
+# Grounding DINO installs from source, not PyPI:
+#   git clone https://github.com/mehrab-sol/Grounding_DINO.git
+#   cd Grounding_DINO && pip install -e . --no-build-isolation
+transformers>=4.40
+
+# Segment Anything (animal domain mask-based overlap suppression):
+#   pip install git+https://github.com/facebookresearch/segment-anything.git

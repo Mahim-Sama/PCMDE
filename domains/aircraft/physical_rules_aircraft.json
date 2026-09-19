@@ -1,0 +1,283 @@
+{
+  "object_type": "aircraft",
+  "version": "3.0",
+  "_meta": {
+    "description": "Physical validation rules for fixed-wing aircraft, written against the detector vocabulary (head, tail, swept_wing, engine, tail_wing) and following the paper's Section IV-A rule set (P1-P5, S1-S4, R1-R3, engine-placement variants, Table I viewpoint counts). Rule ids carry the paper rule they implement.",
+    "generated_by": "handcrafted, September 2026; replaces v2.0 (archive/superseded_rules/), which referenced fuselage/nose/rotor/propeller components the detector never emits and capped every image at critical_violation_cap.",
+    "paper_deviations": [
+      "P5 and R3 (engine width vs fuselage length) are not expressible: there is no fuselage class. Replaced by R3a/R3b size hierarchies against swept_wing.",
+      "S3 (tail x > 0.7 W) and S4 (wings cross y = H/2) need the image size, which predicates do not receive. S3 is implemented as view-invariant x-extremum rules for head and tail; S4 is not implemented.",
+      "P3 allows 1-4 visible engines for unrecognised types because side views hide engines (Table I).",
+      "S1 (engines near wings) applies only to four-engine types: every four-engine type in the test set is under-wing, while twin and tri-jets mix under-wing, rear-fuselage and tail-mounted engines."
+    ]
+  },
+  "component_aliases": {
+    "nose": "head",
+    "cockpit": "head",
+    "wing": "swept_wing",
+    "wings": "swept_wing",
+    "swept_wings": "swept_wing",
+    "main_wing": "swept_wing",
+    "main_wings": "swept_wing",
+    "engines": "engine",
+    "tails": "tail",
+    "tail_fin": "tail",
+    "vertical_stabilizer": "tail",
+    "tail_wings": "tail_wing",
+    "horizontal_stabilizer": "tail_wing",
+    "horizontal_stabilizers": "tail_wing"
+  },
+  "subtypes": {
+    "single_engine": {
+      "display_name": "Single-engine aircraft",
+      "filename_prefix_patterns": [],
+      "caption_regex_patterns": [
+        "\\b(1|one|single)[\\s-]+(piston|turboprop|turbofan|turbojet|jet)?[\\s-]*engines?\\b"
+      ]
+    },
+    "twin_engine": {
+      "display_name": "Twin-engine aircraft",
+      "filename_prefix_patterns": [],
+      "caption_regex_patterns": [
+        "\\b(2|two|twin)[\\s-]+(piston|turboprop|turbofan|turbojet|jet)?[\\s-]*engines?\\b",
+        "\\btwinjet\\b"
+      ]
+    },
+    "tri_engine": {
+      "display_name": "Tri-jet aircraft",
+      "filename_prefix_patterns": [],
+      "caption_regex_patterns": [
+        "\\b(3|three|tri)[\\s-]+(piston|turboprop|turbofan|turbojet|jet)?[\\s-]*engines?\\b",
+        "\\btri-?jet\\b"
+      ]
+    },
+    "quad_engine": {
+      "display_name": "Four-engine aircraft",
+      "filename_prefix_patterns": [],
+      "caption_regex_patterns": [
+        "\\b(4|four|quad)[\\s-]+(piston|turboprop|turbofan|turbojet|jet)?[\\s-]*engines?\\b",
+        "\\bquad-?jet\\b"
+      ]
+    }
+  },
+  "fallback_subtype": {
+    "subtype_id": "generic_aircraft",
+    "display_name": "Generic Aircraft"
+  },
+  "subtype_notes": {
+    "single_engine": "Single-engine aircraft (e.g. DR-400): one engine, usually in the nose driving a propeller, so the engine sits at the head. Two main wings and a conventional tail with horizontal stabilisers.",
+    "twin_engine": "Twin-engine aircraft (e.g. Boeing 737, A320, E-170, CRJ-200, Dash 8): 2 engines, of which 1-2 are visible in a side view. Engines are under the wings on most airliners and turboprops, but mounted on the rear fuselage on regional and business jets (CRJ, ERJ, MD-80, Boeing 717, Challenger).",
+    "tri_engine": "Tri-jet (e.g. DC-10, MD-11, Boeing 727, Tu-154): 3 engines, 2-3 visible in a side view. The third engine is in or at the tail; the other two are under the wings (DC-10, MD-11) or on the rear fuselage (727, Tu-154).",
+    "quad_engine": "Four-engine aircraft (e.g. Boeing 707/747, A340, A380, BAE 146, Il-76): 4 under-wing engines, 2-4 visible in a side view.",
+    "generic_aircraft": "Aircraft type not stated. Apply universal constraints: one nose (head), one tail, 1-2 visible main wings, commonly 2-4 engines with 1-4 visible, engines attached to wings or fuselage, horizontal stabilisers at the tail."
+  },
+  "scoring_weights": {
+    "presence": 0.28,
+    "spatial": 0.38,
+    "relational": 0.19,
+    "subtype": 0.15
+  },
+  "pass_threshold": 60,
+  "rules": [
+    {
+      "rule_id": "P0_airframe_anchors",
+      "rule_type": "critical_presence",
+      "parameters": {"required_components": ["head", "swept_wing", "tail"]},
+      "severity": "critical",
+      "description": "An aircraft image must show a nose section (head), at least one main wing and a tail. Without these anchors the image does not depict a structurally complete aircraft."
+    },
+    {
+      "rule_id": "P1_single_head",
+      "rule_type": "count_constraint",
+      "subject_component": "head",
+      "parameters": {"exact_count": 1},
+      "severity": "major",
+      "description": "Paper P1: exactly one head (nose/front fuselage). Two heads mean a duplicated or merged airframe."
+    },
+    {
+      "rule_id": "P2_single_tail",
+      "rule_type": "count_constraint",
+      "subject_component": "tail",
+      "parameters": {"exact_count": 1},
+      "severity": "major",
+      "description": "Paper P2: exactly one tail section."
+    },
+    {
+      "rule_id": "P4_wing_count",
+      "rule_type": "count_constraint",
+      "subject_component": "swept_wing",
+      "parameters": {"count_range": {"min": 1, "max": 2}},
+      "severity": "major",
+      "description": "Paper P4 / Table I: one main wing visible in a side view, two in a front, rear or top view. Three or more main wings is impossible."
+    },
+    {
+      "rule_id": "P4b_tail_wing_count",
+      "rule_type": "count_constraint",
+      "subject_component": "tail_wing",
+      "parameters": {"count_range": {"min": 0, "max": 2}},
+      "severity": "minor",
+      "description": "At most two horizontal stabilisers (one per side); zero when hidden by the viewpoint."
+    },
+    {
+      "rule_id": "P3_engine_count_generic",
+      "rule_type": "count_constraint",
+      "subject_component": "engine",
+      "applies_to_subtypes": ["generic_aircraft"],
+      "parameters": {"count_range": {"min": 1, "max": 4}},
+      "severity": "major",
+      "description": "Paper P3 for aircraft whose type is not stated: commercial aircraft have 2-4 engines, of which 1-4 are visible depending on viewpoint (Table I)."
+    },
+    {
+      "rule_id": "P3_engine_count_single",
+      "rule_type": "count_constraint",
+      "subject_component": "engine",
+      "applies_to_subtypes": ["single_engine"],
+      "parameters": {"count_range": {"min": 1, "max": 1}},
+      "severity": "major",
+      "description": "Paper P3 with the caption's engine specification: a single-engine aircraft shows exactly one engine."
+    },
+    {
+      "rule_id": "P3_engine_count_twin",
+      "rule_type": "count_constraint",
+      "subject_component": "engine",
+      "applies_to_subtypes": ["twin_engine"],
+      "parameters": {"count_range": {"min": 1, "max": 2}},
+      "severity": "major",
+      "description": "Paper P3 / Table I: a twin-engine aircraft shows 1-2 engines in a side view and 2 from the front or rear. Three or more contradicts the caption."
+    },
+    {
+      "rule_id": "P3_engine_count_tri",
+      "rule_type": "count_constraint",
+      "subject_component": "engine",
+      "applies_to_subtypes": ["tri_engine"],
+      "parameters": {"count_range": {"min": 2, "max": 3}},
+      "severity": "major",
+      "description": "Paper P3 / Table I: a tri-jet shows 2-3 engines in a side view and 3 from the front or rear (e.g. a DC-10 with four engines violates this)."
+    },
+    {
+      "rule_id": "P3_engine_count_quad",
+      "rule_type": "count_constraint",
+      "subject_component": "engine",
+      "applies_to_subtypes": ["quad_engine"],
+      "parameters": {"count_range": {"min": 2, "max": 4}},
+      "severity": "major",
+      "description": "Paper P3 / Table I: a four-engine aircraft shows 2-4 engines in a side view and 4 from the front or rear."
+    },
+    {
+      "rule_id": "S2_head_tail_opposite_ends",
+      "rule_type": "relative_position_constraint",
+      "subject_component": "tail",
+      "reference_component": "head",
+      "parameters": {"axis": "x", "direction": "opposite", "tolerance_fraction": 0.3},
+      "severity": "major",
+      "description": "Paper S2: head at the front and tail at the rear, i.e. at opposite ends of the airframe along x. View-invariant: works whether the aircraft faces left or right."
+    },
+    {
+      "rule_id": "S3_head_at_x_extremum",
+      "rule_type": "relative_position_constraint",
+      "subject_component": "head",
+      "parameters": {"axis": "x", "position": "either", "tolerance_fraction": 0.25},
+      "severity": "major",
+      "description": "Paper S2/S3: the head is at one horizontal end of the aircraft (nearest the leftmost or rightmost component)."
+    },
+    {
+      "rule_id": "S3_tail_at_x_extremum",
+      "rule_type": "relative_position_constraint",
+      "subject_component": "tail",
+      "parameters": {"axis": "x", "position": "either", "tolerance_fraction": 0.25},
+      "severity": "major",
+      "description": "Paper S3: the tail is at one horizontal end of the aircraft, not in the middle of the airframe."
+    },
+    {
+      "rule_id": "S_tail_wing_attached_to_tail",
+      "rule_type": "attachment_constraint",
+      "subject_component": "tail_wing",
+      "reference_component": "tail",
+      "parameters": {"margin_fraction": 0.5},
+      "severity": "major",
+      "description": "Horizontal stabilisers are mounted on the tail section (conventional or T-tail). A stabiliser detached from the tail is structurally impossible."
+    },
+    {
+      "rule_id": "S1_engines_near_wing_quad",
+      "rule_type": "attachment_constraint",
+      "subject_component": "engine",
+      "reference_component": "swept_wing",
+      "applies_to_subtypes": ["quad_engine"],
+      "parameters": {"margin_fraction": 0.5},
+      "severity": "major",
+      "description": "Paper S1 for under-wing layouts: each engine lies on or near the wing. Applied to four-engine types, which are all under-wing in this set."
+    },
+    {
+      "rule_id": "S_underwing_engine_below_wing_quad",
+      "rule_type": "relative_position_constraint",
+      "subject_component": "engine",
+      "reference_component": "swept_wing",
+      "applies_to_subtypes": ["quad_engine"],
+      "parameters": {"axis": "y", "direction": "below_centroid"},
+      "severity": "minor",
+      "description": "Paper engine-placement variant 'Under-Wing': centroid_y(engine) > centroid_y(wing). An engine above the wing is misplaced for these types."
+    },
+    {
+      "rule_id": "S_engine_not_on_nose",
+      "rule_type": "forbid_overlap",
+      "subject_component": "engine",
+      "reference_component": "head",
+      "applies_to_subtypes": ["twin_engine", "tri_engine", "quad_engine", "generic_aircraft"],
+      "parameters": {"max_overlap_ratio": 0.5},
+      "severity": "minor",
+      "description": "On multi-engine aircraft engines sit on the wings, rear fuselage or tail, never on the nose. An engine box mostly inside the head box is misplaced."
+    },
+    {
+      "rule_id": "S_head_not_on_tail",
+      "rule_type": "forbid_overlap",
+      "subject_component": "head",
+      "reference_component": "tail",
+      "parameters": {"max_overlap_ratio": 0.3},
+      "severity": "major",
+      "description": "The nose and tail are at opposite ends of the fuselage and cannot occupy the same region."
+    },
+    {
+      "rule_id": "R1_engine_requires_wing",
+      "rule_type": "dependency_constraint",
+      "subject_component": "engine",
+      "reference_component": "swept_wing",
+      "severity": "major",
+      "description": "Paper R1: if engines are detected, main wings must also be present."
+    },
+    {
+      "rule_id": "R2_head_requires_tail",
+      "rule_type": "dependency_constraint",
+      "subject_component": "head",
+      "reference_component": "tail",
+      "severity": "major",
+      "description": "Paper R2 (head => tail): a nose section implies a tail section."
+    },
+    {
+      "rule_id": "R2_tail_requires_head",
+      "rule_type": "dependency_constraint",
+      "subject_component": "tail",
+      "reference_component": "head",
+      "severity": "major",
+      "description": "Paper R2 (tail => head): a tail section implies a nose section."
+    },
+    {
+      "rule_id": "R3a_engine_smaller_than_wing",
+      "rule_type": "size_hierarchy",
+      "subject_component": "engine",
+      "reference_component": "swept_wing",
+      "parameters": {"dimension": "area"},
+      "severity": "major",
+      "description": "Paper R3 substitute (no fuselage class): an engine nacelle is smaller than the main wing. A larger engine is a scale inversion."
+    },
+    {
+      "rule_id": "R3b_tail_wing_smaller_than_wing",
+      "rule_type": "size_hierarchy",
+      "subject_component": "tail_wing",
+      "reference_component": "swept_wing",
+      "parameters": {"dimension": "area"},
+      "severity": "minor",
+      "description": "The horizontal stabiliser is smaller than the main wing."
+    }
+  ],
+  "llm_prompt_template": "You are an aerospace engineering and aircraft recognition expert assessing whether a detected set of components plausibly describes a real aircraft of the stated type.\n\nAIRCRAFT TYPE: {subtype} (id: {subtype_id})\nCAPTION: \"{caption}\"\n{subtype_notes}\nDETECTED COMPONENT COUNTS (head = nose/front fuselage, tail = rear fuselage with vertical stabiliser, swept_wing = main wing, tail_wing = horizontal stabiliser):\n{counts_json}\n\nDETECTED BOUNDING BOXES (pixel coordinates, center-format):\n{boxes_json}\n\nDetection confidence (image-level aggregate): {ensemble_confidence}\n\nRULES BEING CHECKED BY THE PHYSICAL VALIDATOR (for your reference):\n{rule_summary}\n\n=== YOUR TASK ===\n\nAssess whether the detected configuration is physically plausible for the aircraft described in the caption.\nBe tolerant of detection noise (e.g., one fewer engine visible because of the viewpoint).\nDo NOT penalise purely because some bounding boxes are missing.\n\nConsider:\n1. COMPONENT COUNTS: Do the counts match the aircraft named in the caption (e.g. a DC-10 has 3 engines, a Boeing 747 has 4, an A320 has 2)?\n2. SPATIAL RELATIONSHIPS: Is the head at one end and the tail at the other? Are the horizontal stabilisers at the tail? Are engines where this type mounts them (under the wings, on the rear fuselage, or in the tail)?\n3. OBVIOUS IMPOSSIBILITIES: Engines above the wings on an under-wing type, an extra wing, a stabiliser detached from the tail, a missing tail.\n4. SCALE VIOLATIONS: Any component whose size is wildly inconsistent with the airframe (e.g. an engine larger than the wing).\n\n=== RESPOND IN EXACTLY THIS FORMAT ===\n\nSCORE: [0-100 integer or decimal]\nVERDICT: [PASS if >=60, FAIL if <60]\nSUBTYPE: {subtype}\nCONFIDENCE: [0.0-1.0]\nSPECIFICATION_VIOLATIONS: [bullet list of count/type mismatches, or None]\nSPATIAL_VIOLATIONS: [bullet list of impossible placements or scale errors, or None]\nREASONING: [3-5 sentences summarizing your assessment]\n"
+}

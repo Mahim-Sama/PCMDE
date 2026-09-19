@@ -1,0 +1,22 @@
+# Stage 1b: vision-language model inference (DeepSeek-VL2, Pixtral-12B).
+# Needs a large-VRAM GPU (~80GB recommended to host both).
+#
+#   pip install -r requirements/vlm.txt
+#
+# NOTE: DeepSeek-VL2 and Pixtral have conflicting transformers pins in some
+# versions. If they clash, install them into two separate environments and run
+# pipeline/vlm/deepseek_*.py and pipeline/vlm/pixtral_*.py from each.
+
+-r core.txt
+
+torch>=2.1
+torchvision>=0.16
+pillow>=10.0
+
+# Pixtral-12B — pipeline/vlm/pixtral_*.py (LlavaForConditionalGeneration)
+transformers>=4.45
+accelerate>=0.30
+
+# DeepSeek-VL2 — pipeline/vlm/deepseek_*.py
+# Not on PyPI, install from source:
+#   pip install git+https://github.com/deepseek-ai/deepseek-vl2.git

@@ -1,0 +1,4425 @@
+{
+  "detector": "YOLOv12",
+  "confidence_threshold": 0.5,
+  "total_images": 70,
+  "results": [
+    {
+      "image_id": "ComfyUI_00001_.png",
+      "components": {
+        "head": 1,
+        "tail_wing": 1,
+        "engine": 3,
+        "tail": 1,
+        "swept_wing": 1
+      },
+      "confidence": 0.76,
+      "detections": [
+        {
+          "class": "head",
+          "confidence": 0.8446,
+          "bbox": [
+            918.85,
+            460.03,
+            994.78,
+            554.02
+          ]
+        },
+        {
+          "class": "tail_wing",
+          "confidence": 0.8293,
+          "bbox": [
+            102.6,
+            287.15,
+            308.64,
+            455.98
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.7639,
+          "bbox": [
+            341.54,
+            523.97,
+            486.18,
+            580.16
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.7634,
+          "bbox": [
+            29.04,
+            447.36,
+            233.79,
+            489.95
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.7282,
+          "bbox": [
+            571.83,
+            537.24,
+            649.92,
+            588.47
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.7101,
+          "bbox": [
+            382.74,
+            525.22,
+            484.69,
+            578.75
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.6593,
+          "bbox": [
+            162.2,
+            509.41,
+            550.92,
+            551.22
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "ComfyUI_00002_.png",
+      "components": {
+        "tail_wing": 1,
+        "head": 1,
+        "swept_wing": 1,
+        "engine": 1
+      },
+      "confidence": 0.8,
+      "detections": [
+        {
+          "class": "tail_wing",
+          "confidence": 0.9101,
+          "bbox": [
+            751.06,
+            344.81,
+            1005.53,
+            504.39
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.898,
+          "bbox": [
+            24.33,
+            472.91,
+            126.27,
+            581.33
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.8462,
+          "bbox": [
+            337.9,
+            485.3,
+            688.63,
+            572.98
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.534,
+          "bbox": [
+            651.4,
+            486.31,
+            805.44,
+            537.15
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "ComfyUI_00003_.png",
+      "components": {
+        "tail_wing": 1,
+        "head": 1,
+        "engine": 1,
+        "swept_wing": 1
+      },
+      "confidence": 0.83,
+      "detections": [
+        {
+          "class": "tail_wing",
+          "confidence": 0.9034,
+          "bbox": [
+            797.04,
+            314.05,
+            980.63,
+            490.1
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.8736,
+          "bbox": [
+            34.53,
+            476.9,
+            124.74,
+            563.43
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.8689,
+          "bbox": [
+            327.16,
+            550.16,
+            455.4,
+            610.52
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.655,
+          "bbox": [
+            401.97,
+            538.41,
+            585.77,
+            582.33
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "ComfyUI_00004_.png",
+      "components": {
+        "tail_wing": 1,
+        "head": 1,
+        "engine": 1,
+        "tail": 1,
+        "swept_wing": 1
+      },
+      "confidence": 0.87,
+      "detections": [
+        {
+          "class": "tail_wing",
+          "confidence": 0.9281,
+          "bbox": [
+            780.34,
+            289.45,
+            963.2,
+            477.43
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.9237,
+          "bbox": [
+            39.45,
+            483.39,
+            132.88,
+            577.72
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.8866,
+          "bbox": [
+            366.47,
+            541.8,
+            511.02,
+            612.7
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.8074,
+          "bbox": [
+            840.49,
+            470.0,
+            1014.29,
+            509.98
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.7853,
+          "bbox": [
+            473.63,
+            500.35,
+            716.86,
+            557.11
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "ComfyUI_00005_.png",
+      "components": {
+        "head": 1,
+        "tail_wing": 1,
+        "tail": 1,
+        "engine": 2,
+        "swept_wing": 1
+      },
+      "confidence": 0.81,
+      "detections": [
+        {
+          "class": "head",
+          "confidence": 0.9075,
+          "bbox": [
+            34.25,
+            448.67,
+            138.71,
+            557.07
+          ]
+        },
+        {
+          "class": "tail_wing",
+          "confidence": 0.9072,
+          "bbox": [
+            799.93,
+            262.64,
+            958.86,
+            425.78
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.8346,
+          "bbox": [
+            865.2,
+            387.25,
+            1003.59,
+            455.96
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.7947,
+          "bbox": [
+            416.22,
+            528.9,
+            533.87,
+            594.73
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.7247,
+          "bbox": [
+            778.56,
+            457.78,
+            831.75,
+            491.84
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.7116,
+          "bbox": [
+            361.02,
+            489.81,
+            794.48,
+            555.06
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "ComfyUI_00006_.png",
+      "components": {
+        "engine": 2,
+        "head": 1,
+        "swept_wing": 2
+      },
+      "confidence": 0.76,
+      "detections": [
+        {
+          "class": "engine",
+          "confidence": 0.8966,
+          "bbox": [
+            770.7,
+            593.97,
+            885.28,
+            712.64
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.8662,
+          "bbox": [
+            145.74,
+            595.27,
+            266.86,
+            715.82
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.8283,
+          "bbox": [
+            366.03,
+            337.45,
+            520.58,
+            602.93
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.6301,
+          "bbox": [
+            658.33,
+            560.17,
+            1024.0,
+            621.43
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.5637,
+          "bbox": [
+            1.25,
+            569.97,
+            241.09,
+            616.94
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "ComfyUI_00008_.png",
+      "components": {
+        "engine": 1,
+        "head": 1,
+        "swept_wing": 2,
+        "tail_wing": 1,
+        "tail": 1
+      },
+      "confidence": 0.8,
+      "detections": [
+        {
+          "class": "engine",
+          "confidence": 0.8956,
+          "bbox": [
+            538.36,
+            545.97,
+            673.49,
+            612.44
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.8884,
+          "bbox": [
+            897.16,
+            483.07,
+            1002.95,
+            582.71
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.854,
+          "bbox": [
+            303.6,
+            419.29,
+            579.13,
+            574.45
+          ]
+        },
+        {
+          "class": "tail_wing",
+          "confidence": 0.841,
+          "bbox": [
+            60.88,
+            291.77,
+            215.77,
+            482.95
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.7741,
+          "bbox": [
+            16.78,
+            469.61,
+            171.88,
+            508.27
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.5513,
+          "bbox": [
+            393.92,
+            528.88,
+            573.09,
+            579.8
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "ComfyUI_00009_.png",
+      "components": {
+        "tail_wing": 1,
+        "head": 1,
+        "engine": 1,
+        "tail": 1,
+        "swept_wing": 2
+      },
+      "confidence": 0.76,
+      "detections": [
+        {
+          "class": "tail_wing",
+          "confidence": 0.9094,
+          "bbox": [
+            77.62,
+            362.39,
+            222.79,
+            538.72
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.8986,
+          "bbox": [
+            903.09,
+            561.71,
+            1001.6,
+            646.6
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.8901,
+          "bbox": [
+            534.98,
+            601.05,
+            703.58,
+            669.12
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.8099,
+          "bbox": [
+            14.3,
+            532.07,
+            192.57,
+            577.73
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.5339,
+          "bbox": [
+            264.24,
+            529.71,
+            560.43,
+            624.58
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.5295,
+          "bbox": [
+            367.03,
+            530.2,
+            560.79,
+            637.89
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "ComfyUI_00010_.png",
+      "components": {
+        "tail_wing": 1,
+        "head": 1,
+        "engine": 1,
+        "swept_wing": 1,
+        "tail": 1
+      },
+      "confidence": 0.87,
+      "detections": [
+        {
+          "class": "tail_wing",
+          "confidence": 0.9031,
+          "bbox": [
+            45.12,
+            272.56,
+            285.58,
+            467.3
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.8905,
+          "bbox": [
+            903.78,
+            471.45,
+            1006.19,
+            580.32
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.8707,
+          "bbox": [
+            593.82,
+            541.67,
+            736.59,
+            607.24
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.8538,
+          "bbox": [
+            398.69,
+            417.02,
+            639.85,
+            563.25
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.8212,
+          "bbox": [
+            63.81,
+            446.75,
+            187.81,
+            497.74
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "ComfyUI_00011_.png",
+      "components": {
+        "engine": 1,
+        "tail_wing": 1,
+        "head": 1,
+        "tail": 1,
+        "swept_wing": 1
+      },
+      "confidence": 0.85,
+      "detections": [
+        {
+          "class": "engine",
+          "confidence": 0.9183,
+          "bbox": [
+            347.15,
+            528.35,
+            500.85,
+            611.52
+          ]
+        },
+        {
+          "class": "tail_wing",
+          "confidence": 0.9007,
+          "bbox": [
+            764.31,
+            262.38,
+            960.11,
+            440.24
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.8744,
+          "bbox": [
+            15.94,
+            431.95,
+            121.61,
+            535.42
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.7843,
+          "bbox": [
+            845.97,
+            444.83,
+            978.0,
+            490.33
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.774,
+          "bbox": [
+            366.81,
+            500.62,
+            745.21,
+            550.1
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "ComfyUI_00012_.png",
+      "components": {
+        "tail_wing": 1,
+        "engine": 1,
+        "head": 1,
+        "tail": 1,
+        "swept_wing": 1
+      },
+      "confidence": 0.81,
+      "detections": [
+        {
+          "class": "tail_wing",
+          "confidence": 0.8981,
+          "bbox": [
+            798.68,
+            313.24,
+            968.0,
+            461.4
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.8773,
+          "bbox": [
+            348.13,
+            522.05,
+            480.69,
+            588.7
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.8631,
+          "bbox": [
+            36.08,
+            435.62,
+            124.81,
+            527.97
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.7494,
+          "bbox": [
+            861.52,
+            474.23,
+            1017.75,
+            513.81
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.6727,
+          "bbox": [
+            321.41,
+            492.88,
+            613.5,
+            537.49
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "ComfyUI_00014_.png",
+      "components": {
+        "head": 1,
+        "engine": 1,
+        "tail_wing": 1,
+        "tail": 1,
+        "swept_wing": 1
+      },
+      "confidence": 0.74,
+      "detections": [
+        {
+          "class": "head",
+          "confidence": 0.925,
+          "bbox": [
+            35.21,
+            459.82,
+            197.32,
+            584.14
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.8249,
+          "bbox": [
+            564.93,
+            457.05,
+            787.19,
+            529.32
+          ]
+        },
+        {
+          "class": "tail_wing",
+          "confidence": 0.7612,
+          "bbox": [
+            787.42,
+            287.29,
+            988.2,
+            473.45
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.6844,
+          "bbox": [
+            800.15,
+            429.41,
+            976.22,
+            465.41
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.517,
+          "bbox": [
+            354.93,
+            451.6,
+            966.18,
+            602.53
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "nid_1.png",
+      "components": {
+        "tail_wing": 2,
+        "head": 1,
+        "engine": 1,
+        "swept_wing": 1,
+        "tail": 1
+      },
+      "confidence": 0.8,
+      "detections": [
+        {
+          "class": "tail_wing",
+          "confidence": 0.889,
+          "bbox": [
+            67.56,
+            334.93,
+            285.7,
+            522.87
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.8753,
+          "bbox": [
+            879.6,
+            498.61,
+            977.8,
+            596.07
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.8746,
+          "bbox": [
+            542.61,
+            600.11,
+            691.3,
+            664.02
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.8393,
+          "bbox": [
+            289.9,
+            579.63,
+            655.19,
+            672.76
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.7283,
+          "bbox": [
+            28.86,
+            537.27,
+            201.01,
+            569.53
+          ]
+        },
+        {
+          "class": "tail_wing",
+          "confidence": 0.5699,
+          "bbox": [
+            317.3,
+            421.26,
+            455.64,
+            514.38
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "nid_10.png",
+      "components": {
+        "head": 1,
+        "engine": 3,
+        "tail_wing": 1,
+        "swept_wing": 1,
+        "tail": 1
+      },
+      "confidence": 0.84,
+      "detections": [
+        {
+          "class": "head",
+          "confidence": 0.8906,
+          "bbox": [
+            31.88,
+            495.45,
+            145.82,
+            620.34
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.885,
+          "bbox": [
+            436.85,
+            594.92,
+            551.73,
+            681.29
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.868,
+          "bbox": [
+            643.48,
+            591.51,
+            750.93,
+            667.19
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.8649,
+          "bbox": [
+            576.33,
+            357.4,
+            752.93,
+            420.17
+          ]
+        },
+        {
+          "class": "tail_wing",
+          "confidence": 0.813,
+          "bbox": [
+            653.46,
+            239.18,
+            753.47,
+            363.82
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.7897,
+          "bbox": [
+            417.1,
+            517.07,
+            1020.64,
+            640.55
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.7785,
+          "bbox": [
+            678.32,
+            434.17,
+            877.75,
+            468.08
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "nid_17.png",
+      "components": {
+        "swept_wing": 1,
+        "head": 1,
+        "tail": 2
+      },
+      "confidence": 0.77,
+      "detections": [
+        {
+          "class": "swept_wing",
+          "confidence": 0.8618,
+          "bbox": [
+            115.66,
+            322.26,
+            417.15,
+            489.75
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.8233,
+          "bbox": [
+            64.82,
+            536.95,
+            249.45,
+            701.86
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.7634,
+          "bbox": [
+            711.73,
+            247.3,
+            871.1,
+            286.87
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.6444,
+          "bbox": [
+            688.54,
+            374.09,
+            859.29,
+            411.93
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "nid_20.png",
+      "components": {
+        "engine": 1,
+        "tail_wing": 1,
+        "swept_wing": 2
+      },
+      "confidence": 0.68,
+      "detections": [
+        {
+          "class": "engine",
+          "confidence": 0.8697,
+          "bbox": [
+            633.46,
+            391.68,
+            747.13,
+            487.91
+          ]
+        },
+        {
+          "class": "tail_wing",
+          "confidence": 0.7814,
+          "bbox": [
+            629.97,
+            216.41,
+            711.34,
+            377.19
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.5268,
+          "bbox": [
+            0.0,
+            204.8,
+            676.0,
+            455.08
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.5259,
+          "bbox": [
+            475.47,
+            529.41,
+            1005.45,
+            602.79
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "nid_21.png",
+      "components": {
+        "head": 1,
+        "engine": 1,
+        "tail": 2,
+        "tail_wing": 1,
+        "swept_wing": 1
+      },
+      "confidence": 0.74,
+      "detections": [
+        {
+          "class": "head",
+          "confidence": 0.89,
+          "bbox": [
+            60.13,
+            516.6,
+            244.86,
+            662.88
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.8396,
+          "bbox": [
+            601.15,
+            461.24,
+            725.58,
+            537.64
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.7723,
+          "bbox": [
+            717.06,
+            325.94,
+            907.05,
+            347.29
+          ]
+        },
+        {
+          "class": "tail_wing",
+          "confidence": 0.71,
+          "bbox": [
+            663.98,
+            313.75,
+            763.49,
+            459.14
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.6533,
+          "bbox": [
+            440.13,
+            556.31,
+            1020.38,
+            613.48
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.5931,
+          "bbox": [
+            626.84,
+            314.41,
+            709.57,
+            335.82
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "nid_25.png",
+      "components": {
+        "swept_wing": 2,
+        "head": 1,
+        "engine": 1,
+        "tail": 2,
+        "tail_wing": 1
+      },
+      "confidence": 0.72,
+      "detections": [
+        {
+          "class": "swept_wing",
+          "confidence": 0.8608,
+          "bbox": [
+            97.33,
+            327.24,
+            364.96,
+            494.62
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.7929,
+          "bbox": [
+            26.47,
+            537.46,
+            153.6,
+            705.89
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.7811,
+          "bbox": [
+            525.93,
+            595.45,
+            658.11,
+            700.64
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.7442,
+          "bbox": [
+            572.03,
+            348.21,
+            647.76,
+            390.25
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.6874,
+          "bbox": [
+            698.54,
+            372.69,
+            881.17,
+            410.32
+          ]
+        },
+        {
+          "class": "tail_wing",
+          "confidence": 0.6394,
+          "bbox": [
+            645.2,
+            220.4,
+            727.18,
+            383.33
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.5262,
+          "bbox": [
+            415.43,
+            484.45,
+            1024.0,
+            598.21
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "nid_26.png",
+      "components": {
+        "tail": 1,
+        "engine": 1,
+        "tail_wing": 1
+      },
+      "confidence": 0.63,
+      "detections": [
+        {
+          "class": "tail",
+          "confidence": 0.7732,
+          "bbox": [
+            606.63,
+            415.42,
+            801.85,
+            448.01
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.5931,
+          "bbox": [
+            702.79,
+            598.44,
+            801.79,
+            693.47
+          ]
+        },
+        {
+          "class": "tail_wing",
+          "confidence": 0.5292,
+          "bbox": [
+            573.95,
+            235.33,
+            660.61,
+            413.55
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "nid_3.png",
+      "components": {
+        "swept_wing": 2,
+        "head": 1,
+        "tail_wing": 1,
+        "engine": 1,
+        "tail": 2
+      },
+      "confidence": 0.8,
+      "detections": [
+        {
+          "class": "swept_wing",
+          "confidence": 0.8945,
+          "bbox": [
+            362.25,
+            524.87,
+            674.48,
+            679.67
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.8884,
+          "bbox": [
+            882.93,
+            396.17,
+            971.79,
+            488.85
+          ]
+        },
+        {
+          "class": "tail_wing",
+          "confidence": 0.8776,
+          "bbox": [
+            86.37,
+            343.7,
+            264.03,
+            505.74
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.8684,
+          "bbox": [
+            583.25,
+            546.76,
+            724.43,
+            625.8
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.7334,
+          "bbox": [
+            283.49,
+            359.61,
+            498.23,
+            468.24
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.7145,
+          "bbox": [
+            64.39,
+            527.86,
+            230.14,
+            602.85
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.656,
+          "bbox": [
+            56.74,
+            486.95,
+            155.76,
+            537.37
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "nid_30.png",
+      "components": {
+        "head": 1,
+        "swept_wing": 1,
+        "tail_wing": 1,
+        "engine": 1
+      },
+      "confidence": 0.82,
+      "detections": [
+        {
+          "class": "head",
+          "confidence": 0.8458,
+          "bbox": [
+            73.49,
+            531.77,
+            306.89,
+            795.09
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.8433,
+          "bbox": [
+            507.09,
+            558.36,
+            1024.0,
+            649.84
+          ]
+        },
+        {
+          "class": "tail_wing",
+          "confidence": 0.8161,
+          "bbox": [
+            621.93,
+            224.13,
+            747.45,
+            428.18
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.7676,
+          "bbox": [
+            687.72,
+            429.12,
+            808.98,
+            530.34
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "nid_31.png",
+      "components": {
+        "head": 1,
+        "swept_wing": 3,
+        "tail_wing": 1,
+        "engine": 1
+      },
+      "confidence": 0.67,
+      "detections": [
+        {
+          "class": "head",
+          "confidence": 0.8297,
+          "bbox": [
+            139.21,
+            613.9,
+            306.15,
+            810.46
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.7301,
+          "bbox": [
+            37.8,
+            353.15,
+            360.81,
+            506.0
+          ]
+        },
+        {
+          "class": "tail_wing",
+          "confidence": 0.6697,
+          "bbox": [
+            590.17,
+            55.58,
+            746.74,
+            317.87
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.6619,
+          "bbox": [
+            579.38,
+            618.48,
+            716.52,
+            742.76
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.5729,
+          "bbox": [
+            489.7,
+            510.85,
+            1021.28,
+            617.14
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.5351,
+          "bbox": [
+            37.21,
+            348.78,
+            358.22,
+            577.63
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "nid_43.png",
+      "components": {
+        "head": 1,
+        "tail_wing": 1,
+        "swept_wing": 1
+      },
+      "confidence": 0.83,
+      "detections": [
+        {
+          "class": "head",
+          "confidence": 0.9076,
+          "bbox": [
+            65.81,
+            519.5,
+            271.27,
+            725.77
+          ]
+        },
+        {
+          "class": "tail_wing",
+          "confidence": 0.8661,
+          "bbox": [
+            587.01,
+            263.22,
+            711.33,
+            426.33
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.7065,
+          "bbox": [
+            504.73,
+            441.29,
+            904.22,
+            489.21
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "nid_38.png",
+      "components": {
+        "head": 1,
+        "tail": 1,
+        "engine": 1,
+        "tail_wing": 2,
+        "swept_wing": 1
+      },
+      "confidence": 0.7,
+      "detections": [
+        {
+          "class": "head",
+          "confidence": 0.8373,
+          "bbox": [
+            71.46,
+            520.8,
+            216.63,
+            664.19
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.8109,
+          "bbox": [
+            705.52,
+            278.08,
+            879.31,
+            300.41
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.7859,
+          "bbox": [
+            618.5,
+            421.95,
+            724.07,
+            489.16
+          ]
+        },
+        {
+          "class": "tail_wing",
+          "confidence": 0.7714,
+          "bbox": [
+            616.26,
+            274.44,
+            870.01,
+            409.16
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.5073,
+          "bbox": [
+            296.28,
+            398.99,
+            425.92,
+            478.44
+          ]
+        },
+        {
+          "class": "tail_wing",
+          "confidence": 0.5069,
+          "bbox": [
+            619.07,
+            276.3,
+            731.17,
+            406.87
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "nid_45.png",
+      "components": {
+        "head": 1,
+        "tail": 1,
+        "swept_wing": 1,
+        "engine": 2
+      },
+      "confidence": 0.72,
+      "detections": [
+        {
+          "class": "head",
+          "confidence": 0.8917,
+          "bbox": [
+            45.28,
+            546.51,
+            246.44,
+            741.79
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.772,
+          "bbox": [
+            711.75,
+            205.39,
+            951.7,
+            235.84
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.7622,
+          "bbox": [
+            436.99,
+            547.92,
+            1006.14,
+            649.16
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.6077,
+          "bbox": [
+            424.93,
+            371.34,
+            577.1,
+            431.58
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.5467,
+          "bbox": [
+            606.55,
+            412.14,
+            758.75,
+            508.74
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "nid_52.png",
+      "components": {},
+      "confidence": 0.0,
+      "detections": []
+    },
+    {
+      "image_id": "nid_41.png",
+      "components": {
+        "swept_wing": 1,
+        "engine": 2,
+        "tail": 1
+      },
+      "confidence": 0.71,
+      "detections": [
+        {
+          "class": "swept_wing",
+          "confidence": 0.8344,
+          "bbox": [
+            96.9,
+            342.41,
+            322.1,
+            486.63
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.78,
+          "bbox": [
+            615.66,
+            324.24,
+            740.03,
+            399.69
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.6956,
+          "bbox": [
+            563.17,
+            604.06,
+            693.88,
+            745.22
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.545,
+          "bbox": [
+            699.33,
+            412.8,
+            902.53,
+            449.33
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "nid_44.png",
+      "components": {
+        "tail_wing": 1,
+        "swept_wing": 1
+      },
+      "confidence": 0.85,
+      "detections": [
+        {
+          "class": "tail_wing",
+          "confidence": 0.8563,
+          "bbox": [
+            123.94,
+            375.77,
+            236.14,
+            540.39
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.8487,
+          "bbox": [
+            0.0,
+            610.3,
+            617.99,
+            804.08
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "nid_71.png",
+      "components": {
+        "head": 1,
+        "tail_wing": 1,
+        "engine": 1,
+        "tail": 1,
+        "swept_wing": 1
+      },
+      "confidence": 0.82,
+      "detections": [
+        {
+          "class": "head",
+          "confidence": 0.8945,
+          "bbox": [
+            46.34,
+            481.29,
+            170.93,
+            617.74
+          ]
+        },
+        {
+          "class": "tail_wing",
+          "confidence": 0.8933,
+          "bbox": [
+            616.8,
+            303.39,
+            783.03,
+            490.75
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.8746,
+          "bbox": [
+            410.43,
+            574.44,
+            542.73,
+            652.31
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.7418,
+          "bbox": [
+            729.54,
+            486.94,
+            935.93,
+            517.55
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.7061,
+          "bbox": [
+            385.53,
+            538.37,
+            853.96,
+            586.22
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "nid_72.png",
+      "components": {
+        "tail_wing": 1,
+        "head": 1,
+        "engine": 2,
+        "swept_wing": 1
+      },
+      "confidence": 0.83,
+      "detections": [
+        {
+          "class": "tail_wing",
+          "confidence": 0.894,
+          "bbox": [
+            1.26,
+            356.39,
+            226.35,
+            486.18
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.8912,
+          "bbox": [
+            859.32,
+            490.04,
+            967.63,
+            586.56
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.863,
+          "bbox": [
+            448.31,
+            562.25,
+            569.55,
+            614.68
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.8538,
+          "bbox": [
+            247.72,
+            439.68,
+            376.29,
+            490.28
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.654,
+          "bbox": [
+            124.44,
+            522.02,
+            636.95,
+            587.66
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "nid_73.png",
+      "components": {
+        "tail_wing": 1,
+        "engine": 1,
+        "head": 1,
+        "tail": 1,
+        "swept_wing": 1
+      },
+      "confidence": 0.85,
+      "detections": [
+        {
+          "class": "tail_wing",
+          "confidence": 0.9244,
+          "bbox": [
+            767.24,
+            308.93,
+            951.3,
+            471.73
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.9078,
+          "bbox": [
+            303.93,
+            536.17,
+            450.16,
+            608.41
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.8761,
+          "bbox": [
+            46.57,
+            462.0,
+            138.98,
+            554.96
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.854,
+          "bbox": [
+            829.18,
+            477.26,
+            977.64,
+            519.88
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.7091,
+          "bbox": [
+            416.95,
+            422.82,
+            680.42,
+            545.93
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "nid_76.png",
+      "components": {
+        "tail_wing": 1,
+        "tail": 2
+      },
+      "confidence": 0.79,
+      "detections": [
+        {
+          "class": "tail_wing",
+          "confidence": 0.8101,
+          "bbox": [
+            669.33,
+            280.37,
+            762.06,
+            477.99
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.7945,
+          "bbox": [
+            557.37,
+            292.94,
+            723.66,
+            335.17
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.7643,
+          "bbox": [
+            723.6,
+            445.48,
+            971.73,
+            519.26
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "nid_77.png",
+      "components": {
+        "head": 1,
+        "engine": 2,
+        "swept_wing": 2,
+        "tail_wing": 1,
+        "tail": 1
+      },
+      "confidence": 0.71,
+      "detections": [
+        {
+          "class": "head",
+          "confidence": 0.9063,
+          "bbox": [
+            44.5,
+            494.54,
+            207.09,
+            624.19
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.8106,
+          "bbox": [
+            672.58,
+            475.48,
+            816.09,
+            550.38
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.757,
+          "bbox": [
+            454.51,
+            557.3,
+            998.33,
+            600.3
+          ]
+        },
+        {
+          "class": "tail_wing",
+          "confidence": 0.7252,
+          "bbox": [
+            728.86,
+            346.03,
+            988.17,
+            477.67
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.6972,
+          "bbox": [
+            783.02,
+            356.2,
+            999.02,
+            383.0
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.57,
+          "bbox": [
+            455.84,
+            563.86,
+            837.19,
+            600.68
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.5265,
+          "bbox": [
+            672.31,
+            482.28,
+            720.85,
+            545.33
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "nid_78.png",
+      "components": {
+        "head": 1,
+        "engine": 2,
+        "tail_wing": 1,
+        "tail": 1,
+        "swept_wing": 1
+      },
+      "confidence": 0.81,
+      "detections": [
+        {
+          "class": "head",
+          "confidence": 0.8623,
+          "bbox": [
+            925.36,
+            442.22,
+            987.99,
+            509.03
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.8569,
+          "bbox": [
+            557.15,
+            491.63,
+            665.74,
+            543.01
+          ]
+        },
+        {
+          "class": "tail_wing",
+          "confidence": 0.8501,
+          "bbox": [
+            53.2,
+            314.82,
+            222.36,
+            428.27
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.8444,
+          "bbox": [
+            443.57,
+            462.65,
+            541.54,
+            513.8
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.829,
+          "bbox": [
+            13.44,
+            426.46,
+            155.9,
+            465.19
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.6284,
+          "bbox": [
+            241.98,
+            398.46,
+            507.37,
+            460.53
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "nid_75.png",
+      "components": {
+        "head": 1,
+        "tail_wing": 1,
+        "tail": 2,
+        "engine": 2
+      },
+      "confidence": 0.76,
+      "detections": [
+        {
+          "class": "head",
+          "confidence": 0.8806,
+          "bbox": [
+            35.16,
+            499.24,
+            259.23,
+            668.92
+          ]
+        },
+        {
+          "class": "tail_wing",
+          "confidence": 0.802,
+          "bbox": [
+            559.67,
+            306.99,
+            716.04,
+            464.31
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.7859,
+          "bbox": [
+            556.2,
+            312.73,
+            658.92,
+            336.11
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.7498,
+          "bbox": [
+            561.97,
+            466.08,
+            710.25,
+            554.61
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.7251,
+          "bbox": [
+            663.33,
+            316.57,
+            902.85,
+            341.2
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.6224,
+          "bbox": [
+            562.54,
+            471.06,
+            620.84,
+            544.56
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "nid_74.png",
+      "components": {
+        "head": 1,
+        "engine": 2,
+        "tail": 2,
+        "tail_wing": 2,
+        "swept_wing": 1
+      },
+      "confidence": 0.77,
+      "detections": [
+        {
+          "class": "head",
+          "confidence": 0.9062,
+          "bbox": [
+            58.31,
+            509.83,
+            210.12,
+            660.62
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.8831,
+          "bbox": [
+            580.95,
+            566.43,
+            692.95,
+            650.16
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.8617,
+          "bbox": [
+            465.92,
+            561.35,
+            578.45,
+            648.82
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.7834,
+          "bbox": [
+            717.28,
+            318.62,
+            915.38,
+            341.19
+          ]
+        },
+        {
+          "class": "tail_wing",
+          "confidence": 0.7511,
+          "bbox": [
+            616.81,
+            309.41,
+            768.76,
+            462.95
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.7168,
+          "bbox": [
+            627.37,
+            316.55,
+            708.48,
+            335.63
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.6858,
+          "bbox": [
+            404.67,
+            510.0,
+            1018.34,
+            574.19
+          ]
+        },
+        {
+          "class": "tail_wing",
+          "confidence": 0.5773,
+          "bbox": [
+            615.98,
+            308.08,
+            885.37,
+            464.79
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "nid_79.png",
+      "components": {
+        "head": 2,
+        "tail_wing": 1,
+        "tail": 2,
+        "engine": 1,
+        "swept_wing": 1
+      },
+      "confidence": 0.77,
+      "detections": [
+        {
+          "class": "head",
+          "confidence": 0.8714,
+          "bbox": [
+            91.11,
+            438.76,
+            258.91,
+            606.03
+          ]
+        },
+        {
+          "class": "tail_wing",
+          "confidence": 0.8525,
+          "bbox": [
+            624.1,
+            345.52,
+            699.76,
+            473.66
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.8073,
+          "bbox": [
+            544.29,
+            356.04,
+            656.26,
+            396.95
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.8052,
+          "bbox": [
+            90.72,
+            440.21,
+            341.23,
+            612.56
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.7791,
+          "bbox": [
+            660.74,
+            355.38,
+            861.1,
+            388.52
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.6899,
+          "bbox": [
+            626.35,
+            472.66,
+            685.99,
+            543.63
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.6122,
+          "bbox": [
+            484.6,
+            535.04,
+            894.71,
+            601.15
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "nid_80.png",
+      "components": {
+        "tail": 1,
+        "head": 1,
+        "tail_wing": 1
+      },
+      "confidence": 0.77,
+      "detections": [
+        {
+          "class": "tail",
+          "confidence": 0.8229,
+          "bbox": [
+            313.41,
+            362.61,
+            491.06,
+            411.11
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.7569,
+          "bbox": [
+            666.14,
+            414.51,
+            853.42,
+            622.8
+          ]
+        },
+        {
+          "class": "tail_wing",
+          "confidence": 0.7302,
+          "bbox": [
+            264.97,
+            335.53,
+            348.3,
+            537.59
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "nid_82.png",
+      "components": {
+        "engine": 2,
+        "tail_wing": 1,
+        "head": 1,
+        "swept_wing": 2
+      },
+      "confidence": 0.81,
+      "detections": [
+        {
+          "class": "engine",
+          "confidence": 0.8983,
+          "bbox": [
+            515.95,
+            520.78,
+            659.59,
+            614.11
+          ]
+        },
+        {
+          "class": "tail_wing",
+          "confidence": 0.897,
+          "bbox": [
+            693.62,
+            254.73,
+            778.79,
+            378.63
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.8762,
+          "bbox": [
+            23.49,
+            385.17,
+            152.01,
+            543.45
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.8528,
+          "bbox": [
+            624.66,
+            358.42,
+            799.2,
+            441.42
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.7771,
+          "bbox": [
+            415.65,
+            456.29,
+            1024.0,
+            559.93
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.5301,
+          "bbox": [
+            733.44,
+            453.84,
+            1022.89,
+            513.02
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "nid_81.png",
+      "components": {
+        "head": 1,
+        "tail": 1,
+        "tail_wing": 1
+      },
+      "confidence": 0.76,
+      "detections": [
+        {
+          "class": "head",
+          "confidence": 0.909,
+          "bbox": [
+            52.19,
+            499.58,
+            226.43,
+            602.06
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.6859,
+          "bbox": [
+            742.68,
+            366.72,
+            965.91,
+            388.28
+          ]
+        },
+        {
+          "class": "tail_wing",
+          "confidence": 0.6855,
+          "bbox": [
+            697.07,
+            353.95,
+            931.1,
+            485.29
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "nid_83.png",
+      "components": {
+        "head": 2,
+        "swept_wing": 3,
+        "engine": 1,
+        "tail": 1,
+        "tail_wing": 1
+      },
+      "confidence": 0.74,
+      "detections": [
+        {
+          "class": "head",
+          "confidence": 0.9136,
+          "bbox": [
+            77.67,
+            522.69,
+            257.87,
+            641.17
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.859,
+          "bbox": [
+            723.35,
+            811.0,
+            804.26,
+            894.24
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.8236,
+          "bbox": [
+            459.79,
+            528.88,
+            563.46,
+            567.77
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.7882,
+          "bbox": [
+            197.24,
+            523.47,
+            257.23,
+            639.06
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.7045,
+          "bbox": [
+            675.26,
+            405.13,
+            770.97,
+            435.15
+          ]
+        },
+        {
+          "class": "tail_wing",
+          "confidence": 0.6617,
+          "bbox": [
+            703.77,
+            398.25,
+            933.97,
+            523.43
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.6246,
+          "bbox": [
+            522.6,
+            509.66,
+            936.65,
+            552.99
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.5498,
+          "bbox": [
+            584.13,
+            903.89,
+            937.8,
+            943.83
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "nid_84.png",
+      "components": {
+        "head": 1,
+        "tail_wing": 1,
+        "engine": 2,
+        "swept_wing": 1
+      },
+      "confidence": 0.8,
+      "detections": [
+        {
+          "class": "head",
+          "confidence": 0.9077,
+          "bbox": [
+            852.0,
+            490.42,
+            961.39,
+            583.9
+          ]
+        },
+        {
+          "class": "tail_wing",
+          "confidence": 0.8972,
+          "bbox": [
+            19.26,
+            352.33,
+            254.81,
+            491.44
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.861,
+          "bbox": [
+            497.44,
+            528.53,
+            605.03,
+            587.64
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.7146,
+          "bbox": [
+            593.76,
+            528.23,
+            658.0,
+            584.89
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.6409,
+          "bbox": [
+            314.66,
+            485.48,
+            636.35,
+            529.11
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "nid_85.png",
+      "components": {
+        "head": 1,
+        "tail_wing": 1,
+        "engine": 1,
+        "swept_wing": 1
+      },
+      "confidence": 0.81,
+      "detections": [
+        {
+          "class": "head",
+          "confidence": 0.9131,
+          "bbox": [
+            44.68,
+            483.1,
+            161.8,
+            576.92
+          ]
+        },
+        {
+          "class": "tail_wing",
+          "confidence": 0.902,
+          "bbox": [
+            775.04,
+            390.25,
+            993.18,
+            495.91
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.8689,
+          "bbox": [
+            621.6,
+            485.86,
+            776.65,
+            545.91
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.5411,
+          "bbox": [
+            396.59,
+            546.52,
+            627.52,
+            572.19
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "nid_87.png",
+      "components": {
+        "head": 1,
+        "engine": 1,
+        "tail_wing": 1,
+        "swept_wing": 1,
+        "tail": 1
+      },
+      "confidence": 0.81,
+      "detections": [
+        {
+          "class": "head",
+          "confidence": 0.9025,
+          "bbox": [
+            30.98,
+            454.4,
+            168.11,
+            560.5
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.8757,
+          "bbox": [
+            632.16,
+            459.19,
+            788.2,
+            516.2
+          ]
+        },
+        {
+          "class": "tail_wing",
+          "confidence": 0.84,
+          "bbox": [
+            749.02,
+            337.91,
+            995.08,
+            460.9
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.7328,
+          "bbox": [
+            405.61,
+            504.58,
+            844.24,
+            551.09
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.6775,
+          "bbox": [
+            816.57,
+            343.96,
+            1004.82,
+            367.98
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "nid_86.png",
+      "components": {
+        "head": 1,
+        "tail_wing": 1,
+        "tail": 3,
+        "swept_wing": 2
+      },
+      "confidence": 0.77,
+      "detections": [
+        {
+          "class": "head",
+          "confidence": 0.9112,
+          "bbox": [
+            707.13,
+            540.38,
+            873.22,
+            669.02
+          ]
+        },
+        {
+          "class": "tail_wing",
+          "confidence": 0.8657,
+          "bbox": [
+            204.39,
+            389.49,
+            313.02,
+            538.23
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.8268,
+          "bbox": [
+            66.1,
+            519.22,
+            251.26,
+            565.39
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.7902,
+          "bbox": [
+            258.96,
+            400.27,
+            349.49,
+            431.33
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.6893,
+          "bbox": [
+            68.47,
+            390.22,
+            246.51,
+            419.26
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.6781,
+          "bbox": [
+            38.89,
+            582.1,
+            512.76,
+            622.64
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.6273,
+          "bbox": [
+            22.96,
+            579.72,
+            421.01,
+            618.48
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "nid_88.png",
+      "components": {
+        "tail_wing": 1,
+        "engine": 1,
+        "head": 1,
+        "tail": 1,
+        "swept_wing": 2
+      },
+      "confidence": 0.75,
+      "detections": [
+        {
+          "class": "tail_wing",
+          "confidence": 0.9224,
+          "bbox": [
+            718.62,
+            290.88,
+            890.29,
+            444.29
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.892,
+          "bbox": [
+            393.64,
+            573.66,
+            530.69,
+            650.37
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.8679,
+          "bbox": [
+            26.67,
+            491.58,
+            117.79,
+            591.9
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.7365,
+          "bbox": [
+            797.95,
+            454.34,
+            1000.51,
+            478.56
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.5668,
+          "bbox": [
+            362.22,
+            380.74,
+            449.24,
+            466.58
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.5296,
+          "bbox": [
+            352.33,
+            532.08,
+            791.42,
+            577.33
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "nid_89.png",
+      "components": {
+        "head": 1,
+        "engine": 3,
+        "tail": 1,
+        "tail_wing": 1,
+        "swept_wing": 1
+      },
+      "confidence": 0.86,
+      "detections": [
+        {
+          "class": "head",
+          "confidence": 0.8977,
+          "bbox": [
+            33.76,
+            413.61,
+            107.04,
+            493.04
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.8803,
+          "bbox": [
+            435.63,
+            487.38,
+            548.36,
+            547.94
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.8663,
+          "bbox": [
+            638.51,
+            455.61,
+            743.93,
+            511.92
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.86,
+          "bbox": [
+            808.16,
+            474.54,
+            989.84,
+            518.46
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.8467,
+          "bbox": [
+            267.34,
+            522.78,
+            371.2,
+            574.01
+          ]
+        },
+        {
+          "class": "tail_wing",
+          "confidence": 0.8321,
+          "bbox": [
+            778.45,
+            366.77,
+            875.0,
+            486.09
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.8282,
+          "bbox": [
+            372.36,
+            396.01,
+            910.67,
+            516.23
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "nid_90.png",
+      "components": {
+        "head": 1,
+        "engine": 1,
+        "tail_wing": 1,
+        "tail": 1,
+        "swept_wing": 1
+      },
+      "confidence": 0.76,
+      "detections": [
+        {
+          "class": "head",
+          "confidence": 0.8968,
+          "bbox": [
+            74.91,
+            493.74,
+            285.97,
+            660.59
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.8582,
+          "bbox": [
+            632.14,
+            450.53,
+            753.86,
+            530.55
+          ]
+        },
+        {
+          "class": "tail_wing",
+          "confidence": 0.6849,
+          "bbox": [
+            636.85,
+            305.91,
+            758.65,
+            452.5
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.6808,
+          "bbox": [
+            714.44,
+            319.82,
+            908.22,
+            346.08
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.6741,
+          "bbox": [
+            439.32,
+            499.45,
+            1003.01,
+            599.66
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "nsid_115.png",
+      "components": {
+        "swept_wing": 1,
+        "tail": 1,
+        "tail_wing": 1
+      },
+      "confidence": 0.69,
+      "detections": [
+        {
+          "class": "swept_wing",
+          "confidence": 0.8022,
+          "bbox": [
+            108.48,
+            342.73,
+            322.66,
+            522.81
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.7554,
+          "bbox": [
+            650.14,
+            330.84,
+            842.76,
+            381.71
+          ]
+        },
+        {
+          "class": "tail_wing",
+          "confidence": 0.5139,
+          "bbox": [
+            563.66,
+            163.79,
+            687.45,
+            372.31
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "nsid_116.png",
+      "components": {
+        "engine": 1,
+        "tail_wing": 1,
+        "head": 1,
+        "tail": 1,
+        "swept_wing": 1
+      },
+      "confidence": 0.82,
+      "detections": [
+        {
+          "class": "engine",
+          "confidence": 0.8705,
+          "bbox": [
+            406.99,
+            591.58,
+            575.83,
+            692.96
+          ]
+        },
+        {
+          "class": "tail_wing",
+          "confidence": 0.8636,
+          "bbox": [
+            728.76,
+            246.54,
+            835.73,
+            404.73
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.8492,
+          "bbox": [
+            47.76,
+            491.31,
+            185.63,
+            625.47
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.7964,
+          "bbox": [
+            771.65,
+            420.59,
+            954.44,
+            443.58
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.7309,
+          "bbox": [
+            414.84,
+            525.94,
+            974.79,
+            602.4
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "nsid_119.png",
+      "components": {
+        "engine": 2,
+        "head": 1,
+        "swept_wing": 1,
+        "tail": 1
+      },
+      "confidence": 0.83,
+      "detections": [
+        {
+          "class": "engine",
+          "confidence": 0.9029,
+          "bbox": [
+            492.53,
+            615.23,
+            635.52,
+            717.96
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.8899,
+          "bbox": [
+            630.73,
+            413.26,
+            771.58,
+            499.23
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.8805,
+          "bbox": [
+            33.09,
+            492.44,
+            236.02,
+            672.69
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.7967,
+          "bbox": [
+            437.83,
+            526.29,
+            1021.91,
+            634.39
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.6888,
+          "bbox": [
+            747.56,
+            213.94,
+            979.8,
+            246.4
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "nsid_120.png",
+      "components": {
+        "tail_wing": 1,
+        "tail": 3,
+        "swept_wing": 2
+      },
+      "confidence": 0.78,
+      "detections": [
+        {
+          "class": "tail_wing",
+          "confidence": 0.8893,
+          "bbox": [
+            141.7,
+            521.08,
+            297.56,
+            673.6
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.8594,
+          "bbox": [
+            143.11,
+            668.25,
+            258.64,
+            740.98
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.838,
+          "bbox": [
+            515.63,
+            517.03,
+            896.15,
+            717.13
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.8027,
+          "bbox": [
+            157.03,
+            372.13,
+            491.48,
+            555.08
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.7373,
+          "bbox": [
+            747.45,
+            385.82,
+            880.88,
+            408.06
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.5296,
+          "bbox": [
+            203.5,
+            686.93,
+            308.12,
+            776.6
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "nsid_117.png",
+      "components": {
+        "engine": 3,
+        "head": 1,
+        "swept_wing": 2,
+        "tail_wing": 1
+      },
+      "confidence": 0.86,
+      "detections": [
+        {
+          "class": "engine",
+          "confidence": 0.898,
+          "bbox": [
+            590.79,
+            638.92,
+            737.06,
+            724.15
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.8893,
+          "bbox": [
+            14.74,
+            477.9,
+            100.86,
+            574.44
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.8886,
+          "bbox": [
+            418.4,
+            597.83,
+            544.14,
+            678.45
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.8603,
+          "bbox": [
+            386.38,
+            325.56,
+            490.62,
+            468.98
+          ]
+        },
+        {
+          "class": "tail_wing",
+          "confidence": 0.8583,
+          "bbox": [
+            804.35,
+            344.15,
+            946.08,
+            470.91
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.8475,
+          "bbox": [
+            310.17,
+            424.54,
+            384.67,
+            468.41
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.7998,
+          "bbox": [
+            368.73,
+            539.76,
+            1017.95,
+            678.86
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "nsid_121.png",
+      "components": {
+        "engine": 2,
+        "head": 1,
+        "swept_wing": 2
+      },
+      "confidence": 0.76,
+      "detections": [
+        {
+          "class": "engine",
+          "confidence": 0.8724,
+          "bbox": [
+            49.22,
+            669.81,
+            193.35,
+            822.52
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.8645,
+          "bbox": [
+            804.07,
+            676.98,
+            954.71,
+            825.54
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.7957,
+          "bbox": [
+            504.84,
+            404.69,
+            670.27,
+            704.46
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.7207,
+          "bbox": [
+            0.48,
+            614.58,
+            369.81,
+            679.04
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.5291,
+          "bbox": [
+            651.28,
+            612.78,
+            1017.54,
+            693.23
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "nsid_122.png",
+      "components": {
+        "tail_wing": 1,
+        "engine": 2,
+        "swept_wing": 2,
+        "head": 1,
+        "tail": 1
+      },
+      "confidence": 0.77,
+      "detections": [
+        {
+          "class": "tail_wing",
+          "confidence": 0.8763,
+          "bbox": [
+            723.76,
+            226.4,
+            835.19,
+            400.11
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.8708,
+          "bbox": [
+            469.21,
+            602.85,
+            596.41,
+            697.04
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.8392,
+          "bbox": [
+            245.54,
+            351.9,
+            404.81,
+            471.17
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.8292,
+          "bbox": [
+            35.33,
+            516.19,
+            156.99,
+            644.77
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.7987,
+          "bbox": [
+            763.22,
+            411.63,
+            974.54,
+            436.85
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.6726,
+          "bbox": [
+            373.16,
+            522.33,
+            1024.0,
+            648.48
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.5232,
+          "bbox": [
+            679.28,
+            626.21,
+            801.76,
+            707.67
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "nsid_118.png",
+      "components": {
+        "tail_wing": 2,
+        "head": 1,
+        "engine": 2,
+        "swept_wing": 1,
+        "tail": 1
+      },
+      "confidence": 0.85,
+      "detections": [
+        {
+          "class": "tail_wing",
+          "confidence": 0.8936,
+          "bbox": [
+            691.24,
+            236.71,
+            854.07,
+            422.02
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.8911,
+          "bbox": [
+            37.96,
+            508.48,
+            128.03,
+            620.98
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.881,
+          "bbox": [
+            563.05,
+            618.86,
+            691.61,
+            699.53
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.8657,
+          "bbox": [
+            417.36,
+            609.68,
+            543.37,
+            682.6
+          ]
+        },
+        {
+          "class": "tail_wing",
+          "confidence": 0.8244,
+          "bbox": [
+            265.96,
+            337.76,
+            377.52,
+            464.13
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.7905,
+          "bbox": [
+            297.53,
+            532.87,
+            984.57,
+            661.63
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.7697,
+          "bbox": [
+            748.87,
+            432.08,
+            977.44,
+            458.57
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "nsid_123.png",
+      "components": {
+        "tail_wing": 2,
+        "head": 1,
+        "engine": 3,
+        "tail": 1,
+        "swept_wing": 1
+      },
+      "confidence": 0.77,
+      "detections": [
+        {
+          "class": "tail_wing",
+          "confidence": 0.8884,
+          "bbox": [
+            636.48,
+            264.3,
+            783.6,
+            435.37
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.8811,
+          "bbox": [
+            64.36,
+            530.16,
+            150.84,
+            642.15
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.8709,
+          "bbox": [
+            592.87,
+            611.65,
+            701.39,
+            681.89
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.847,
+          "bbox": [
+            430.49,
+            606.17,
+            537.12,
+            673.38
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.8456,
+          "bbox": [
+            206.85,
+            428.95,
+            279.57,
+            479.83
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.7475,
+          "bbox": [
+            687.83,
+            438.55,
+            888.26,
+            470.42
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.6084,
+          "bbox": [
+            267.88,
+            540.08,
+            948.88,
+            647.51
+          ]
+        },
+        {
+          "class": "tail_wing",
+          "confidence": 0.5084,
+          "bbox": [
+            269.5,
+            334.64,
+            390.98,
+            486.2
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "nsid_125.png",
+      "components": {
+        "engine": 2,
+        "head": 1
+      },
+      "confidence": 0.69,
+      "detections": [
+        {
+          "class": "engine",
+          "confidence": 0.858,
+          "bbox": [
+            633.63,
+            439.42,
+            748.4,
+            526.18
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.6313,
+          "bbox": [
+            64.74,
+            591.79,
+            184.27,
+            782.89
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.5875,
+          "bbox": [
+            519.12,
+            644.47,
+            569.9,
+            707.52
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "nsid_126.png",
+      "components": {
+        "engine": 4,
+        "head": 1,
+        "swept_wing": 1,
+        "tail": 1
+      },
+      "confidence": 0.8,
+      "detections": [
+        {
+          "class": "engine",
+          "confidence": 0.8741,
+          "bbox": [
+            651.01,
+            299.16,
+            801.97,
+            386.67
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.8679,
+          "bbox": [
+            44.79,
+            345.48,
+            213.96,
+            530.27
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.867,
+          "bbox": [
+            514.89,
+            571.15,
+            726.3,
+            716.6
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.8241,
+          "bbox": [
+            518.89,
+            577.45,
+            634.29,
+            715.12
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.8235,
+          "bbox": [
+            159.77,
+            647.49,
+            242.57,
+            755.18
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.6891,
+          "bbox": [
+            407.78,
+            468.57,
+            1024.0,
+            581.88
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.6558,
+          "bbox": [
+            730.13,
+            418.32,
+            1000.68,
+            454.42
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "nsid_127.png",
+      "components": {
+        "tail_wing": 1,
+        "head": 1,
+        "swept_wing": 2,
+        "engine": 1,
+        "tail": 1
+      },
+      "confidence": 0.7,
+      "detections": [
+        {
+          "class": "tail_wing",
+          "confidence": 0.9108,
+          "bbox": [
+            738.5,
+            206.85,
+            869.6,
+            387.25
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.8842,
+          "bbox": [
+            44.68,
+            501.37,
+            225.23,
+            659.27
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.8111,
+          "bbox": [
+            422.35,
+            484.57,
+            994.78,
+            704.62
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.5485,
+          "bbox": [
+            262.88,
+            274.37,
+            438.05,
+            460.71
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.5362,
+          "bbox": [
+            204.7,
+            670.8,
+            339.29,
+            776.96
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.5023,
+          "bbox": [
+            335.59,
+            676.0,
+            416.49,
+            723.89
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "id_4036.png",
+      "components": {
+        "tail": 1,
+        "tail_wing": 2
+      },
+      "confidence": 0.68,
+      "detections": [
+        {
+          "class": "tail",
+          "confidence": 0.7799,
+          "bbox": [
+            679.92,
+            339.09,
+            837.91,
+            383.73
+          ]
+        },
+        {
+          "class": "tail_wing",
+          "confidence": 0.7049,
+          "bbox": [
+            579.54,
+            182.57,
+            711.67,
+            456.03
+          ]
+        },
+        {
+          "class": "tail_wing",
+          "confidence": 0.5602,
+          "bbox": [
+            141.44,
+            332.07,
+            336.89,
+            573.7
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "id_4153.png",
+      "components": {
+        "tail_wing": 1,
+        "tail": 1
+      },
+      "confidence": 0.58,
+      "detections": [
+        {
+          "class": "tail_wing",
+          "confidence": 0.626,
+          "bbox": [
+            551.55,
+            110.54,
+            686.41,
+            423.79
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.5348,
+          "bbox": [
+            653.25,
+            299.06,
+            813.13,
+            327.38
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "id_4417.png",
+      "components": {
+        "head": 1,
+        "tail_wing": 1,
+        "engine": 3,
+        "swept_wing": 1
+      },
+      "confidence": 0.84,
+      "detections": [
+        {
+          "class": "head",
+          "confidence": 0.903,
+          "bbox": [
+            19.3,
+            442.47,
+            123.98,
+            545.86
+          ]
+        },
+        {
+          "class": "tail_wing",
+          "confidence": 0.8783,
+          "bbox": [
+            719.87,
+            263.44,
+            854.8,
+            394.97
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.8569,
+          "bbox": [
+            431.78,
+            565.07,
+            554.47,
+            628.69
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.8442,
+          "bbox": [
+            634.94,
+            613.91,
+            751.27,
+            685.97
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.8296,
+          "bbox": [
+            399.03,
+            487.42,
+            1013.21,
+            676.62
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.7153,
+          "bbox": [
+            230.09,
+            365.32,
+            313.42,
+            418.24
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "id_4452.png",
+      "components": {
+        "engine": 2,
+        "swept_wing": 2,
+        "tail_wing": 1,
+        "tail": 1
+      },
+      "confidence": 0.72,
+      "detections": [
+        {
+          "class": "engine",
+          "confidence": 0.8728,
+          "bbox": [
+            598.08,
+            605.82,
+            711.26,
+            704.63
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.8088,
+          "bbox": [
+            413.06,
+            506.16,
+            1024.0,
+            624.36
+          ]
+        },
+        {
+          "class": "tail_wing",
+          "confidence": 0.7625,
+          "bbox": [
+            652.59,
+            157.57,
+            753.2,
+            381.07
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.6967,
+          "bbox": [
+            698.33,
+            358.91,
+            923.74,
+            411.28
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.6464,
+          "bbox": [
+            841.66,
+            565.04,
+            948.5,
+            667.11
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.5147,
+          "bbox": [
+            116.55,
+            333.57,
+            371.61,
+            516.96
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "id_4622.png",
+      "components": {
+        "tail": 1,
+        "swept_wing": 2
+      },
+      "confidence": 0.79,
+      "detections": [
+        {
+          "class": "tail",
+          "confidence": 0.8307,
+          "bbox": [
+            719.8,
+            168.38,
+            991.96,
+            235.34
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.7852,
+          "bbox": [
+            276.65,
+            462.07,
+            802.02,
+            702.71
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.7494,
+          "bbox": [
+            37.44,
+            276.14,
+            427.71,
+            441.27
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "id_5063.png",
+      "components": {
+        "head": 1,
+        "swept_wing": 2
+      },
+      "confidence": 0.67,
+      "detections": [
+        {
+          "class": "head",
+          "confidence": 0.8711,
+          "bbox": [
+            41.2,
+            332.22,
+            231.33,
+            441.4
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.5741,
+          "bbox": [
+            698.58,
+            376.85,
+            881.81,
+            427.88
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.566,
+          "bbox": [
+            419.85,
+            484.38,
+            1008.8,
+            547.59
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "id_5087.png",
+      "components": {
+        "engine": 3,
+        "head": 1,
+        "swept_wing": 2
+      },
+      "confidence": 0.74,
+      "detections": [
+        {
+          "class": "engine",
+          "confidence": 0.8215,
+          "bbox": [
+            615.44,
+            520.17,
+            743.89,
+            630.17
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.8087,
+          "bbox": [
+            92.11,
+            530.77,
+            243.79,
+            672.12
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.7576,
+          "bbox": [
+            506.72,
+            393.52,
+            1024.0,
+            542.35
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.7315,
+          "bbox": [
+            108.57,
+            269.41,
+            382.49,
+            478.95
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.7004,
+          "bbox": [
+            830.39,
+            440.43,
+            942.62,
+            585.31
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.6217,
+          "bbox": [
+            617.78,
+            523.66,
+            707.2,
+            629.67
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "id_5470.png",
+      "components": {
+        "head": 1,
+        "engine": 2,
+        "tail_wing": 1,
+        "swept_wing": 1
+      },
+      "confidence": 0.86,
+      "detections": [
+        {
+          "class": "head",
+          "confidence": 0.9211,
+          "bbox": [
+            815.96,
+            453.94,
+            953.56,
+            568.16
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.8897,
+          "bbox": [
+            497.63,
+            533.38,
+            632.5,
+            604.23
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.8566,
+          "bbox": [
+            668.09,
+            570.04,
+            786.63,
+            623.88
+          ]
+        },
+        {
+          "class": "tail_wing",
+          "confidence": 0.8245,
+          "bbox": [
+            231.16,
+            336.23,
+            346.74,
+            480.31
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.8237,
+          "bbox": [
+            90.96,
+            449.91,
+            530.94,
+            553.67
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "id_5329.png",
+      "components": {
+        "head": 1,
+        "engine": 1
+      },
+      "confidence": 0.83,
+      "detections": [
+        {
+          "class": "head",
+          "confidence": 0.9035,
+          "bbox": [
+            145.42,
+            424.07,
+            355.42,
+            571.97
+          ]
+        },
+        {
+          "class": "engine",
+          "confidence": 0.7594,
+          "bbox": [
+            550.08,
+            397.85,
+            678.15,
+            479.23
+          ]
+        }
+      ]
+    },
+    {
+      "image_id": "nsid_128.png",
+      "components": {
+        "engine": 1,
+        "head": 1,
+        "tail_wing": 1,
+        "tail": 1,
+        "swept_wing": 1
+      },
+      "confidence": 0.78,
+      "detections": [
+        {
+          "class": "engine",
+          "confidence": 0.8984,
+          "bbox": [
+            459.01,
+            632.66,
+            615.48,
+            743.81
+          ]
+        },
+        {
+          "class": "head",
+          "confidence": 0.8425,
+          "bbox": [
+            41.42,
+            543.95,
+            206.33,
+            707.41
+          ]
+        },
+        {
+          "class": "tail_wing",
+          "confidence": 0.8284,
+          "bbox": [
+            607.93,
+            199.16,
+            776.39,
+            452.02
+          ]
+        },
+        {
+          "class": "tail",
+          "confidence": 0.7837,
+          "bbox": [
+            725.43,
+            419.53,
+            943.83,
+            443.07
+          ]
+        },
+        {
+          "class": "swept_wing",
+          "confidence": 0.5243,
+          "bbox": [
+            426.07,
+            556.48,
+            1024.0,
+            693.53
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+# ===========================================================================
+# PCMDE — public repository contents
+#
+# What ships: source code (core, cli, pipeline, analysis, metrics, domains,
+# tests), per-domain configs, requirements, the shipped detection/VLM/ensemble
+# JSONs needed to reproduce scores, and README.md.
+#
+# What stays local: manuscript material, every generated run output, figure
+# generation, and superseded files. Rules are grouped below by reason.
+# ===========================================================================
+
+# ---------------------------------------------------------------------------
+# Manuscript and internal documentation
+#
+# Only the top-level README.md ships. Everything under docs/ is paper and
+# review material (PAMI PDF, ICML reviews, LaTeX sources and figures, the
+# .docx ablation note) plus internal working notes.
+# ---------------------------------------------------------------------------
+docs/
+
+# ---------------------------------------------------------------------------
+# Run outputs
+#
+# Nothing in results/ is source: every file there is produced by a pipeline
+# run. Each writer creates its own output directory (parents=True), so a fresh
+# clone rebuilds the tree on the first run -- no scaffolding needs tracking.
+#
+# Covers scores/, ablation/, crosscheck/, reference_run/, detections_annotated/
+# and bundled runs such as results/pcmde_results_<date>/.
+# ---------------------------------------------------------------------------
+results/
+
+# Annotated detection overlays, wherever a run is pointed instead of results/
+**/detections_annotated/
+
+# Shell-driver logs (scripts/run_domain.sh writes logs/<domain>_<n>_<step>.log)
+logs/
+terminal_output_*.txt
+
+# ---------------------------------------------------------------------------
+# Figure and paper-number generation
+#
+# These read a local run directory and write into docs/LaTeX/figures. They
+# reproduce paper artifacts rather than the framework, and make_projected_values
+# emits projected (not measured) numbers, so neither belongs in a public repo.
+# ---------------------------------------------------------------------------
+scripts/make_figure7.py
+scripts/make_projected_values.py
+figures/
+*.eps
+
+# ---------------------------------------------------------------------------
+# Superseded material
+#
+# archive/ holds outdated values from earlier runs, kept only for local
+# reference. Nothing in the codebase reads it.
+# ---------------------------------------------------------------------------
+archive/
+
+# ---------------------------------------------------------------------------
+# Datasets
+#
+# Test images (~330 MB) are not distributed, but the folder itself is tracked
+# via a .gitkeep so a fresh clone has somewhere to put them. captions.csv lists
+# every image_id, which is the authoritative filename list.
+#
+# The detection / VLM / ensemble JSONs under data/ ARE tracked: they are the
+# shipped inputs that let scores be reproduced without a GPU.
+# ---------------------------------------------------------------------------
+data/*/images/*
+!data/*/images/.gitkeep
+
+# Raw HiDream-I1 generation staging output (generated_2.py --output_dir).
+# One-time intermediate: add_generated_images.py has already copied these into
+# data/<domain>/images/ under their pipeline names.
+dataset_output/
+data/dataset_output/
+
+# ---------------------------------------------------------------------------
+# Local-only
+#
+# tests/ is a personal check harness, not part of the distribution.
+# .removed/ holds files pulled out of the project but kept on disk.
+# ---------------------------------------------------------------------------
+tests/
+.removed/
+
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Test / lint / type-check caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# ---------------------------------------------------------------------------
+# Environments and secrets
+# ---------------------------------------------------------------------------
+venv/
+.venv/
+env/
+ENV/
+pcmdenv/
+.conda/
+.python-version
+
+# API keys for the VLM / LLM backends (core/llm_client.py) live here.
+.env
+.env.*
+*.env
+!.env.example
+secrets.json
+*.pem
+*.key
+
+# ---------------------------------------------------------------------------
+# Jupyter
+# ---------------------------------------------------------------------------
+.ipynb_checkpoints/
+
+# ---------------------------------------------------------------------------
+# Model weights (never commit these)
+# ---------------------------------------------------------------------------
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+*.onnx
+*.h5
+weights/
+
+# YOLOv12 notebook: Roboflow training exports, training runs, trained weights
+# (pipeline/detection/yolov12_train_infer.ipynb)
+datasets/
+runs/
+trained_models/
+
+# ---------------------------------------------------------------------------
+# Windows / OS / editor
+# ---------------------------------------------------------------------------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+desktop.ini
+$RECYCLE.BIN/
+*.lnk
+*.stackdump
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~
