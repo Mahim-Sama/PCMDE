@@ -13,9 +13,7 @@ An aircraft engine floating above the fuselage, a car with wheels above the
 roofline, or a dog with no torso each trigger a violation regardless of how well
 the image matches its caption.
 
-Paper: available on arXiv. The manuscript PDF and the maintainer notes are
-not distributed with this repository -- see *What this repository contains*
-below.
+Paper: available on arXiv.
 
 ---
 
@@ -58,30 +56,10 @@ analysis/
   ablation_analysis_{aircraft,car}.py   Legacy, reads the 2026-03 output schema.
 data/<d>/             images/ (empty, you supply) · captions.csv · detections/
                       vlm/ · ensemble/ · generated_images_log.csv
-results/<d>/          NOT IN THE REPOSITORY -- created by your first run.
-                      scores/ · ablation/ · crosscheck/ · detections_annotated/
+results/<d>/          Run output, created on the first run: scores/ ·
+                      ablation/ · crosscheck/ · detections_annotated/
 scripts/run_domain.sh One-domain driver: fusion -> vocab -> evaluate -> ablation.
 ```
-
-### What this repository contains
-
-The repository ships the framework and the inputs needed to reproduce scores:
-source code, per-domain configs and rules, the requirements files, and the
-shipped detection / VLM / ensemble JSONs under `data/<domain>/`.
-
-These are deliberately **not** distributed, and are gitignored:
-
-| Not shipped | Why |
-|---|---|
-| `results/` | Every file in it is run output. Each script creates its own output directory, so your first run rebuilds the tree. |
-| `docs/` | Manuscript and review material (paper PDF, LaTeX sources, figures) plus maintainer working notes. |
-| `archive/` | Superseded values from earlier runs. Nothing in the codebase reads it. |
-| `data/<domain>/images/` | ~330 MB of test images. The folder is tracked but empty -- see *Getting the test images*. |
-| `tests/` | A personal check harness, kept local. |
-
-Passages below that reference a `docs/*.md` file or a recorded run under
-`results/` describe the maintainer's working copy. Everything needed to run the
-pipeline is in the repository.
 
 ---
 
@@ -119,13 +97,13 @@ Pass `--no-llm` to skip Stage 3 entirely.
 
 ### Getting the test images
 
-The images are not distributed (~330 MB). Each domain expects 100 of them since
-the September 2026 batch (70 original + 30 generated).
+You supply the test images (~330 MB). Each domain expects 100 since the
+September 2026 batch (70 original + 30 generated).
 
 `data/<domain>/captions.csv` is the filename list. The column holding the
 filename differs per domain -- it is `csv_mapping.image_col` in the domain's
 config: `Image_path` for aircraft and animal, `image_id` for car. The same
-names appear in the shipped detection, VLM and ensemble JSONs.
+names appear in the detection, VLM and ensemble JSONs.
 
 ```bash
 # aircraft / animal
@@ -138,14 +116,14 @@ One known discrepancy: `data/aircraft/captions.csv` holds 101 rows, and one of
 them (`nsid_124.png`) has no image on disk and no entry in the ensemble. The
 aircraft set is 100 images; treat that row as spurious.
 
-Place the files at `data/<domain>/images/`, which ships empty. Everything except
-image-reading steps works without them.
+Place the files at `data/<domain>/images/`. Everything except image-reading
+steps works without them.
 
 ---
 
 ## Quick start
 
-Score a domain end-to-end from the shipped ensemble — no GPU, no images:
+Score a domain end-to-end from an existing ensemble — no GPU, no images:
 
 ```bash
 # Rules only (no Ollama needed)
@@ -176,9 +154,6 @@ from the project root. Stage 1 needs GPUs, Stages 2+3 need Ollama.
 
 ### Stage 1a — Detection
 
-See `docs/DETECTION_SETUP.md` for backend choice, prompts, per-domain tuning and
-Grounding DINO installation.
-
 ```bash
 jupyter notebook pipeline/detection/yolov12_train_infer.ipynb   # car, aircraft
 ```
@@ -187,8 +162,8 @@ jupyter notebook pipeline/detection/yolov12_train_infer.ipynb   # car, aircraft
 python pipeline/detection/groundingdino_sam_animal.py --force        --annotate results/animal/detections_annotated               # animal
 ```
 
-The animal script is a reconstruction of the lost original (`docs/KNOWN_GAPS.md`
-§3); the original 70-image output is kept as
+The animal script is a reconstruction of the lost original; the original
+70-image output is kept as
 `data/animal/detections/groundingdino_sam_animal.reference_70.json`. Output goes
 to `data/<domain>/detections/`.
 
@@ -249,8 +224,7 @@ re-run those domains.
 
 Fresh runs write to `results/<domain>/scores/`. The recorded experiment output
 lives in `results/<domain>/reference_run/` and is never written by the pipeline,
-so re-running cannot destroy it. Currently only animal has a reference run —
-see `docs/PROVENANCE.md`.
+so re-running cannot destroy it. Currently only animal has a reference run.
 
 ### Ablation (paper Sec. VI-F)
 
@@ -323,12 +297,12 @@ which is the full record of the batch.
 Before the re-run, the pipeline blockers were fixed: the aircraft and car rules
 now match their detectors, `Wheels`/`wheels` are one component, VLM confidence is
 read correctly, LLM failures are no longer silent, and the ablation can be
-produced (`docs/KNOWN_GAPS.md` §1).
+produced.
 
 The 100-image run has since been completed on a separate machine and its output
 merged back into this tree. Verified from `results/`:
 
-- **Stages 1a -> 1c re-run** per domain: the shipped ensembles now carry 100
+- **Stages 1a -> 1c re-run** per domain: the ensembles now carry 100
   images each (they carried 70 before).
 - **Stages 2+3 re-run** per domain, `statistics.llm_failures` is **0** for all
   three. Mean overall: aircraft 72.68, animal 85.19, car 85.09.
@@ -351,8 +325,7 @@ What remains:
    `size_ratio.head_width_over_torso_width.default.22` (27/100, animal).
 2. **Collect human labels** for the 30 new images per domain (Table V); the
    existing 70 labels per domain stay valid.
-3. **Update the paper** -- `docs/PAPER_UPDATE.md` lists every number, where it
-   lives in the paper, and which command prints its replacement.
+3. **Update the paper** with the new numbers.
 
 The 70-image results stay where they are: `results/animal/reference_run/` and
 `results/<domain>/ablation/legacy_run_2026-03/` are never written by the
@@ -364,8 +337,8 @@ pipeline.
 
 One JSON and one YAML. Zero Python changes.
 
-1. Author `domains/<name>/physical_rules_<name>.json` (see `docs/RULES_SCHEMA.md`;
-   it includes an LLM prompt that generates a conforming rules file).
+1. Author `domains/<name>/physical_rules_<name>.json` — copy an existing
+   domain's file and edit it; every rule carries its own predicate and severity.
 2. Create `configs/<name>.yaml` by copying an existing one and repointing paths.
 3. Put data under `data/<name>/{images,detections,vlm,ensemble}` and `captions.csv`.
 4. `python analysis/check_rule_vocabulary.py --config configs/<name>.yaml` — confirm
@@ -391,26 +364,3 @@ both components ≥ 40. A `critical` severity violation caps the rule score.
 
 Severity levels: `critical` (obviously unusable, high certainty) → `major`
 (structurally wrong, partially usable) → `minor` (imprecision, still plausible).
-
-Full detail, including the unevaluability policy that separates detector gaps from
-genuine violations, is in `docs/RULES_SCHEMA.md`.
-
----
-
-## Documentation
-
-This README is the documentation that ships with the repository. The rules JSON
-schema is self-describing, and every script supports `--help`.
-
-The maintainer's working copy also carries the notes below under `docs/`, which
-is gitignored because it holds the manuscript and review material. They are
-listed here so the references elsewhere in this README resolve; request them if
-you need them.
-
-| Document | Contents |
-|---|---|
-| `KNOWN_GAPS.md` | Missing scripts, untested configs, data bugs, paper/code divergences |
-| `PROVENANCE.md` | Where every data file came from; reproduction verification |
-| `DETECTION_SETUP.md` | Detector backends, prompts, per-domain tuning, Grounding DINO install |
-| `RULES_SCHEMA.md` | Rules JSON schema, 10-rule catalog, scoring, LLM rule-generation prompt |
-| `PAPER_UPDATE.md` | Every number in the paper: where it lives, and which command produces its replacement |
