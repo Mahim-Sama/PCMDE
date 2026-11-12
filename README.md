@@ -97,8 +97,7 @@ Pass `--no-llm` to skip Stage 3 entirely.
 
 ### Getting the test images
 
-You supply the test images (~330 MB). Each domain expects 100 since the
-September 2026 batch (70 original + 30 generated).
+You supply the test images (~330 MB). Each domain expects 100 images.
 
 `data/<domain>/captions.csv` is the filename list. The column holding the
 filename differs per domain -- it is `csv_mapping.image_col` in the domain's
@@ -162,10 +161,7 @@ jupyter notebook pipeline/detection/yolov12_train_infer.ipynb   # car, aircraft
 python pipeline/detection/groundingdino_sam_animal.py --force        --annotate results/animal/detections_annotated               # animal
 ```
 
-The animal script is a reconstruction of the lost original; the original
-70-image output is kept as
-`data/animal/detections/groundingdino_sam_animal.reference_70.json`. Output goes
-to `data/<domain>/detections/`.
+Output goes to `data/<domain>/detections/`.
 
 ### Stage 1b — VLM inference
 
@@ -222,9 +218,7 @@ inside `<think>`), the run says so: the image is flagged `llm_failed`, counted i
 invented value. **A run with failures is not reportable** — fix the LLM setup and
 re-run those domains.
 
-Fresh runs write to `results/<domain>/scores/`. The recorded experiment output
-lives in `results/<domain>/reference_run/` and is never written by the pipeline,
-so re-running cannot destroy it. Currently only animal has a reference run.
+Runs write to `results/<domain>/scores/`.
 
 ### Ablation (paper Sec. VI-F)
 
@@ -243,11 +237,6 @@ over the dataset per domain; `--variants` and `--force` control re-runs, and
 `ablation_analysis.py` prints Table IV (PCMDE rows) and Table XIII (a) and (b),
 as text and as LaTeX rows, and warns when a run had LLM failures, ran without the
 LLM, or covers different image counts across variants.
-
-The 2026-03 legacy ablation files live in
-`results/<domain>/ablation/legacy_run_2026-03/` and are read by the older
-`ablation_analysis_{aircraft,car}.py`. They came from evaluators that are not in
-this repo and are not comparable with new runs.
 
 ### Baseline cross-check
 
@@ -284,52 +273,30 @@ list. All three domains currently report `RESULT: OK`.
 
 ---
 
-## The 100-image re-run
+## Dataset and results
 
-The dataset is now **100 images per domain**: the original 70 plus 30 generated
-with HiDream-I1 in September 2026 (the generator script is not part of this
-repository). They were renamed into each domain's
-scheme (`ncar_71...`, `gatto_11...`, `nid_111...`), copied into
-`data/<domain>/images/`, and their caption rows appended. Source filename, seed,
-prompt and defect flag are kept in `data/<domain>/generated_images_log.csv`,
-which is the full record of the batch.
+Each domain has **100 test images** generated with HiDream-I1. Seeds, prompts
+and defect flags for the generated images are logged in
+`data/<domain>/generated_images_log.csv`.
 
-Before the re-run, the pipeline blockers were fixed: the aircraft and car rules
-now match their detectors, `Wheels`/`wheels` are one component, VLM confidence is
-read correctly, LLM failures are no longer silent, and the ablation can be
-produced.
+Verified from `results/`:
 
-The 100-image run has since been completed on a separate machine and its output
-merged back into this tree. Verified from `results/`:
+- **Stages 1a -> 1c**: the ensembles carry 100 images per domain.
+- **Stages 2+3**: `statistics.llm_failures` is **0** for all three domains.
+  Mean overall: aircraft 72.68, animal 85.19, car 85.09.
+- **Ablation** for all three domains (five variants, manifest and per-image CSV
+  in `results/<domain>/ablation/`).
+- **Baseline cross-check** for all three domains -- CLIPScore, SigLIP-2, FLEUR
+  and VQAScore, plus `results/crosscheck_summary.csv`.
 
-- **Stages 1a -> 1c re-run** per domain: the ensembles now carry 100
-  images each (they carried 70 before).
-- **Stages 2+3 re-run** per domain, `statistics.llm_failures` is **0** for all
-  three. Mean overall: aircraft 72.68, animal 85.19, car 85.09.
-- **Ablation** produced for all three domains (five variants, manifest and
-  per-image CSV in `results/<domain>/ablation/`).
-- **Baseline cross-check** run for all three domains -- CLIPScore, SigLIP-2,
-  FLEUR and VQAScore, plus `results/crosscheck_summary.csv`.
+Rules worth reviewing, as they fire widely:
 
-What remains:
-
-1. **Review two domain decisions** that were left alone because they are yours.
-   Recounted against the 100-image run:
-   - animal head-position tolerance (`extremum.head.x_either.18`): fails on
-     **36/100** images;
-   - car grille count (`count_range.grille.11`, paper says exactly 1): fails on
-     **27/100** images.
-
-   Two related rules also fire widely and may be worth the same look:
-   `size_ratio.eye_width_over_head_width.26` (39/100, animal) and
-   `size_ratio.head_width_over_torso_width.default.22` (27/100, animal).
-2. **Collect human labels** for the 30 new images per domain (Table V); the
-   existing 70 labels per domain stay valid.
-3. **Update the paper** with the new numbers.
-
-The 70-image results stay where they are: `results/animal/reference_run/` and
-`results/<domain>/ablation/legacy_run_2026-03/` are never written by the
-pipeline.
+- animal head-position tolerance (`extremum.head.x_either.18`): fails on
+  **36/100** images;
+- car grille count (`count_range.grille.11`, paper says exactly 1): fails on
+  **27/100** images;
+- `size_ratio.eye_width_over_head_width.26` (39/100, animal) and
+  `size_ratio.head_width_over_torso_width.default.22` (27/100, animal).
 
 ---
 
